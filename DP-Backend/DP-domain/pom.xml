@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.guyuchen</groupId>
+        <artifactId>DeadPool</artifactId>
+        <version>1.0.snapshot</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>DP-domain</artifactId>
+    <version>1.0.snapshot</version>
+    <name>DP-domain</name>
+    <packaging>jar</packaging>
+    <description>DP-domain</description>
+
+    <dependencies>
+        <!-- === internal dependencies === -->
+        <dependency>
+            <groupId>com.guyuchen</groupId>
+            <artifactId>DP-core</artifactId>
+            <version>1.0.snapshot</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven.compiler.plugin.version}</version>
+                    <configuration>
+                        <encoding>${sourceEncoding}</encoding>
+                        <source>${maven.compiler.version}</source>
+                        <target>${maven.compiler.version}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
