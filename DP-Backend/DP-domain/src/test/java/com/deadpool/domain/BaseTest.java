@@ -11,4 +11,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @TestPropertySource(value = {"classpath:test.properties"})
 public abstract class BaseTest {
 
+
+
 }
