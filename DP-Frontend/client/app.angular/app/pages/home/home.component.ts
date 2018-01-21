@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 
 @Component({
   selector: 'home',
@@ -7,5 +7,26 @@ import {Component} from '@angular/core';
 })
 
 export class HomeComponent {
+
+  distance:number;
+
+  scroll(e:any){
+    console.log(e);
+  }
+
+  @HostListener('mousewheel', ['$event'])
+  onWheel(e) {
+
+      this.distance = e.deltaY-0;
+      console.log(this.distance);
+
+
+  }
+
+
+
+
+
+
 
 }

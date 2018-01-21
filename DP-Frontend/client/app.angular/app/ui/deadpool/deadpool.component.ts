@@ -9,5 +9,24 @@ import {Component} from '@angular/core';
 export class DeadpoolComponent {
 
   shine: number = 0;
+  inter:any;
+
+  ngOnInit(){
+    // this.shineFunc();
+  }
+
+  shineFunc(){
+
+    this.inter = setInterval(()=>{
+      this.shine = Math.floor((Math.random() * 400) + 1);
+    },300)
+
+  }
+
+  ngOnDestroy(){
+    clearInterval(this.inter);
+  }
+
+
 
 }
