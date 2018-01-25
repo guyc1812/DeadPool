@@ -1,0 +1,57 @@
+div{
+  display: block;
+  box-sizing: border-box;
+}
+.item{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.item-title{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  border-radius: 2px;
+  color: #6e6e6e;
+  padding: 0 5px;
+}
+.item-title:hover{
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
+.item-title:focus{
+  background-color: #ddd;
+  outline: none;
+}
+.item-title-text{
+  display: inline-block;
+  box-sizing: border-box;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 40px;
+  text-align: left;
+  font-size: 15px;
+}
+.item-title-text:hover{
+  color: #1976d2;
+}
+.item-title-arrow{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 24px;
+  height: 40px;
+  padding: 8px 0;
+}
+.item-title-arrow svg{
+  fill:	#5B5B5B;
+}
+.item-content{
+  width: 100%;
+  height: auto;
+  padding-left: 10px;
+}

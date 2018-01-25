@@ -1,16 +1,22 @@
 import {NgModule} from '@angular/core';
 import {DeadpoolComponent} from "./deadpool/deadpool.component";
 import {SpiderWebComponent} from "./spiderweb/spiderweb.component";
+import {MarkDownComponent} from "./markdown/markdown.component";
+import {SiderModule} from "./sider/sider.module";
 
 @NgModule({
-  imports: [],
+  imports: [
+    SiderModule
+  ],
   declarations: [
     DeadpoolComponent,
-    SpiderWebComponent
+    SpiderWebComponent,
+    MarkDownComponent
   ],
   exports:[
     DeadpoolComponent,
-    SpiderWebComponent
+    SpiderWebComponent,
+    MarkDownComponent
   ]
 })
 

@@ -204,7 +204,8 @@
   },
   "scripts": {
     "prestart": "npm install --registry=https://registry.npmjs.org --allow-root",
-    "build:client-ssr": "ng build --prod --output-hashing=false"
+    "build:client-ssr": "ng build --prod --output-hashing=false",
+    "start": "node server"
   },
   "private": true
 }

@@ -1,0 +1,13 @@
+.main{
+  min-height: 600px;
+  height: 100%;
+  padding-left:260px;
+}
+
+.main-block{
+  padding: 190px 10px 10px 10px;
+  margin-top: -80px;
+  height: auto;
+  min-height: 100%;
+  min-width: 10px;
+}

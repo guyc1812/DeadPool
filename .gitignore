@@ -4,6 +4,7 @@
 
 ### maven template
 target/
+!.mvn/**/*
 
 ### Java template
 *.class
@@ -109,12 +110,13 @@ local.properties
 .recommenders/
 
 
-logs
+# Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pids
+
+# Pids
 *.pid
 *.seed
 *.pid.lock
@@ -135,10 +137,6 @@ typings/
 .yarn-integrity
 .env
 
-
-!.mvn/**/*
-
-# node-binary
-node-binary
-
+# Dist
 dist
+
