@@ -140,3 +140,4 @@ typings/
 # Dist
 dist
 
+!DP-Frontend/node-binary
