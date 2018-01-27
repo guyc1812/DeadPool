@@ -24,6 +24,7 @@ target/
 *.ear
 *.zip
 *.tar.gz
+!node-v6.9.1-linux-x64.tar.gz
 *.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
@@ -139,5 +140,3 @@ typings/
 
 # Dist
 dist
-
-!DP-Frontend/node-binary
