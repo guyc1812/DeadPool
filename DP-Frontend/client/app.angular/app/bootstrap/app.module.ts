@@ -1,4 +1,4 @@
-import {NgModule} from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ReactiveFormsModule} from '@angular/forms';
@@ -32,4 +32,5 @@ import {SiderState} from "../service/siderState/sider.state.store";
   providers: [SiderState]
 })
 
-export class AppModule {}
+export class AppModule {
+}

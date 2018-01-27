@@ -3,7 +3,7 @@ div{
   box-sizing: border-box;
 }
 .sider-container{
-  background-color: #fafafa;
+  background-color: #fef5e6;
   box-shadow: 6px 0 6px rgba(0,0,0,.1);
   position: fixed;
   width: 260px;

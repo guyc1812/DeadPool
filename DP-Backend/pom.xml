@@ -4,12 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.guyuchen</groupId>
-    <artifactId>DeadPool</artifactId>
+    <parent>
+        <groupId>com.guyuchen</groupId>
+        <artifactId>DeadPool</artifactId>
+        <version>1.0.snapshot</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>DP-Backend</artifactId>
     <version>1.0.snapshot</version>
     <packaging>pom</packaging>
-    <name>DP-Backend</name>
-    <description>DP-Backend</description>
+    <name>DeadPool-backend</name>
+    <description>Personal Site Backend</description>
 
     <properties>
         <!-- ==== Encoding ================== -->
@@ -24,6 +30,7 @@
         <spring.version>4.3.11.RELEASE</spring.version>
         <spring.boot.version>1.5.7.RELEASE</spring.boot.version>
         <mongoDB.connector.version>2.13.2</mongoDB.connector.version>
+        <egit.version>2.1.5</egit.version>
     </properties>
 
     <dependencies>
@@ -88,6 +95,13 @@
             <version>${spring.boot.version}</version>
         </dependency>
         <!-- == Library == -->
+        <!-- === github sdk from eclise egit === -->
+        <dependency>
+            <groupId>org.eclipse.mylyn.github</groupId>
+            <artifactId>org.eclipse.egit.github.core</artifactId>
+            <version>${egit.version}</version>
+        </dependency>
+        <!-- === github sdk from eclise egit === -->
         <dependency>
             <groupId>org.mongodb</groupId>
             <artifactId>mongo-java-driver</artifactId>
@@ -118,6 +132,12 @@
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.24</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

@@ -26,7 +26,6 @@ public class GithubServiceImpl implements GithubService{
     private final GithubTreeDao githubTreeDao;
     private final MarkdownService markdownService;
 
-
     @Autowired
     public GithubServiceImpl(GithubContentDao githubContentDao, GithubTreeDao githubTreeDao, MarkdownService markdownService) {
         this.githubContentDao = githubContentDao;
@@ -56,7 +55,13 @@ public class GithubServiceImpl implements GithubService{
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            Doc doc = new Doc(repo, md.getName(), md.getPath(), decodedContent, htmlString);
+            Doc doc = Doc.builder()
+                         .category(repo)
+                         .title(md.getName())
+                         .path(md.getPath())
+                         .content(decodedContent)
+                         .markdown(htmlString)
+                         .build();
             docs.add(doc);
         });
 

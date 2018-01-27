@@ -78,3 +78,5 @@ buildNumber.properties
 *.iml
 
 !node-binary
+
+# exclude all the config files

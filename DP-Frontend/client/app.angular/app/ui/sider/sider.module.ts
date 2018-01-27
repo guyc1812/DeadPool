@@ -5,7 +5,6 @@ import {SiderItemComponent} from "./sider-item/sider-item.component";
 import {RouterModule} from "@angular/router";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
-
 @NgModule({
   imports: [
     CommonModule,

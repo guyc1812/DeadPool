@@ -9,8 +9,8 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 export const dpProxy = proxy('localhost:8080', {
   proxyReqPathResolver: function (req) {
-    let prefix = '/api/dp';
-    reqLog('localhost:8083', prefix, req);
+    let prefix = '/api/note';
+    reqLog('localhost:8080', prefix, req);
     return prefix + Url.parse(req.url).path;
   }
 });

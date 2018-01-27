@@ -1,6 +1,9 @@
 package com.deadpool.core.entity;
 
+
 import lombok.*;
+
+import java.util.List;
 
 @Builder
 @Getter
@@ -8,11 +11,10 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Doc {
-    int commit;
-    String category;
+public class SiderItem {
+
     String title;
-    String path;
-    String content;
-    String markdown;
+    String nav;
+    List<SiderItem> items;
+
 }

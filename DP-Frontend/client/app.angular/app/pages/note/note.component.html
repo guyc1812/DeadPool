@@ -1,0 +1,12 @@
+<sider [list]="siderList"></sider>
+<div class="main row" [@siderListExpand]="mainState" [@mainHeaderToggle]="mainHeaderState" (click)="toggle()">
+
+  <div class="main-header col-100-0">
+
+  </div>
+
+  <div class="main-block col-100-0">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

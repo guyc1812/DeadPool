@@ -15,7 +15,7 @@ export class MarkDownComponent {
 
   ngOnInit(){
     this.id = this.route.snapshot.paramMap.get('id');
-    console.log(this.id);
+    console.log('[mark component]\t\t '+this.id);
   }
 
 
