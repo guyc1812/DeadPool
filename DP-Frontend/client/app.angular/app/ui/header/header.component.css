@@ -1,0 +1,15 @@
+.header{
+  position: fixed;
+  top:10px;
+  left: 50px;
+  z-index: 1300;
+}
+
+.header-logo{
+  width: 28px;
+  height: 28px;
+}
+
+.header-logo:hover{
+  cursor: pointer;
+}

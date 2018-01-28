@@ -1,61 +1,87 @@
 .spider{
   position: fixed;
-  top:-445px;
+  top:-230px;
   left: 200px;
+  transition: top 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.spider-show{
+  top: -2px;
 }
 
 .spider-web{
   position: absolute;
   top: 0;
-  left: 0;
-  width: 364px;
-  height: 464px;
+  left: 88px;
+  width: 200px;
+  height: 300px;
 }
 
 .spider-man{
   position: absolute;
-  top:445px;
+  top:250px;
   left: 0;
   width: 364px;
   height: 288px;
 }
 
-.blackpanther{
+.logo{
   position: absolute;
-  top: 60px;
-  left: 226px;
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
 }
 
-.captain{
-  position: absolute;
-  top: 35px;
-  left: 126px;
-  width: 90px;
-  height: 90px;
+.tony{
+  top:40px;
+  left:130px;
+}
+.tony:hover{
+  cursor: pointer;
+  content: url('../../../../assets/images/Stark-logo-2.png');
 }
 
-.ironman{
-  position: absolute;
-  top: 175px;
-  left: 232px;
-  width: 90px;
-  height: 90px;
+.banner{
+  top:110px;
+  left:130px;
+}
+.banner:hover{
+  cursor: pointer;
+  content: url('../../../../assets/images/Hulk-logo-2.png');
 }
 
-.hulk{
-  position: absolute;
-  top: 153px;
-  left: 135px;
-  width: 90px;
-  height: 90px;
+.tchalla{
+  top:180px;
+  left:130px;
+}
+.tchalla:hover{
+  cursor: pointer;
+  content: url('../../../../assets/images/Tchalla-logo-2.png');
 }
 
-.drstrange{
-  position: absolute;
-  top: 255px;
-  left: 180px;
-  width: 90px;
-  height: 90px;
+.steven{
+  top:20px;
+  left:224px;
+}
+.steven:hover{
+  cursor: pointer;
+  content: url('../../../../assets/images/Steven-logo-2.png');
+}
+
+.thor{
+  top:90px;
+  left:225px;
+}
+.thor:hover{
+  cursor: pointer;
+  content: url('../../../../assets/images/Thor-logo-2.png');
+}
+
+.strange{
+  top:160px;
+  left:225px;
+}
+.strange:hover{
+  cursor: pointer;
+  content: url('../../../../assets/images/Strange-logo-2.png');
 }

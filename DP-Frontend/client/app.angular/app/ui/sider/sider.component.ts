@@ -25,8 +25,16 @@ export class SiderComponent {
 
   @Input() list: SiderItem[];
 
+  @Input() category:string;
+
+  src:string;
+
+  categories:any;
+
   isBrowser: boolean;
+
   animationState: string;
+
   disposer: any;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object,
@@ -38,6 +46,15 @@ export class SiderComponent {
     this.siderState.setBigScreenState(window.innerWidth >= 960);
     this.siderState.setExpandState(false);
     this.siderState.setInitedState(false);
+
+    this.categories = {
+      steven : 'assets/images/Steven-logo-1.png',
+      javaBasic  : 'assets/images/Stark-logo-1.png',
+      banner : 'assets/images/Hulk-logo-1.png',
+      thor   : 'assets/images/Thor-logo-1.png',
+      tchalla: 'assets/images/Tchalla-logo-1.png',
+      strange: 'assets/images/Strange-logo-1.png',
+    }
 
   }
 
@@ -53,6 +70,10 @@ export class SiderComponent {
       self.siderState.setInitedState(true);
       self.siderState.setExpandState(this.siderState.isBigScreen);
     }, 2200);
+  }
+
+  ngOnChanges(){
+    this.src = this.categories[`${this.category}`];
   }
 
   ngOnDestroy(){

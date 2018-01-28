@@ -1,4 +1,6 @@
-<sider [list]="siderList"></sider>
+<header></header>
+
+<sider [list]="siderList" [category]="id"></sider>
 <div class="main row" [@siderListExpand]="mainState" [@mainHeaderToggle]="mainHeaderState" (click)="toggle()">
 
   <div class="main-header col-100-0">
