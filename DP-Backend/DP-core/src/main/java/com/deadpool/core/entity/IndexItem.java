@@ -11,10 +11,12 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class SiderItem {
+public class IndexItem {
 
+    String category;
     String title;
+    String path;
     String nav;
-    List<SiderItem> items;
+    List<IndexItem> items;
 
 }

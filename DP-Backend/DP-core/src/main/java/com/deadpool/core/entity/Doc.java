@@ -13,6 +13,7 @@ public class Doc {
     String category;
     String title;
     String path;
+    String nav;
     String content;
     String markdown;
 }

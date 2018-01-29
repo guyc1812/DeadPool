@@ -4,6 +4,7 @@ import com.deadpool.core.dao.github.GithubContentDao;
 import com.deadpool.core.dao.github.GithubTreeDao;
 import com.deadpool.core.entity.Dir;
 import com.deadpool.core.entity.Doc;
+import com.deadpool.core.entity.Index;
 import com.deadpool.core.service.github.GithubService;
 import com.deadpool.domain.service.util.Decode;
 import org.eclipse.egit.github.core.RepositoryContents;
@@ -20,24 +21,23 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 @Service("githubService")
-public class GithubServiceImpl implements GithubService{
+public class GithubServiceImpl extends GithubFunctions implements GithubService{
 
-    private final GithubContentDao githubContentDao;
-    private final GithubTreeDao githubTreeDao;
+
     private final MarkdownService markdownService;
 
     @Autowired
     public GithubServiceImpl(GithubContentDao githubContentDao, GithubTreeDao githubTreeDao, MarkdownService markdownService) {
-        this.githubContentDao = githubContentDao;
-        this.githubTreeDao = githubTreeDao;
+        super(githubContentDao,githubTreeDao);
         this.markdownService = markdownService;
     }
 
     @Override
-    public List<Doc> getDocs(String owner, String repo, String branch) {
+    public List<Doc> getAllDocs(String owner, String repo, String branch) {
 
         List<Doc> docs = new LinkedList<>();
         List<RepositoryContents> markdowns = new LinkedList<>();
+        Decode decode = new Decode();
 
         try {
             List<Dir> dirs = getDirSha(owner, repo, branch);
@@ -46,7 +46,6 @@ public class GithubServiceImpl implements GithubService{
             e.printStackTrace();
         }
 
-        Decode decode = new Decode();
         markdowns.forEach(md -> {
             String decodedContent = decode.decodeContentUTF(md.getContent());
             String htmlString = "";
@@ -69,44 +68,16 @@ public class GithubServiceImpl implements GithubService{
 
     }
 
-    // get all the dirs in the repo(with branch) which contain the sha
-    private List<Dir> getDirSha(String owner, String repo, String branch) throws Exception {
-        List<Dir> dirs = new CopyOnWriteArrayList<>();
+    @Override
+    public String getIndex(String owner, String repo, String branch) {
+
         try {
-            List<RepositoryContents> contentsList = githubContentDao.getContentsAll(repo, owner, branch);
-            contentsList.forEach(item -> {
-                if (item.getType().equals("dir")) {
-                    dirs.add(new Dir(item.getName(), item.getSha(), item.getPath()));
-                }
-            });
-        } catch (Exception e) {
-            return null;
+            List<RepositoryContents> index = githubContentDao.getContents(repo, owner, "index.json", branch);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        return dirs;
+        return null;
     }
 
-    // get all the markdown files
-    private List<RepositoryContents> getAllMarkdowns(List<Dir> dirsList, String owner, String repo, String branch) throws Exception {
-        List<RepositoryContents> mdList = new CopyOnWriteArrayList<>();
-        dirsList.parallelStream().forEach((Dir item) -> {
-            try {
-                Tree trees = githubTreeDao.getTree(owner, repo, item.getSha(), true);
-                trees.getTree().parallelStream().forEach((TreeEntry tr) -> {
-                    if (tr.getType().equals("blob") && (!tr.getPath().contains("README.md")) && tr.getPath().contains(".md")) {
-                        tr.setPath(item.getPath() + "/" + tr.getPath());
-                        try {
-                            List<RepositoryContents> singleCase = githubContentDao.getContents(repo, owner, tr.getPath(), branch);
-                            mdList.addAll(singleCase);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                });
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
-        return mdList;
-    }
 
 }

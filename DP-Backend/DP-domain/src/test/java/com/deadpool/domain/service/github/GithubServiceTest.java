@@ -20,7 +20,7 @@ public class GithubServiceTest extends BaseTest {
 
     @Test
     public void gitDocs() {
-        List<Doc> docs = githubService.getDocs("guyc1812", "Tony", "master");
+        List<Doc> docs = githubService.getAllDocs("guyc1812", "Tony", "master");
         System.out.println(docs.size());
     }
 
