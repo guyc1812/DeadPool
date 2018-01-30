@@ -1,76 +1,96 @@
 package com.deadpool.application.controller;
 
+import com.deadpool.core.entity.IndexFlatItem;
+import com.deadpool.core.entity.ResponseTransfer;
+import com.deadpool.core.service.curd.docs.DocsService;
+import com.deadpool.core.service.curd.index.IndexService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 @RestController
 @RequestMapping("/api")
+@Api(value = "Sync Controller", description = "CURD")
 public class SyncController {
 
+    private IndexService indexService;
+    private DocsService docsService;
+
     @Autowired
-    public SyncController() { }
-
-
-    /* ADD */
-    @RequestMapping(value = "/allNotes", method = RequestMethod.POST)
-    public String addAllNotes() {
-        return null;
+    public SyncController(IndexService indexService, DocsService docsService) {
+        this.indexService = indexService;
+        this.docsService = docsService;
     }
 
     /* ADD */
-    @RequestMapping(value = "/notes", method = RequestMethod.POST)
-    public String addNotes(@RequestParam("category") String category) {
-        return null;
-    }
-
-    /* ADD */
-    @RequestMapping(value = "/note", method = RequestMethod.POST)
-    public String addNote(@RequestParam("category") String category,
-                          @RequestParam("category") String title) {
-        return null;
+    @RequestMapping(value = "/docs", method = RequestMethod.POST)
+    public ResponseTransfer addNotes(@RequestParam("category") String category) {
+        try {
+            docsService.addDocs("guyc1812", category, "master");
+            return new ResponseTransfer("ok", "adding done");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ResponseTransfer("error", "adding error");
+        }
     }
 
 
     /* UPDATE */
-    @RequestMapping(value = "/allNotes", method = RequestMethod.PUT)
-    public String updateAllNotes() {
-        return null;
+    @RequestMapping(value = "/docs", method = RequestMethod.PUT)
+    public ResponseTransfer updateNotes(@RequestParam("category") String category) {
+        try {
+            docsService.updateDocs("guyc1812", category, "master");
+            return new ResponseTransfer("ok", "updating done");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ResponseTransfer("error", "updating error");
+        }
     }
 
     /* UPDATE */
-    @RequestMapping(value = "/notes", method = RequestMethod.PUT)
-    public String updateNotes(@RequestParam("category") String category) {
-        return null;
-    }
-
-    /* UPDATE */
-    @RequestMapping(value = "/note", method = RequestMethod.PUT)
-    public String updateNote(@RequestParam("category") String category,
-                             @RequestParam("category") String title) {
-        return null;
+    @RequestMapping(value = "/doc", method = RequestMethod.PUT)
+    public ResponseTransfer updateNotes(
+            @RequestParam("category") String category,
+            @RequestParam("title") String title,
+            @RequestParam("path") String path,
+            @RequestParam("nav") String nav) {
+        try {
+            docsService.updateDoc("guyc1812", category, "master", new IndexFlatItem(category,title,path,nav,0));
+            return new ResponseTransfer("ok", "updating done");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ResponseTransfer("error", "updating error");
+        }
     }
 
 
     /* DELETE */
-    @RequestMapping(value = "/allNotes", method = RequestMethod.DELETE)
-    public String deleteAllNotes() {
-        return null;
+    @RequestMapping(value = "/docs", method = RequestMethod.DELETE)
+    public ResponseTransfer deleteNotes(@RequestParam("category") String category) {
+        try {
+            docsService.removeDocs(category);
+            return new ResponseTransfer("ok", "deleting done");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ResponseTransfer("error", "deleting error");
+        }
     }
 
     /* DELETE */
-    @RequestMapping(value = "/notes", method = RequestMethod.DELETE)
-    public String deleteNotes(@RequestParam("category") String category) {
-        return null;
-    }
-
-    /* DELETE */
-    @RequestMapping(value = "/note", method = RequestMethod.DELETE)
-    public String deleteNote(@RequestParam("category") String category,
-                             @RequestParam("category") String title) {
-        return null;
+    @RequestMapping(value = "/doc", method = RequestMethod.DELETE)
+    public ResponseTransfer deleteNote(
+            @RequestParam("category") String category,
+            @RequestParam("nav") String nav) {
+        try {
+            docsService.removeDoc(category, nav);
+            return new ResponseTransfer("ok", "deleting done");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ResponseTransfer("error", "deleting error");
+        }
     }
 
 

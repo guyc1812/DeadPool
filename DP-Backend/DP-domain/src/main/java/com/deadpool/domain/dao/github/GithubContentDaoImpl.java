@@ -24,22 +24,22 @@ public class GithubContentDaoImpl implements GithubContentDao {
     }
 
     @Override
-    public List<RepositoryContents> getContentsAll(String repo, String owner) throws IOException {
-        return getContents(repo, owner, null, null);
+    public List<RepositoryContents> getContentsAll(String owner, String repo) throws IOException {
+        return getContents(owner, repo, null, null);
     }
 
     @Override
-    public List<RepositoryContents> getContentsAll(String repo, String owner, String branch) throws IOException {
-        return getContents(repo, owner, null, branch);
+    public List<RepositoryContents> getContentsAll(String owner, String repo, String branch) throws IOException {
+        return getContents(owner, repo, null, branch);
     }
 
     @Override
-    public List<RepositoryContents> getContents(String repo, String owner, String path) throws IOException {
-        return getContents(repo, owner, path, null);
+    public List<RepositoryContents> getContents(String owner, String repo, String path) throws IOException {
+        return getContents(owner, repo, path, null);
     }
 
     @Override
-    public List<RepositoryContents> getContents(String repo, String owner, String path, String branch) throws IOException {
+    public List<RepositoryContents> getContents(String owner, String repo, String branch, String path) throws IOException {
         Repository repository = new Repository();
         repository.setName(repo);
         repository.setOwner(userService.getUser(owner));

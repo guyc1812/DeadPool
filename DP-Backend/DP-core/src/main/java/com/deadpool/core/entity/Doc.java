@@ -9,11 +9,9 @@ import lombok.*;
 @AllArgsConstructor
 @ToString
 public class Doc {
-    int commit;
     String category;
     String title;
     String path;
     String nav;
     String content;
-    String markdown;
 }

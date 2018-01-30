@@ -13,14 +13,14 @@
 .spider-web{
   position: absolute;
   top: 0;
-  left: 88px;
-  width: 200px;
-  height: 300px;
+  left: 97px;
+  width: 170px;
+  height: 280px;
 }
 
 .spider-man{
   position: absolute;
-  top:250px;
+  top:230px;
   left: 0;
   width: 364px;
   height: 288px;
@@ -32,56 +32,56 @@
   height: 50px;
 }
 
-.tony{
+.tony,.tony-d{
   top:40px;
   left:130px;
 }
-.tony:hover{
+.tony-d:hover{
   cursor: pointer;
   content: url('../../../../assets/images/Stark-logo-2.png');
 }
 
-.banner{
+.banner,.banner-d{
   top:110px;
   left:130px;
 }
-.banner:hover{
+.banner-d:hover{
   cursor: pointer;
   content: url('../../../../assets/images/Hulk-logo-2.png');
 }
 
-.tchalla{
+.tchalla,.tchalla-d{
   top:180px;
   left:130px;
 }
-.tchalla:hover{
+.tchalla-d:hover{
   cursor: pointer;
   content: url('../../../../assets/images/Tchalla-logo-2.png');
 }
 
-.steven{
+.steven,.steven-d{
   top:20px;
-  left:224px;
+  left:210px;
 }
-.steven:hover{
+.steven-d:hover{
   cursor: pointer;
   content: url('../../../../assets/images/Steven-logo-2.png');
 }
 
-.thor{
+.thor,.thor-d{
   top:90px;
-  left:225px;
+  left:210px;
 }
-.thor:hover{
+.thor-d:hover{
   cursor: pointer;
   content: url('../../../../assets/images/Thor-logo-2.png');
 }
 
-.strange{
+.strange,.strange-d{
   top:160px;
-  left:225px;
+  left:210px;
 }
-.strange:hover{
+.strange-d:hover{
   cursor: pointer;
   content: url('../../../../assets/images/Strange-logo-2.png');
 }

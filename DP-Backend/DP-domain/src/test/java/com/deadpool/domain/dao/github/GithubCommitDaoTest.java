@@ -28,7 +28,7 @@ public class GithubCommitDaoTest extends BaseTest {
 
     @Test
     public void getCommitAll() throws Exception {
-        Assert.assertTrue(githubCommitDao.getCommitsAll(repo, owner).size() > 0);
+        Assert.assertTrue(githubCommitDao.getAllCommits(repo, owner).size() > 0);
     }
 
 

@@ -1,22 +1,16 @@
 package com.deadpool.domain.service.mongo;
 
-import com.deadpool.core.entity.Index;
-import com.deadpool.core.entity.IndexFlatItem;
-import com.deadpool.core.entity.IndexItem;
 import com.deadpool.core.service.github.GithubService;
+import com.mongodb.MongoClient;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import java.util.ArrayList;
-import java.util.List;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class MongoFunctions {
 
-    GithubService githubService;
+    MongoClient mongoClient;
 
     @Autowired
-    public MongoFunctions(GithubService githubService){
-        this.githubService = githubService;
+    public MongoFunctions(@Qualifier("MongoClient") MongoClient mongoClient) {
+        this.mongoClient = mongoClient;
     }
-
-
 }

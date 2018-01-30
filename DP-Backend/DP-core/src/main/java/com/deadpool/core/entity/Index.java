@@ -10,6 +10,6 @@ import java.util.List;
 @AllArgsConstructor
 @ToString
 public class Index {
-    String id;
+    String category;
     List<IndexItem> index;
 }

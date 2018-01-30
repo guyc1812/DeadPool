@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.List;
 
 @Service("githubCommitDao")
-public class GithubCommitDaoImpl implements GithubCommitDao{
+public class GithubCommitDaoImpl implements GithubCommitDao {
 
     private CommitService commitService;
     private UserService userService;
@@ -24,22 +24,22 @@ public class GithubCommitDaoImpl implements GithubCommitDao{
     }
 
     @Override
-    public List<RepositoryCommit> getCommitsAll(String repo, String owner) throws IOException {
-        return getCommits(repo, owner, null, null);
+    public List<RepositoryCommit> getAllCommits(String owner, String repo) throws IOException {
+        return getCommits(owner, repo, null, null);
     }
 
     @Override
-    public List<RepositoryCommit> getCommitsAll(String repo, String owner, String branch) throws IOException {
-        return getCommits(repo, owner, null, branch);
+    public List<RepositoryCommit> getAllCommits(String owner, String repo, String branch) throws IOException {
+        return getCommits(owner, repo, branch, null);
     }
 
     @Override
-    public List<RepositoryCommit> getCommits(String repo, String owner, String path) throws IOException {
-        return getCommits(repo, owner, path, null);
+    public List<RepositoryCommit> getCommits(String owner, String repo, String path) throws IOException {
+        return getCommits(owner, repo, null, path);
     }
 
     @Override
-    public List<RepositoryCommit> getCommits(String repo, String owner, String path, String branch) throws IOException {
+    public List<RepositoryCommit> getCommits(String owner, String repo, String branch, String path) throws IOException {
         Repository repository = new Repository();
         repository.setName(repo);
         repository.setOwner(userService.getUser(owner));

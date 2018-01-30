@@ -17,6 +17,7 @@ public class IndexItem {
     String title;
     String path;
     String nav;
+    int status;
     List<IndexItem> items;
 
 }

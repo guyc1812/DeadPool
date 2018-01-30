@@ -6,10 +6,10 @@ import java.util.List;
 
 public interface GithubContentDao {
 
-    List<RepositoryContents> getContents(String repo, String owner, String path) throws IOException;
-    List<RepositoryContents> getContents(String repo, String owner, String path, String branch) throws IOException;
+    List<RepositoryContents> getContents(String owner, String repo, String path) throws IOException;
+    List<RepositoryContents> getContents(String owner, String repo, String branch, String path) throws IOException;
 
-    List<RepositoryContents> getContentsAll(String repo, String owner) throws IOException;
-    List<RepositoryContents> getContentsAll(String repo, String owner,String branch) throws IOException;
+    List<RepositoryContents> getContentsAll(String owner, String repo) throws IOException;
+    List<RepositoryContents> getContentsAll(String owner, String repo, String branch) throws IOException;
 
 }

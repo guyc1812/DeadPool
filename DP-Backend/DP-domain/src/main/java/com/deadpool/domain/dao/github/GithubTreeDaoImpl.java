@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 
 @Service("githubTreeDao")
-public class GithubTreeDaoImpl implements GithubTreeDao{
+public class GithubTreeDaoImpl implements GithubTreeDao {
 
     private UserService userService;
     private DataService dataService;        //oops

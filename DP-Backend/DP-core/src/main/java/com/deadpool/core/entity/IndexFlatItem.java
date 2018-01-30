@@ -14,12 +14,14 @@ public class IndexFlatItem {
     String title;
     String path;
     String nav;
+    int status;
 
     public IndexFlatItem(IndexItem indexItem){
         this.category = indexItem.getCategory();
         this.title = indexItem.getTitle();
         this.path = indexItem.getPath();
         this.nav = indexItem.getNav();
+        this.status = indexItem.getStatus();
     }
 
 }
