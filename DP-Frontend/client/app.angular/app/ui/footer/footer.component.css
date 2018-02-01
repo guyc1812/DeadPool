@@ -2,11 +2,34 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  z-index: 1800;
+  height: 100px;
+  width: auto;
+  min-width: 100px;
+  background-color: #444444;
 }
 
-.item{
-  height: 40px;
-  width:  200px;
-  background-color: #1a1825;
+.wechat,.ins,.linkedin,.at{
+  left: 0;
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  font-size: 12px;
+  color: #5f5e6e;
+  background-color: #5f5e6e;
+}
+
+.wechat{
+  bottom: 90px;
+}
+
+.ins{
+  bottom: 60px;
+}
+
+.linkedin{
+  bottom: 30px;
+}
+
+.at{
+  bottom: 0;
 }

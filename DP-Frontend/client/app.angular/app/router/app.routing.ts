@@ -15,14 +15,12 @@ export const appRoutes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'note/:id',
-    component: NoteComponent,
-    children: [
-      {
-        path: ':id',
-        component: MarkDownComponent
-      }
-    ]
+    path: 'note/:category',
+    component: NoteComponent
+  },
+  {
+    path: 'note/:category/:id',
+    component: NoteComponent
   }
 ];
 

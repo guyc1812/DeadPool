@@ -1,4 +1,4 @@
-import {Component, HostListener, Inject} from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import {autorun} from "mobx";
 
@@ -7,86 +7,102 @@ import {SiderItem} from '../../ui/sider/sider-item/sider.item.interface'
 
 import siderList from '../../ui/sider/sider-list/sider.list'
 import {ActivatedRoute} from "@angular/router";
-import {DOCUMENT} from "@angular/common";
+import {HttpService} from "../../service/httpService/httpService";
 
 @Component({
   templateUrl: './note.component.html',
   styleUrls: ['./note.component.css'],
   animations: [
     trigger('siderListExpand', [
-      state('isExpand', style({'padding-left': '260px'})),
+      state('isExpand', style({'padding-left': '265px'})),
       state('noExpand', style({'padding-left': '0'})),
       transition('* => isExpand', animate('500ms ease-in')),
       transition('noExpand => isExpand', animate('500ms ease-in')),
       transition('isExpand => noExpand', animate('500ms ease-out'))
-    ]),
-    trigger('mainHeaderToggle', [
-      state('noToggled', style({'margin-top': '-400px'})),
-      state('isToggled', style({'margin-top': '0'})),
-      transition('noToggled => isToggled', animate('500ms ease-in')),
-      transition('isToggled => noToggled', animate('500ms ease-out'))
     ])
   ]
 })
 
 export class NoteComponent {
 
+  // Input values
+  id: string;
+  category: string;
   siderList: SiderItem[];
 
-  id: string;
-  mainState: string;
-  mainHeaderState: string;
+  // subscribers
+  httpSubscriber: any;
+  routeSubscriber: any;
   disposer: any;
 
-  scrollTop:number;
+  mainState: string;
+
+  lastScrollTop = 0;
 
   constructor(private siderState: SiderState,
               private route: ActivatedRoute,
-              @Inject(DOCUMENT) private document: Document) {
+              private http: HttpService) {
     this.siderList = siderList;
-    this.mainHeaderState = 'isToggled';
-    this.scrollTop = 0;
   }
 
   ngOnInit() {
+
+    this.category = this.route.snapshot.paramMap.get('category');
     this.id = this.route.snapshot.paramMap.get('id');
+
+    this.httpSubscriber = this.http.getSiderList(this.category)
+      .subscribe(
+        data => {
+          let text = data['text'];
+          let response = JSON.parse(data['response']);
+          if (text === 'error') {
+            console.error("get sider list error");
+          } else if (text === 'ok') {
+            this.siderList = response['index'];
+            console.log(this.siderList);
+          }
+        }
+      );
+
+    this.routeSubscriber = this.route.params
+      .subscribe(
+        params => {
+          this.category = params['category'];
+          this.id = params['id'];
+        }
+      );
+
     this.disposer = autorun(() => {
       this.mainState = this.siderState.isSiderExpanded ? 'isExpand' : 'noExpand';
     });
   }
 
-  ngAfterContentInit() {
-    setTimeout(()=>this.mainHeaderState='noToggled',1500)
-  }
-
-  ngOnDestroy(){
+  ngOnDestroy() {
     this.disposer();
+    this.httpSubscriber.unsubscribe();
+    this.routeSubscriber.unsubscribe();
   }
 
-  toggle() {
-    if (this.siderState.isBigScreen) {
-      return
-    } else {
-      if (this.siderState.isSiderExpanded) {
-        this.siderState.setExpandState(false)
-      }
-    }
+  toTop() {
+    $("html, body").animate({scrollTop: 0}, 500);
   }
 
-  @HostListener("window:scroll", ['$event'])
-  onWindowScroll() {
-    this.scrollTop = this.document.scrollingElement.scrollTop;
+  toBottom() {
+    $("html, body").animate({scrollTop: $(document).height() - $(window).height()}, 500);
   }
 
-  @HostListener('mousewheel', ['$event'])
-  onWheel(e) {
-    if(e.deltaY<=-10&&this.scrollTop===0&&this.mainHeaderState === 'noToggled'){
-      this.mainHeaderState = 'isToggled';
-    }
-    if(e.deltaY>=10&&this.mainHeaderState === 'isToggled'){
-      this.mainHeaderState = 'noToggled';
-      setTimeout(()=>this.document.scrollingElement.scrollTo(0,0),510)
-    }
-  }
-
+  // @HostListener('window:scroll', ['$event'])
+  // onScrollEvent() {
+  //   let scrollTop = $(window).scrollTop();
+  //   if (scrollTop >= 10 && scrollTop <= 390) {
+  //     if (scrollTop > this.lastScrollTop+10) {
+  //       $("html, body").animate({scrollTop: 0}, 500);
+  //       console.log('upscroll: ');
+  //     } else if(scrollTop > this.lastScrollTop-10)  {
+  //       $("html, body").animate({scrollTop: 400}, 500);
+  //       console.log('downscroll: ');
+  //     }
+  //     this.lastScrollTop = scrollTop;
+  //   }
+  // }
 }

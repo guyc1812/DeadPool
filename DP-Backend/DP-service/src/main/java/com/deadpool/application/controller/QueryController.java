@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/DP")
 @Api(value = "Query Controller", description = "Query Index and Docs")
 public class QueryController {
 

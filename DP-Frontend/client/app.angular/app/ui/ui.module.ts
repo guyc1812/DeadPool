@@ -5,9 +5,12 @@ import {MarkDownComponent} from "./markdown/markdown.component";
 import {SiderModule} from "./sider/sider.module";
 import {FooterComponent} from "./footer/footer.component";
 import {HeaderComponent} from "./header/header.component";
+import {HttpService} from "../service/httpService/httpService";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   imports: [
+    HttpClientModule,
     SiderModule
   ],
   declarations: [
@@ -23,6 +26,9 @@ import {HeaderComponent} from "./header/header.component";
     DeadpoolComponent,
     SpiderWebComponent,
     MarkDownComponent
+  ],
+  providers: [
+    HttpService
   ]
 })
 

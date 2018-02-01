@@ -3,16 +3,15 @@ package com.deadpool.core.config;
 import com.mongodb.MongoClient;
 import org.eclipse.egit.github.core.client.GitHubClient;
 import org.eclipse.egit.github.core.service.*;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration;
 import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 import java.net.UnknownHostException;
+
 import static springfox.documentation.builders.PathSelectors.regex;
 
 @Configuration
@@ -43,9 +42,10 @@ public class CoreConfig {
     @Bean
     public GitHubClient gitHubClient(Environment environment) {
         final String url = environment.getProperty("github.url");
-        final String token = environment.getProperty("github.token");
+        final String token1 = environment.getProperty("github.token1");
+        final String token2 = environment.getProperty("github.token2");
         GitHubClient gitHubClient = new GitHubClient(url);
-        gitHubClient.setOAuth2Token(token);
+        gitHubClient.setOAuth2Token(token1+token2);
         return gitHubClient;
     }
 

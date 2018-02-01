@@ -48,12 +48,12 @@ export class SiderComponent {
     this.siderState.setInitedState(false);
 
     this.categories = {
-      steven : 'assets/images/Steven-logo-1.png',
-      javaBasic  : 'assets/images/Stark-logo-1.png',
-      banner : 'assets/images/Hulk-logo-1.png',
-      thor   : 'assets/images/Thor-logo-1.png',
-      tchalla: 'assets/images/Tchalla-logo-1.png',
-      strange: 'assets/images/Strange-logo-1.png',
+      designPattern : 'assets/images/Steven-logo-1.png',
+      javaBasic :     'assets/images/Stark-logo-1.png',
+      banner :        'assets/images/Hulk-logo-1.png',
+      thor :          'assets/images/Thor-logo-1.png',
+      tchalla :       'assets/images/Tchalla-logo-1.png',
+      strange :       'assets/images/Strange-logo-1.png',
     }
 
   }
@@ -88,14 +88,6 @@ export class SiderComponent {
     } else {
       this.siderState.setExpandState(false);
       this.siderState.setBigScreenState(false);
-    }
-  }
-
-  expand() {
-    if (this.siderState.isSiderExpanded) {
-      this.siderState.setExpandState(false);
-    } else {
-      this.siderState.setExpandState(true);
     }
   }
 

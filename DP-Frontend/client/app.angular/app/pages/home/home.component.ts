@@ -1,5 +1,6 @@
 import {Component, HostListener} from '@angular/core';
 import {animate, state, style, transition, trigger} from "@angular/animations";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'home',
@@ -21,6 +22,57 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
 })
 
 export class HomeComponent {
+
+  categories:any;
+
+  constructor(private router: Router){
+    this.categories = [
+      {
+        avenger: 'Stark',
+        category:'javaBasic',
+        title:'Java Basic',
+        src: ''
+      },
+      {
+        avenger: 'Rogers',
+        category:'designPattern',
+        title:'Design Pattern',
+        src: ''
+      },
+      {
+        avenger: 'Banner',
+        category:'algorithm',
+        title:'Algorithm',
+        src: ''
+      },
+      {
+        avenger: 'TChalla',
+        category:'devOps',
+        title:'DevOps',
+        src: ''
+      },
+      {
+        avenger: 'Thor',
+        category:'frontend',
+        title:'Frontend',
+        src: ''
+      },
+      {
+        avenger: 'Strange',
+        category:'others',
+        title:'Others',
+        src: ''
+      },
+    ]
+  }
+
+  navTo(category:string){
+    this.router.navigate([`/note/${category}/hello`]);
+  }
+
+  navToHome(){
+    this.router.navigate([`/home`]);
+  }
 
 
 

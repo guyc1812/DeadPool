@@ -1,13 +1,27 @@
-<div class="down"></div>
-<div class="up-1"></div>
-<div class="up-2"></div>
+<div class="home-header">
 
-<!--[@scrollAnimation]="scrollStatus"-->
+  <div class="home-header-logo">
+    <img src="assets/images/Deadpool-logo.png" (click)="navToHome()">
+  </div>
 
-<!--?<div class="dp">-->
-  <!--?<deadpool></deadpool>-->
-<!--?</div>-->
+  <div *ngFor="let item of categories">
 
-<spiderWeb></spiderWeb>
+    <div class="home-header-category" >
+      <div class="home-header-category-title" >
+        <span (click)="navTo(item.category)">{{item.title}}</span>
+      </div>
+      <div class="home-header-category-content" >
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+</div>
+
+<!--<spiderWeb></spiderWeb>-->
 
 <footer></footer>

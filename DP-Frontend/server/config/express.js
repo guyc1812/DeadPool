@@ -1,3 +1,7 @@
+/**
+ * Express configuration
+ */
+
 'use strict';
 
 import express from 'express';
@@ -9,23 +13,31 @@ import methodOverride from 'method-override';
 import cookieParser from 'cookie-parser';
 import errorHandler from 'errorhandler';
 import path from 'path';
+import lusca from 'lusca';
 import config from './environment';
+import session from 'express-session';
+import connectMongo from 'connect-mongo';
+import mongoose from 'mongoose';
+let MongoStore = connectMongo(session);
 
 const chalk = require('chalk');
 const argv = require('yargs').argv;
 
-export default function (app) {
-
+export default function(app) {
   let env = app.get('env');
-  if (env === 'development') {
+
+  if(env === 'development' || env === 'test') {
     app.use(express.static(path.join(config.root, '.tmp')));
   }
-  if (env === 'production') {
-    app.use(favicon(path.join(config.root, 'client', 'favicon.ico')));
+
+  if(env === 'production') {
+    app.use(favicon(path.join(config.root, 'client', 'favicon-testcase.ico')));
   }
+
   app.set('appPath', path.join(config.root, 'client'));
   app.use(express.static(app.get('appPath')));
   app.use(morgan('dev'));
+
   app.set('views', `${config.root}/server/views`);
   app.engine('html', require('ejs').renderFile);
   app.set('view engine', 'html');
@@ -34,26 +46,67 @@ export default function (app) {
   app.use(bodyParser.json());
   app.use(methodOverride());
   app.use(cookieParser());
-  if (env === 'development') {
+
+
+  // Persist sessions with MongoStore / sequelizeStore
+  // We need to enable sessions for passport-twitter because it's an
+  // oauth 1.0 strategy, and Lusca depends on sessions
+  // app.use(session({
+  //   secret: config.secrets.session,
+  //   saveUninitialized: true,
+  //   resave: false,
+  //   store: new MongoStore({
+  //     mongooseConnection: mongoose.connection,
+  //     db: 'e-cg-qe-portal'
+  //   })
+  // }));
+
+  /**
+   * Lusca - express server security
+   * https://github.com/krakenjs/lusca
+   */
+  if(env !== 'test' && !process.env.SAUCE_USERNAME) {
+    // app.use(lusca({
+    //   csrf: {
+    //     angular: true
+    //   },
+    //   xframe: 'SAMEORIGIN',
+    //   hsts: {
+    //     maxAge: 31536000, //1 year, in seconds
+    //     includeSubDomains: true,
+    //     preload: true
+    //   },
+    //   xssProtection: true
+    // }));
+  }
+
+  if(env === 'development') {
+    const webpackDevMiddleware = require('webpack-dev-middleware');
+    const stripAnsi = require('strip-ansi');
+    const webpack = require('webpack');
     const _env = argv.env && {envFile: argv.env} || {};
     const _envFile = _env.envFile && `.${_env.envFile}` || '';
     console.log(chalk.red(
       `\n\t\t environment from commandline is =====> ${JSON.stringify(_env)}\n\t\t watch out, your 'environment' should be mapped into 'environment${_envFile}.ts'\n`
     ));
-    const webpackDevMiddleware = require('webpack-dev-middleware');
-    const stripAnsi = require('strip-ansi');
-    const webpack = require('webpack');
     const makeWebpackConfig = require('../../webpack.config');
     const webpackConfig = makeWebpackConfig('angular')(Object.assign({DEV: true}, _env));
     const compiler = webpack(webpackConfig);
     const browserSync = require('browser-sync').create();
+
+    /**
+     * Run Browsersync and use middleware for Hot Module Replacement
+     */
     browserSync.init({
       open: false,
       logFileChanges: false,
       proxy: `localhost:${config.port}`,
       ws: true,
-      // if not choose a port, 3001 always be used on windows, mac is ok
-      ui: {port: 3045},
+      // if not choose a port, 3001 always be used on windows
+      // mac is ok
+      ui: {
+        port: 3045
+      },
       middleware: [
         webpackDevMiddleware(compiler, {
           noInfo: false,
@@ -67,9 +120,15 @@ export default function (app) {
       port: config.browserSyncPort,
       plugins: ['bs-fullscreen-message']
     });
-    compiler.plugin('done', function (stats) {
+
+    /**
+     * Reload all devices when bundle is complete
+     * or send a fullscreen error message to the browser instead
+     */
+    compiler.plugin('done', function(stats) {
       console.log('webpack done hook');
-      if (stats.hasErrors()) {
+      // if (stats.hasErrors() || stats.hasWarnings()) {
+      if(stats.hasErrors()) {
         return browserSync.sockets.emit('fullscreen:message', {
           title: 'Webpack Error:',
           body: stripAnsi(stats.toString()),
@@ -79,7 +138,8 @@ export default function (app) {
       browserSync.reload();
     });
   }
-  if (env === 'development') {
+
+  if(env === 'development' || env === 'test') {
     app.use(errorHandler()); // Error handler - has to be last
   }
 }

@@ -1,6 +1,6 @@
 <div class="item">
 
-  <button class="item-title" (click)="toggleOrNav(item.nav)">
+  <button class="item-title" (click)="toggleOrNav(item)">
     <span class="item-title-text">{{item.title}}</span>
     <span class="item-title-arrow" *ngIf="item.items&&item.items.length!==0" [@siderItemExpand]="animationState">
       <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">

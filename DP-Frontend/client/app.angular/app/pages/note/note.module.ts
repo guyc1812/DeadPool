@@ -4,11 +4,14 @@ import {UIModule} from "../../ui/ui.module";
 import {RouterModule} from "@angular/router";
 import {NoteComponent} from "./note.component";
 import {SiderModule} from "../../ui/sider/sider.module";
+import {HttpService} from "../../service/httpService/httpService";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   imports: [
     RouterModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     UIModule,
     SiderModule
   ],
@@ -17,6 +20,9 @@ import {SiderModule} from "../../ui/sider/sider.module";
   ],
   exports: [
     NoteComponent
+  ],
+  providers: [
+    HttpService
   ]
 })
 

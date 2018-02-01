@@ -1,14 +1,20 @@
-<header></header>
+<header [category]="category"></header>
 
-<sider [list]="siderList" [category]="id"></sider>
-<div class="main row" [@siderListExpand]="mainState" [@mainHeaderToggle]="mainHeaderState" (click)="toggle()">
+<div class="sider">
+  <sider [list]="siderList" [category]="category"></sider>
+</div>
+
+<div class="toTop" (click)="toTop()"></div>
+<div class="toBottom" (click)="toBottom()"></div>
+
+<div class="main row" [@siderListExpand]="mainState">
 
   <div class="main-header col-100-0">
 
   </div>
 
   <div class="main-block col-100-0">
-    <router-outlet></router-outlet>
+    <markdown [category]="category" [id]="id" ></markdown>
   </div>
 
 </div>

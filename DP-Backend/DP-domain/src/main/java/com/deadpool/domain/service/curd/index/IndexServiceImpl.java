@@ -105,10 +105,10 @@ public class IndexServiceImpl extends IndexFunctions implements IndexService {
     public IndexFlatItem getSingleIndex(String repo, String nav) throws Exception{
         DB db = mongoClient.getDB(repo);
         DBCollection collection = db.getCollection("docs");
-        logger.info(" \n\t\t\t [guyc1812/" + repo + "] Get single index ...");
+        logger.info(" \n\t\t\t [guyc1812/" + repo + "] Get single index("+nav+") ...");
         BasicDBObject queryObject = new BasicDBObject("nav", nav);
         DBObject obj = collection.findOne(queryObject);
-        logger.info(" \n\t\t\t [guyc1812/" + repo + "] Get single index done");
+        logger.info(" \n\t\t\t [guyc1812/" + repo + "] Get single index("+nav+") done");
         if (obj != null) {
             return new Gson().fromJson(obj.toString(), IndexFlatItem.class);
         } else {

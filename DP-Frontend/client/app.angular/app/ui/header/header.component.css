@@ -1,15 +1,38 @@
 .header{
   position: fixed;
-  top:10px;
-  left: 10px;
-  z-index: 1300;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #ddd;
+  background: #f3f3f3;
+  z-index: 1800;
 }
 
 .header-logo{
-  width: 28px;
-  height: 28px;
+  position: fixed;
+  top: 17px;
+  left: 10px;
+  width: 35px;
+  height: 35px;
 }
 
-.header-logo:hover{
+.header-title {
+  width: auto;
+  font-size: 32px;
+  line-height: 65px;
+  margin: 0 auto;
+}
+
+.category {
+  position: fixed;
+  top: 17px;
+  left: 58px;
+  height: 36px;
+  width: 36px;
+}
+
+.category:hover,.header-logo:hover{
   cursor: pointer;
 }
+

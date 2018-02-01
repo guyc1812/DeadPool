@@ -3,8 +3,8 @@
 // Set default node environment to development
 let env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
-// Register Babel if no production mode
-if (env === 'development' || env === 'test') {
+if(env === 'development' || env === 'test') {
+  // Register the Babel require hook
   require('babel-register');
 }
 // Export the application

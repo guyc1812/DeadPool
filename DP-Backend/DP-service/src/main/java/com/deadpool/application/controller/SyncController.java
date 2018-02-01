@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/DP")
 @Api(value = "Sync Controller", description = "CURD")
 public class SyncController {
 
@@ -30,6 +30,18 @@ public class SyncController {
     public ResponseTransfer addNotes(@RequestParam("category") String category) {
         try {
             docsService.addDocs("guyc1812", category, "master");
+            return new ResponseTransfer("ok", "adding done");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ResponseTransfer("error", "adding error");
+        }
+    }
+
+    /* ADD */
+    @RequestMapping(value = "/docHello", method = RequestMethod.POST)
+    public ResponseTransfer addDocHello(@RequestParam("category") String category) {
+        try {
+            docsService.addDoc("guyc1812", category, "master", new IndexFlatItem(category, "Hello", "README.md", "hello", 310));
             return new ResponseTransfer("ok", "adding done");
         } catch (Exception e) {
             e.printStackTrace();
@@ -58,11 +70,22 @@ public class SyncController {
             @RequestParam("path") String path,
             @RequestParam("nav") String nav) {
         try {
-            docsService.updateDoc("guyc1812", category, "master", new IndexFlatItem(category,title,path,nav,0));
+            docsService.updateDoc("guyc1812", category, "master", new IndexFlatItem(category, title, path, nav, 0));
             return new ResponseTransfer("ok", "updating done");
         } catch (Exception e) {
             e.printStackTrace();
             return new ResponseTransfer("error", "updating error");
+        }
+    }
+
+    @RequestMapping(value = "/docHello", method = RequestMethod.PUT)
+    public ResponseTransfer updateDocHello(@RequestParam("category") String category) {
+        try {
+            docsService.updateDoc("guyc1812", category, "master", new IndexFlatItem(category, "Hello", "README.md", "hello", 310));
+            return new ResponseTransfer("ok", "adding done");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ResponseTransfer("error", "adding error");
         }
     }
 

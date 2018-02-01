@@ -48,21 +48,21 @@ public class GithubServiceImpl extends GithubFunctions implements GithubService 
         List<RepositoryContents> gitDocs;
         Decode decode = new Decode();
         try {
-            logger.info(" \n\t\t\t [guyc1812/" + repo + "] Get doc from github ...");
+            logger.info(" \n\t\t\t [guyc1812/" + repo + "] Get doc("+nav+") from github ...");
             gitDocs = githubContentDao.getContents(owner, repo, branch, path);
             if(gitDocs.size()==0) return null;
             RepositoryContents theDoc = gitDocs.get(0);
             String decodedContent = decode.decodeContentUTF(theDoc.getContent());
-            logger.info(" \n\t\t\t [guyc1812/" + repo + "] Get doc from github done");
+            logger.info(" \n\t\t\t [guyc1812/" + repo + "] Get doc("+nav+") from github done");
             return Doc.builder()
                     .category(repo)
                     .title(title)
                     .path(theDoc.getPath())
                     .nav(nav)
-                    .content(decodedContent)
+                    .content(parseToHtml(decodedContent))
                     .build();
         } catch (Exception e) {
-            logger.info(" \n\t\t\t [guyc1812/" + repo + "] Get doc from github ERROR");
+            logger.info(" \n\t\t\t [guyc1812/" + repo + "] Get doc("+nav+") from github ERROR");
             throw e;
         }
     }

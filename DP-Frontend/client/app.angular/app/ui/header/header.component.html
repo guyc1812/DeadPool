@@ -1,3 +1,10 @@
 <div class="header">
-  <img class="header-logo" src="assets/images/Deadpool-logo.png">
+
+  <img class="header-logo" (click)="navToHome()" src="assets/images/Deadpool-logo.png">
+  <img class="category" (click)="expand()" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()" src="{{src}}">
+
+  <div class="header-title">
+    {{title}}
+  </div>
+
 </div>

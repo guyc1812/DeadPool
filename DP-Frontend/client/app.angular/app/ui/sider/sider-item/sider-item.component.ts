@@ -26,13 +26,19 @@ export class SiderItemComponent {
 
   animationState:string;
 
+  // for nav
+  category:any = {
+    Stark: "javaBasic"
+  };
+
   constructor(private router: Router) {}
 
-  toggleOrNav(nav:string){
+  toggleOrNav(item:SiderItem){
+    let category = this.category[`${item.category}`];
     this.expand = !this.expand;
     this.animationState = this.expand?'isExpand':'noExpand';
-    if(nav&&nav!==''){
-      this.router.navigate([`/${nav}`]);
+    if(item.nav&&item.nav!==''){
+      this.router.navigate([`/note/${category}/${item.nav}`]);
     }
   }
 

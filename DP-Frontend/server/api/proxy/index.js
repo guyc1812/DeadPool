@@ -1,5 +1,9 @@
 'use strict';
 
-let apiProxy = require('./apiProxy');
+var express = require('express');
+var Proxy = require('./proxy');
 
-export default apiProxy;
+var router = express.Router();
+
+
+module.exports = router;

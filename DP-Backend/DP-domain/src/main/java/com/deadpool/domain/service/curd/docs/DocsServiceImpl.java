@@ -32,7 +32,7 @@ public class DocsServiceImpl implements DocsService {
         this.mongoService = mongoService;
     }
 
-    public void addDocs(String owner, String repo, String branch) throws Exception{
+    public void addDocs(String owner, String repo, String branch) throws Exception {
         //update index
         String indexStr = githubService.getIndex(owner, repo, branch);
         Gson gson = new Gson();
@@ -45,6 +45,8 @@ public class DocsServiceImpl implements DocsService {
                     if (indexFromBD != null) {
                         if (item.getStatus() < 0) {
                             removeDoc(repo, item.getNav());
+                        } else if (item.getStatus() == 310) {
+                            updateDoc(owner, repo, branch, item);
                         } else if (item.getStatus() > indexFromBD.getStatus()) {
                             updateDoc(owner, repo, branch, item);
                         }
@@ -60,33 +62,33 @@ public class DocsServiceImpl implements DocsService {
         mongoService.saveIndexToDB(repo, indexStr, flatIndexFromGit);
     }
 
-    public void addDoc(String owner, String repo, String branch, IndexFlatItem item) throws Exception{
+    public void addDoc(String owner, String repo, String branch, IndexFlatItem item) throws Exception {
         Doc doc = githubService.getDoc(owner, repo, branch, item.getPath(), item.getTitle(), item.getNav());
         if (doc != null) mongoService.saveDocToDB(repo, doc);
     }
 
-    public void updateDocs(String owner, String repo, String branch) throws Exception{
+    public void updateDocs(String owner, String repo, String branch) throws Exception {
         addDocs(owner, repo, branch);
     }
 
-    public void updateDoc(String owner, String repo, String branch, IndexFlatItem item) throws Exception{
+    public void updateDoc(String owner, String repo, String branch, IndexFlatItem item) throws Exception {
         mongoService.removeDocFromDB(repo, item.getNav());
         addDoc(owner, repo, branch, item);
     }
 
-    public void removeDocs(String repo) throws Exception{
+    public void removeDocs(String repo) throws Exception {
         mongoService.removeAllDocsFromDB(repo);
     }
 
-    public void removeDoc(String repo, String nav) throws Exception{
+    public void removeDoc(String repo, String nav) throws Exception {
         mongoService.removeDocFromDB(repo, nav);
     }
 
-    public List<String> getDocs(String repo) throws Exception{
+    public List<String> getDocs(String repo) throws Exception {
         return mongoService.getAllDocsFromDB(repo);
     }
 
-    public String getDoc(String repo, String nav) throws Exception{
+    public String getDoc(String repo, String nav) throws Exception {
         return mongoService.getDocFromDB(repo, nav);
     }
 }

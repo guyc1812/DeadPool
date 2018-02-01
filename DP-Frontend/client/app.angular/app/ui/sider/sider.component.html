@@ -1,13 +1,5 @@
-<div class="sider-header">
-  <img src="assets/images/header.png">
-  <img class="category" (click)="expand()" src="{{src}}">
-</div>
-
-
 <div class="sider-container" [@siderListExpand]="animationState">
-
   <div class="sider-list">
     <sider-item *ngFor="let item of list" [item]="item"></sider-item>
   </div>
-
 </div>
