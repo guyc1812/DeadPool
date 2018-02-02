@@ -61,7 +61,10 @@ export class HeaderComponent {
     }
   }
 
-  expand() {
+  expand(e:any) {
+
+    e.stopPropagation();
+
     if (this.siderState.isSiderExpanded) {
       this.siderState.setExpandState(false);
     } else {

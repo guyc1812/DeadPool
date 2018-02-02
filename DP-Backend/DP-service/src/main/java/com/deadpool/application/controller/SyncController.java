@@ -29,6 +29,7 @@ public class SyncController {
     @RequestMapping(value = "/docs", method = RequestMethod.POST)
     public ResponseTransfer addNotes(@RequestParam("category") String category) {
         try {
+            docsService.addDoc("guyc1812", category, "master", new IndexFlatItem(category, "Hello", "README.md", "hello", 310));
             docsService.addDocs("guyc1812", category, "master");
             return new ResponseTransfer("ok", "adding done");
         } catch (Exception e) {
@@ -54,6 +55,7 @@ public class SyncController {
     @RequestMapping(value = "/docs", method = RequestMethod.PUT)
     public ResponseTransfer updateNotes(@RequestParam("category") String category) {
         try {
+            docsService.updateDoc("guyc1812", category, "master", new IndexFlatItem(category, "Hello", "README.md", "hello", 310));
             docsService.updateDocs("guyc1812", category, "master");
             return new ResponseTransfer("ok", "updating done");
         } catch (Exception e) {

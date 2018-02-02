@@ -2,34 +2,169 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 100px;
-  width: auto;
+  height: 130px;
+  width: 100%;
   min-width: 100px;
-  background-color: #444444;
+  background-color: #f3f3f3;
 }
 
-.wechat,.ins,.linkedin,.at{
-  left: 0;
+.footer-content{
+  display: block;
+  width: 350px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.title{
+  display: block;
+  height: 35px;
+  width: 100%;
+  line-height: 35px;
+  text-align: center;
+  font-family: 'Portrait', serif;
+  font-weight: 400;
+  font-size: 24px;
+  color:#333;
+  margin: 15px 0;
+}
+
+.contact{
+  display: block;
+  width: 315px;
+  height: 30px;
+  margin: 0 auto 5px;
+}
+
+.single-contact{
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.single-contact img{
+  width: 100%;
+  height: auto;
+}
+
+.single-contact img:hover{
+  cursor: pointer;
+}
+
+.contact-github{
+  margin-right: 44px;
+}
+
+.contact-github img{
+  width: 24px;
+  height: 23px;
+  transition: content .5s ease;
+}
+
+.github{
+  width: 24px;
+  height: 23px;
   position: absolute;
-  width: 150px;
-  height: 20px;
-  font-size: 12px;
-  color: #5f5e6e;
-  background-color: #5f5e6e;
+  top:0;
+  left:0;
 }
 
-.wechat{
-  bottom: 90px;
+.github:hover{
+  content: url("assets/images/github.png");
 }
 
-.ins{
-  bottom: 60px;
+.contact-gmail{
+  margin-right: 44px;
+}
+
+.contact-gmail img{
+  width: 23px;
+  height: 15px;
+  margin-top:4px;
+}
+
+.gmail{
+  width: 23px;
+  height: 15px;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.gmail:hover{
+  content: url("assets/images/gmail.png");
+}
+
+.contact-linkedin{
+  margin-right: 44px;
+}
+
+.contact-linkedin img{
+  width: 22px;
+  height: 21px;
+  margin-top:1px;
 }
 
 .linkedin{
-  bottom: 30px;
+  width: 22px;
+  height: 21px;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.linkedin:hover{
+  content: url("assets/images/linkedin.png");
+}
+
+.contact-wechat{
+  margin-right: 44px;
+}
+
+.contact-wechat img{
+  width: 23px;
+  height: 19px;
+  margin-top:2px;
+}
+
+.wechat{
+  width: 23px;
+  height: 19px;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.wechat:hover{
+  content: url("assets/images/wechat.png");
+}
+
+.contact-weibo img{
+  width: 23px;
+  height: 19px;
+  margin-top:2px;
+}
+
+.weibo{
+  width: 23px;
+  height: 19px;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.weibo:hover{
+  content: url("assets/images/weibo.png");
 }
 
 .at{
-  bottom: 0;
+  display: block;
+  width: 60px;
+  height: 30px;
+  margin: 0 auto;
+  font-family: 'Portrait', serif;
+  font-weight: 400;
+  font-size: 18px;
+  color:#333;
 }

@@ -1,43 +1,202 @@
-.home-header{
+.home-header {
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 70px;
   border-bottom: 1px solid #ddd;
-  background: #f3f3f3;
+  background: white;
   z-index: 1800;
 }
 
-.home-header-logo{
-  margin: 15px 30px;
+.home-header-logo {
+  position: fixed;
+  top: 17px;
+  left: 20px;
 }
 
-.home-header-logo img{
-  width: 40px;
-  height: 40px;
+.home-header-logo img {
+  width: 36px;
+  height: 36px;
 }
 
-.home-header-category{
-  height: 200px;
+.home-header-category {
+  position: fixed;
+  height: auto;
   width: auto;
 }
 
-.home-header-category-title{
+.home-header-category-title {
   height: 30px;
   width: auto;
-  margin-top: 20px;
   border-left: solid 1px #ddd;
   font-size: 18px;
   line-height: 29px;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
 }
 
-.home-header-category-title span{
-  color: #656c7d;
+.home-header-category-title span {
+  color: #333;
+  margin: 0 auto;
 }
 
-.home-header-category-title span:hover, .home-header-logo img:hover{
+.home-header-category-title span:hover, .home-header-logo img:hover {
   cursor: pointer;
-  color: #424856;
+  color: #888888;
+}
+
+.javaBasic {
+  top: 20px;
+  left: 76px;
+  width: 114px;
+}
+
+.designPattern {
+  top: 20px;
+  left: 190px;
+  width: 152px;
+}
+
+.algorithm {
+  top: 20px;
+  left: 342px;
+  width: 119px;
+}
+
+.devOps {
+  top: 20px;
+  left: 461px;
+  width: 101px;
+}
+
+.frontend {
+  top: 20px;
+  left: 562px;
+  width: 111px;
+}
+
+.others {
+  top: 20px;
+  left: 673px;
+  width: 112px;
+}
+
+.home-main{
+  min-width: 100px;
+  height: 100%;
+  width: 100%;
+  padding:85px 15px 145px;
+}
+
+.home-content{
+  min-width: 100px;
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 4px;
+}
+
+.home-content img{
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 800px) {
+
+  .home-header {
+    height: 120px;
+  }
+
+  .home-main{
+    padding-top: 135px;
+  }
+
+  .javaBasic {
+    top: 20px;
+    left: 76px;
+    width: 114px;
+  }
+
+  .designPattern {
+    top: 20px;
+    left: 190px;
+    width: 152px;
+  }
+
+  .algorithm {
+    top: 20px;
+    left: 342px;
+    width: 119px;
+  }
+
+  .devOps {
+    top: 70px;
+    left: 76px;
+    width: 114px;
+  }
+
+  .frontend {
+    top: 70px;
+    left: 190px;
+    width: 152px;
+  }
+
+  .others {
+    top: 70px;
+    left: 342px;
+    width: 119px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .home-header {
+    height: 170px;
+  }
+
+  .home-main{
+    padding-top: 185px;
+  }
+
+  .javaBasic {
+    top: 20px;
+    left: 76px;
+    width: 114px;
+  }
+
+  .designPattern {
+    top: 20px;
+    left: 190px;
+    width: 152px;
+  }
+
+  .algorithm {
+    top: 70px;
+    left: 76px;
+    width: 114px;
+  }
+
+  .devOps {
+    top: 70px;
+    left: 190px;
+    width: 152px;
+  }
+
+  .frontend {
+    top: 120px;
+    left: 76px;
+    width: 114px;
+  }
+
+  .others {
+    top: 120px;
+    left: 190px;
+    width: 152px;
+  }
+
+
+
+
 }

@@ -1,27 +1,54 @@
 <div class="home-header">
-
   <div class="home-header-logo">
     <img src="assets/images/Deadpool-logo.png" (click)="navToHome()">
   </div>
-
-  <div *ngFor="let item of categories">
-
-    <div class="home-header-category" >
-      <div class="home-header-category-title" >
-        <span (click)="navTo(item.category)">{{item.title}}</span>
-      </div>
-      <div class="home-header-category-content" >
-
-      </div>
+  <div class="home-header-category javaBasic" >
+    <div class="home-header-category-title" >
+      <span (click)="navTo('javaBasic')">Java Basic</span>
     </div>
-
+    <div class="home-header-category-content" ></div>
   </div>
-
-
-
-
+  <div class="home-header-category designPattern" >
+    <div class="home-header-category-title " >
+      <span (click)="navTo('designPattern')">Design Pattern</span>
+    </div>
+    <div class="home-header-category-content" ></div>
+  </div>
+  <div class="home-header-category algorithm" >
+    <div class="home-header-category-title" >
+      <span (click)="navTo('algorithm')">Algorithm</span>
+    </div>
+    <div class="home-header-category-content" ></div>
+  </div>
+  <div class="home-header-category devOps" >
+    <div class="home-header-category-title" >
+      <span (click)="navTo('devOps')">DevOps</span>
+    </div>
+    <div class="home-header-category-content" ></div>
+  </div>
+  <div class="home-header-category frontend" >
+    <div class="home-header-category-title" >
+      <span (click)="navTo('frontend')">Frontend</span>
+    </div>
+    <div class="home-header-category-content" ></div>
+  </div>
+  <div class="home-header-category others" >
+    <div class="home-header-category-title" >
+      <span (click)="navTo('others')">Others</span>
+    </div>
+    <div class="home-header-category-content" ></div>
+  </div>
 </div>
 
 <!--<spiderWeb></spiderWeb>-->
+
+<div class="home-main">
+
+  <div class="home-content">
+    <img src="assets/images/2200.jpg">
+  </div>
+
+
+</div>
 
 <footer></footer>

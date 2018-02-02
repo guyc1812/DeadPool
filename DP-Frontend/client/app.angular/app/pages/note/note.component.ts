@@ -13,8 +13,8 @@ import {HttpService} from "../../service/httpService/httpService";
   templateUrl: './note.component.html',
   styleUrls: ['./note.component.css'],
   animations: [
-    trigger('siderListExpand', [
-      state('isExpand', style({'padding-left': '265px'})),
+    trigger('mainExpand', [
+      state('isExpand', style({'padding-left': '260px'})),
       state('noExpand', style({'padding-left': '0'})),
       transition('* => isExpand', animate('500ms ease-in')),
       transition('noExpand => isExpand', animate('500ms ease-in')),
@@ -37,6 +37,10 @@ export class NoteComponent {
 
   mainState: string;
 
+  categories:any;
+  src:string;
+  background:string;
+
   lastScrollTop = 0;
 
   constructor(private siderState: SiderState,
@@ -47,8 +51,42 @@ export class NoteComponent {
 
   ngOnInit() {
 
+    this.categories = {
+      javaBasic: {
+        src:'assets/images/Stark-symbol.png',
+        background:'radial-gradient(circle farthest-side at right top,#fefdfe 5%,#f8cdda 25%,#1d2b64 80%,#0e153a 98%)'
+      },
+      designPattern:  {
+        src:'assets/images/Steven-symbol.png',
+        background:'radial-gradient(circle farthest-side at right top,#233f6e 5%,#9e404a 25%,#381317 80%,#20090b 98%)'
+      },
+      algorithm:  {
+        src:'assets/images/Hulk-Symbol.png',
+        background:'radial-gradient(circle farthest-side at right top,#fab64b 5%,#2d582a 25%,#082310 80%,#001204 98%)'
+      },
+      devOps:  {
+        src:'assets/images/Tchalla-symbol.png',
+        background:'radial-gradient(circle farthest-side at right top,#c8b388 5%,#9fbab5 25%,#082310 80%,#162522 98%)'
+      },
+      frontend:  {
+        src:'assets/images/Thor-symbol.png',
+        background:'radial-gradient(circle farthest-side at right top,#fbfef7 5%,#c1792f 25%,#30221f 80%,#1c1115 98%)'
+      },
+      others:  {
+        src:'assets/images/Strange-symbol.png',
+        background:'radial-gradient(circle farthest-side at right top,#d6df36 5%,#ae7984 25%,#231231 80%,#120323 98%)'
+      }
+    };
+
     this.category = this.route.snapshot.paramMap.get('category');
     this.id = this.route.snapshot.paramMap.get('id');
+
+    console.log(this.id);
+
+    this.src = this.categories[`${this.category}`].src;
+    this.background = this.categories[`${this.category}`].background;
+
+    console.log(this.src);
 
     this.httpSubscriber = this.http.getSiderList(this.category)
       .subscribe(
@@ -59,7 +97,6 @@ export class NoteComponent {
             console.error("get sider list error");
           } else if (text === 'ok') {
             this.siderList = response['index'];
-            console.log(this.siderList);
           }
         }
       );
@@ -73,7 +110,7 @@ export class NoteComponent {
       );
 
     this.disposer = autorun(() => {
-      this.mainState = this.siderState.isSiderExpanded ? 'isExpand' : 'noExpand';
+      this.mainState = this.siderState.isBigScreen&&this.siderState.isSiderExpanded ? 'isExpand' : 'noExpand';
     });
   }
 
@@ -89,6 +126,12 @@ export class NoteComponent {
 
   toBottom() {
     $("html, body").animate({scrollTop: $(document).height() - $(window).height()}, 500);
+  }
+
+  toggleMain(){
+    if(this.siderState.isSiderExpanded){
+      this.siderState.setExpandState(false);
+    }
   }
 
   // @HostListener('window:scroll', ['$event'])

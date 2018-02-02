@@ -1,9 +1,38 @@
 <div class="footer">
 
-  <div class="wechat"></div>
-  <div class="ins"></div>
-  <div class="linkedin"></div>
-  <div class="at"></div>
+  <div class="footer-content">
 
+    <div class="title">{{title}}</div>
+
+    <div class="contact">
+
+      <div class="single-contact contact-github">
+        <img src="assets/images/github-black.png">
+        <img class="github"   (mouseenter)="mouseEnter('github')"   (mouseleave)="mouseLeave()" src="assets/images/github-black.png">
+      </div>
+      <div class="single-contact contact-gmail">
+        <img src="assets/images/gmail-black.png">
+        <img class="gmail"    (mouseenter)="mouseEnter('gmail')"    (mouseleave)="mouseLeave()" src="assets/images/gmail-black.png">
+      </div>
+      <div class="single-contact contact-linkedin">
+        <img src="assets/images/linkedin-black.png">
+        <img class="linkedin" (mouseenter)="mouseEnter('linkedin')" (mouseleave)="mouseLeave()" src="assets/images/linkedin-black.png">
+      </div>
+      <div class="single-contact contact-wechat">
+        <img src="assets/images/wechat-black.png">
+        <img class="wechat"   (mouseenter)="mouseEnter('wechat')"   (mouseleave)="mouseLeave()" src="assets/images/wechat-black.png">
+      </div>
+      <div class="single-contact contact-weibo">
+        <img src="assets/images/weibo-black.png">
+        <img class="weibo"  (mouseenter)="mouseEnter('weibo')"      (mouseleave)="mouseLeave()" src="assets/images/weibo-black.png">
+      </div>
+
+    </div>
+
+    <div class="at">
+      <b>@&nbsp;2018</b>
+    </div>
+
+  </div>
 
 </div>

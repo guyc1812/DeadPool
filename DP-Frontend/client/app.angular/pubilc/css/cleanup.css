@@ -11,7 +11,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "robotoregular", monospace;
+  font-family: "Portrait", "robotoregular", monospace;
   min-height: 100%;
   min-width:10px;
   box-sizing: border-box;
@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6, div{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1, h2{
+  font-family: "Portrait", "robotoregular", monospace !important;
 }
 
 @font-face {
@@ -43,6 +47,13 @@ h1, h2, h3, h4, h5, h6, div{
   font-family: 'robotoregular';
   src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
   url('../fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Portrait';
+  src: url('../fonts/Portrait-Text-Web-Regular-2.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
