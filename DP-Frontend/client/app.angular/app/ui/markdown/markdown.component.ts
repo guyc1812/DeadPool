@@ -1,4 +1,4 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 import * as $ from 'jquery';
 import {HttpService} from "../../service/httpService/httpService";
@@ -18,16 +18,25 @@ export class MarkDownComponent {
   @Input()
   id: string;
 
+  loading:boolean;
+
   constructor(private http: HttpService) {}
 
   ngOnInit() {}
 
   ngOnChanges() {
+    this.loading =true;
+    let codePlace = $('#markdown');
+    codePlace.html("");
     this.http.getDoc(this.category, this.id).subscribe(data => {
-      let res = JSON.parse(data['response']);
-      let codePlace = $('#markdown');
-      codePlace.html("");
-      codePlace.append(res['content']);
+      let text = data['text'];
+      let response = JSON.parse(data['response']);
+      if (text === 'error') {
+        console.error('get doc error: '+ this.category+'/'+this.id);
+      } else if (text === 'ok') {
+        this.loading = false;
+        codePlace.append(response['content']);
+      }
     });
   }
 

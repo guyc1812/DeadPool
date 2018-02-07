@@ -3,12 +3,12 @@ import {SiderState} from "../../service/siderState/sider.state.store";
 import {Router} from "@angular/router";
 
 @Component({
-  selector: 'header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'header-note',
+  templateUrl: './header.note.html',
+  styleUrls: ['./header.note.css']
 })
 
-export class HeaderComponent {
+export class HeaderNoteComponent {
 
   @Input()
   category: string;

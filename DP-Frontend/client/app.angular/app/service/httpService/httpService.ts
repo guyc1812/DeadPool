@@ -51,9 +51,9 @@ export class HttpService {
   }
 
   // update doc
-  putDoc(category:string,title:string,path:string,nav:string){
+  putDoc(category:string,nav:string){
     let avenger = this.avengers[`${category}`];
-    return this.http.put(`/api/DP/doc?category=${avenger}&title=${title}&path=${path}&nav=${nav}`,null);
+    return this.http.put(`/api/DP/doc?category=${avenger}&nav=${nav}`,null);
   }
 
   // update docs

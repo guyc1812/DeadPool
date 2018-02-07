@@ -8,29 +8,61 @@ import {Component} from '@angular/core';
 
 export class FooterComponent {
 
-  contact:any;
+  contact: any;
 
-  title:string;
+  title: string;
 
-  constructor(){
+  time: any;
+
+  isClicked:boolean;
+
+  constructor() {
 
     this.title = 'www.guyuchen.com';
 
     this.contact = {
       github: 'github.com/guyc1812',
-      gmail:  'guyc1812@gmail.com',
-      linkedin: 'guyuchen@linkedin',
+      gmail: 'guyc1812@gmail.com',
+      linkedin: '谷宇晨',
       wechat: 'wxid_fakeface',
-      weibo: 'good@weibo'
+      weibo: 'weibo.com/guyc1812'
     }
   }
 
-  mouseEnter(con:string){
-    this.title = this.contact[`${con}`];
+  mouseEnter(con: string) {
+    if(this.title !== this.contact[`${con}`]){
+      clearTimeout(this.time);
+      this.isClicked = false;
+      this.title = this.contact[`${con}`];
+    }
   }
 
-  mouseLeave(){
-    this.title = 'www.guyuchen.com';
+  mouseLeave() {
+    if(!this.isClicked){
+      this.title = 'www.guyuchen.com';
+    }
+  }
+
+  clickE(con: string) {
+    this.isClicked = true;
+    clearTimeout(this.time);
+    this.title = this.contact[`${con}`];
+    this.time = setTimeout(()=>{
+      this.title = 'www.guyuchen.com';
+      this.isClicked = false;
+    },3000);
+
+    if(con==='github'){
+      window.open(
+        'https://github.com/guyc1812',
+        '_blank'
+      );
+    } else if (con==='weibo'){
+      window.open(
+        'https://weibo.com/guyc1812',
+        '_blank'
+      );
+    }
   }
 
 

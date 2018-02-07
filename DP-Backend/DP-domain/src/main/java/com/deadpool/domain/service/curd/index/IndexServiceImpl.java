@@ -74,7 +74,7 @@ public class IndexServiceImpl extends IndexFunctions implements IndexService {
         DB db = mongoClient.getDB(repo);
         DBCollection collection = db.getCollection("index");
         logger.info(" \n\t\t\t [guyc1812/" + repo + "] Get index ...");
-        BasicDBObject queryObject = new BasicDBObject("category", "index");
+        BasicDBObject queryObject = new BasicDBObject("category", repo);
         DBObject obj = collection.findOne(queryObject);
         logger.info(" \n\t\t\t [guyc1812/" + repo + "] Get index done");
         if (obj != null) {

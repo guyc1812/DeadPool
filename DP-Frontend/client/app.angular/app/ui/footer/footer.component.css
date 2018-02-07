@@ -25,7 +25,7 @@
   font-weight: 400;
   font-size: 24px;
   color:#333;
-  margin: 15px 0;
+  margin: 5px 0 25px;
 }
 
 .contact{
@@ -44,22 +44,18 @@
 }
 
 .single-contact img{
-  width: 100%;
-  height: auto;
+  opacity: 0.9;
+  transition: opacity 0.1s ease;
 }
 
 .single-contact img:hover{
   cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.1s ease;
 }
 
 .contact-github{
   margin-right: 44px;
-}
-
-.contact-github img{
-  width: 24px;
-  height: 23px;
-  transition: content .5s ease;
 }
 
 .github{
@@ -70,92 +66,52 @@
   left:0;
 }
 
-.github:hover{
-  content: url("assets/images/github.png");
-}
-
 .contact-gmail{
   margin-right: 44px;
 }
 
-.contact-gmail img{
-  width: 23px;
-  height: 15px;
-  margin-top:4px;
-}
-
 .gmail{
+  margin-top: 4px;
   width: 23px;
   height: 15px;
   position: absolute;
   top:0;
   left:0;
-}
-
-.gmail:hover{
-  content: url("assets/images/gmail.png");
 }
 
 .contact-linkedin{
   margin-right: 44px;
 }
 
-.contact-linkedin img{
-  width: 22px;
-  height: 21px;
-  margin-top:1px;
-}
-
 .linkedin{
+  margin-top:1px;
   width: 22px;
   height: 21px;
   position: absolute;
   top:0;
   left:0;
-}
-
-.linkedin:hover{
-  content: url("assets/images/linkedin.png");
 }
 
 .contact-wechat{
   margin-right: 44px;
 }
 
-.contact-wechat img{
-  width: 23px;
-  height: 19px;
-  margin-top:2px;
-}
-
 .wechat{
+  margin-top:2px;
   width: 23px;
   height: 19px;
   position: absolute;
   top:0;
   left:0;
-}
-
-.wechat:hover{
-  content: url("assets/images/wechat.png");
-}
-
-.contact-weibo img{
-  width: 23px;
-  height: 19px;
-  margin-top:2px;
 }
 
 .weibo{
   width: 23px;
   height: 19px;
+  margin-top:2px;
   position: absolute;
   top:0;
   left:0;
-}
-
-.weibo:hover{
-  content: url("assets/images/weibo.png");
 }
 
 .at{
@@ -167,4 +123,40 @@
   font-weight: 400;
   font-size: 18px;
   color:#333;
+}
+
+@media screen and (max-width: 1280px) {
+
+  .footer{
+    height: 110px;
+  }
+
+  .title{
+    margin: 8px 0;
+    font-size: 20px;
+  }
+
+  .contact{
+    margin: 0 auto 3px;
+  }
+
+  .at{
+    font-size: 16px;
+  }
+
+  .contact-github img{
+    width: 22px;
+    height: 21px;
+  }
+
+  .contact-gmail img{
+    width: 21px;
+    height: 14px;
+  }
+
+  .contact-linkedin img{
+    width: 20px;
+    height: 20px;
+  }
+
 }

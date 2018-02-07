@@ -1,0 +1,123 @@
+.home-main{
+  min-width: 100px;
+  height: 100%;
+  width: 100%;
+  padding:85px 15px 145px;
+}
+
+.home-content{
+  min-width: 100px;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  display: block;
+  overflow: auto;
+}
+
+.home-content img{
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.update-single{
+  display: block;
+  height: auto;
+  margin: 20px 0 10px 20px;
+}
+
+.update {
+  display: block;
+  height: auto;
+  width: 600px;
+  margin-left: 20px;
+}
+
+.update table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.update table td, .update table th {
+  border: 1px solid #ddd;
+  padding: 3px 8px;
+  font-size: 18px;
+}
+
+.update table th {
+  background-color: lightgray;
+  color: #337ab7;
+}
+
+.update table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.update table tr:hover {
+  background-color: #ddd;
+}
+
+.update-btn {
+  width: 80px;
+  text-align: center;
+}
+
+.infoPanel{
+  margin-top: 20px;
+  width: 570px;
+  height: 60px;
+  text-align: center;
+}
+
+.info{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+}
+
+.alert-success{
+  display: block;
+  background-color: #97CBFF;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.alert-danger{
+  display: block;
+  background-color: #ff7575;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.rAlert {
+  display: none;
+}
+
+.rSuccess {
+  display: none;
+}
+
+.noShow {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .home-main {
+    padding-bottom: 125px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home-main{
+    padding-top: 135px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-main{
+    padding-top: 185px;
+  }
+}
+

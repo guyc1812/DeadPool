@@ -1,4 +1,5 @@
-import {Component, HostListener} from '@angular/core';
+import {Component} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'spiderWeb',
@@ -8,33 +9,19 @@ import {Component, HostListener} from '@angular/core';
 
 export class SpiderWebComponent {
 
-  spiderShow:boolean;
-  scrollStatus:string = 'void';
+  spiderShow: boolean;
+  scrollStatus: string = 'void';
 
-  constructor(){
+  constructor(private router: Router) {
     this.spiderShow = false;
   }
 
-  ngOnInit(){
-    setTimeout(()=>this.spiderShow=true,2000);
+  ngOnInit() {
+    setTimeout(() => this.spiderShow = true, 1000);
   }
 
-
-  @HostListener('mousewheel', ['$event'])
-  onWheel(e) {
-    console.log(e.deltaY);
-    if(e.deltaY>30){
-      this.scrollStatus = 'scrollDown';
-    }else if(e.deltaY<-30){
-      this.scrollStatus = 'scrollUp'
-    }
-    setTimeout(()=>{
-      this.scrollStatus = 'void';
-      console.log(this.scrollStatus);
-    },300);
+  spider() {
+    this.router.navigate([`/spider`]);
   }
-
-
-
 
 }

@@ -10,6 +10,7 @@
   min-height: 600px;
   height: 100%;
   padding-left: 260px;
+  width: 100%;
 }
 
 .main-header {
@@ -17,17 +18,18 @@
   height: 470px;
   padding-top:70px;
   z-index: 1200;
+  overflow-x: hidden;
   direction: rtl;
 }
 
 .main-header-img{
   height: 400px;
   width: 100%;
-  direction: rtl;
 }
 
 .main-header-img img{
   height: 400px;
+  width: auto;
 }
 
 .main-block {
@@ -65,54 +67,76 @@
 
 @media screen and (max-width: 1160px) {
   .main-header-img img{
-    margin-left: -100px;
+    margin-right: -100px;
+  }
+  .designPattern img{
+    margin-right: 0;
   }
 }
 
 @media screen and (max-width: 1060px) {
   .main-header-img img{
-    margin-left: -200px;
+    margin-right: -200px;
+  }
+  .designPattern img{
+    margin-right: 0;
   }
 }
 
 @media screen and (max-width: 960px) {
   .main-header-img img{
-    margin-left: -300px;
+    margin-right: -300px;
   }
-}
-
-@media screen and (max-width: 860px) {
-  .main-header-img img{
-    margin-left: -400px;
+  .devOps img{
+    margin-right: -200px;
   }
-}
-
-@media screen and (max-width: 760px) {
-  .main-header-img img{
-    margin-left: -500px;
+  .designPattern img{
+    margin-right: 0;
+  }
+  .frontend img{
+    margin-right: -200px;
   }
 }
 
 @media screen and (max-width: 660px) {
-  .main-header-img img{
-    margin-left: -600px;
+  .javaBasic img{
+    margin-right: -400px;
   }
+
+
+
+
 }
 
-@media screen and (max-width: 560px) {
-  .main-header-img img{
-    margin-left: -700px;
-  }
-}
+/*@media screen and (max-width: 760px) {*/
+  /*.main-header-img img{*/
+    /*margin-left: -500px;*/
+  /*}*/
+/*}*/
 
-@media screen and (max-width: 460px) {
-  .main-header-img img{
-    margin-left: -800px;
-  }
-}
+/*@media screen and (max-width: 660px) {*/
+  /*.main-header-img img{*/
+    /*margin-left: -600px;*/
+  /*}*/
+/*}*/
 
-@media screen and (max-width: 360px) {
-  .main-header-img img{
-    margin-left: -900px;
-  }
-}
+/*@media screen and (max-width: 560px) {*/
+  /*.main-header-img img{*/
+    /*margin-left: -700px;*/
+  /*}*/
+/*}*/
+
+/*@media screen and (max-width: 460px) {*/
+  /*.main-header-img img{*/
+    /*margin-left: -800px;*/
+  /*}*/
+/*}*/
+
+/*@media screen and (max-width: 360px) {*/
+  /*.main-header-img img{*/
+    /*margin-left: -900px;*/
+  /*}*/
+/*}*/
+
+
+

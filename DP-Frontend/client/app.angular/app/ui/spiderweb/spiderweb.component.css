@@ -1,87 +1,49 @@
-.spider{
+.spider-cover{
+  clip-path: polygon(39% 11%, 29% 27%, 9% 37%, 1% 46%, 2% 52%, 22% 58%, 17% 74%, 32% 84%, 27% 92%, 35% 99%, 43% 100%, 50% 97%, 54% 92%, 54% 84%, 62% 84%, 79% 74%, 78% 83%, 70% 85%, 76% 87%, 76% 93%, 85% 91%, 86% 84%, 89% 81%, 87% 67%, 64% 71%, 61% 55%, 89% 51%, 97% 47%, 98% 42%, 84% 36%, 53% 28%);
+}
+
+.spider-cover:hover{
+  cursor: pointer;
+}
+
+.spider,.spider-cover{
   position: fixed;
-  top:-230px;
-  left: 200px;
-  transition: top 2s;
+  z-index: 1700;
+  top:-340px;
+  left: 0;
+  transition: top 1s;
   transition-timing-function: ease-in-out;
+  width: 227px;
+  height: 400px;
 }
 
-.spider-show{
-  top: -2px;
-}
-
-.spider-web{
-  position: absolute;
-  top: 0;
-  left: 88px;
-  width: 200px;
-  height: 300px;
+.spider-show,.spider-cover{
+  left: 0;
+  top: 70px;
 }
 
 .spider-man{
-  position: absolute;
-  top:250px;
-  left: 0;
-  width: 364px;
-  height: 288px;
+  width: 100%;
+  height: 100%;
 }
 
-.logo{
-  position: absolute;
-  width: 50px;
-  height: 50px;
+@media screen and (max-width: 800px) {
+  .spider,.spider-cover{
+    transform:scale(0.8,0.8);
+  }
+  .spider-show,.spider-cover{
+    left: -22px;
+    top: 80px;
+  }
 }
 
-.tony{
-  top:40px;
-  left:130px;
-}
-.tony:hover{
-  cursor: pointer;
-  content: url('../../../../assets/images/Stark-logo-2.png');
-}
+@media screen and (max-width: 500px) {
+  .spider,.spider-cover{
+    transform:scale(0.3,0.3);
+  }
+  .spider-show,.spider-cover{
+    left: -80px;
+    top: 28px;
+  }
 
-.banner{
-  top:110px;
-  left:130px;
-}
-.banner:hover{
-  cursor: pointer;
-  content: url('../../../../assets/images/Hulk-logo-2.png');
-}
-
-.tchalla{
-  top:180px;
-  left:130px;
-}
-.tchalla:hover{
-  cursor: pointer;
-  content: url('../../../../assets/images/Tchalla-logo-2.png');
-}
-
-.steven{
-  top:20px;
-  left:224px;
-}
-.steven:hover{
-  cursor: pointer;
-  content: url('../../../../assets/images/Steven-logo-2.png');
-}
-
-.thor{
-  top:90px;
-  left:225px;
-}
-.thor:hover{
-  cursor: pointer;
-  content: url('../../../../assets/images/Thor-logo-2.png');
-}
-
-.strange{
-  top:160px;
-  left:225px;
-}
-.strange:hover{
-  cursor: pointer;
-  content: url('../../../../assets/images/Strange-logo-2.png');
 }

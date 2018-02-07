@@ -7,10 +7,7 @@ import * as apiProxy from './api/proxy/apiProxy';
 export default function(app) {
 
   // Proxy to Java Backend
-  app.use('/api/IT', apiProxy.itProxy);
-  app.use('/api/MOBILE', apiProxy.mobileProxy);
-  app.use('/api/AU', apiProxy.auProxy);
-  app.use('/api/DP', apiProxy.boltProxy);
+  app.use('/api/DP', apiProxy.dpProxy);
 
   // All undefined asset or api routes should return a 404
   app.route('/:url(api|auth|components|app|bower_components|assets)/*')

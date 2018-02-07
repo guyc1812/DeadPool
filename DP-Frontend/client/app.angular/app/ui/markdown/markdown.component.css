@@ -10,5 +10,19 @@ div{
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  min-height: 100px;
+  min-height: 10px;
+}
+
+.loading{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading img{
+  display: block;
+  width: 80px;
+  height: 80px;
 }

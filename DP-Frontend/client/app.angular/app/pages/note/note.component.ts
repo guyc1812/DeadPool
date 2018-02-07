@@ -41,8 +41,6 @@ export class NoteComponent {
   src:string;
   background:string;
 
-  lastScrollTop = 0;
-
   constructor(private siderState: SiderState,
               private route: ActivatedRoute,
               private http: HttpService) {
@@ -81,12 +79,8 @@ export class NoteComponent {
     this.category = this.route.snapshot.paramMap.get('category');
     this.id = this.route.snapshot.paramMap.get('id');
 
-    console.log(this.id);
-
     this.src = this.categories[`${this.category}`].src;
     this.background = this.categories[`${this.category}`].background;
-
-    console.log(this.src);
 
     this.httpSubscriber = this.http.getSiderList(this.category)
       .subscribe(
@@ -133,19 +127,4 @@ export class NoteComponent {
       this.siderState.setExpandState(false);
     }
   }
-
-  // @HostListener('window:scroll', ['$event'])
-  // onScrollEvent() {
-  //   let scrollTop = $(window).scrollTop();
-  //   if (scrollTop >= 10 && scrollTop <= 390) {
-  //     if (scrollTop > this.lastScrollTop+10) {
-  //       $("html, body").animate({scrollTop: 0}, 500);
-  //       console.log('upscroll: ');
-  //     } else if(scrollTop > this.lastScrollTop-10)  {
-  //       $("html, body").animate({scrollTop: 400}, 500);
-  //       console.log('downscroll: ');
-  //     }
-  //     this.lastScrollTop = scrollTop;
-  //   }
-  // }
 }

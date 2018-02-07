@@ -48,8 +48,9 @@ public class MongoServiceImpl extends MongoFunctions implements MongoService {
     // remove index
     @Override
     public void removeIndexFromDB(String repo) throws Exception {
-        DB db = mongoClient.getDB(repo);
         logger.info(" \n\t\t\t [guyc1812/" + repo + "] Remove index from DB ...");
+        // remove index from DB(repo)
+        DB db = mongoClient.getDB(repo);
         if (db.collectionExists("index")) db.getCollection("index").drop();
         logger.info(" \n\t\t\t [guyc1812/" + repo + "] Remove index from DB done");
     }

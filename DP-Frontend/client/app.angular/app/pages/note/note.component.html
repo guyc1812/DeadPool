@@ -1,8 +1,8 @@
-  <header [category]="category"></header>
+<header-note [category]="category"></header-note>
 
-  <div class="sider">
-    <sider [list]="siderList" [category]="category"></sider>
-  </div>
+<div class="sider">
+  <sider [list]="siderList" [category]="category"></sider>
+</div>
 
 <div (click)="toggleMain()">
 
@@ -12,15 +12,16 @@
   <div class="main row" [@mainExpand]="mainState">
 
     <div class="main-header col-100-0">
-      <div class="main-header-img" [style.background]="background">
+      <div class="main-header-img" [style.background]="background" [ngClass]="category">
         <img src="{{src}}">
       </div>
     </div>
 
     <div class="main-block col-100-0">
-      <markdown [category]="category" [id]="id" ></markdown>
+      <markdown [category]="category" [id]="id"></markdown>
     </div>
 
   </div>
 
 </div>
+

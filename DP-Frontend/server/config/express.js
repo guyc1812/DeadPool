@@ -1,7 +1,3 @@
-/**
- * Express configuration
- */
-
 'use strict';
 
 import express from 'express';
@@ -13,25 +9,24 @@ import methodOverride from 'method-override';
 import cookieParser from 'cookie-parser';
 import errorHandler from 'errorhandler';
 import path from 'path';
-import lusca from 'lusca';
 import config from './environment';
 import session from 'express-session';
 import connectMongo from 'connect-mongo';
-import mongoose from 'mongoose';
+
 let MongoStore = connectMongo(session);
 
 const chalk = require('chalk');
 const argv = require('yargs').argv;
 
-export default function(app) {
+export default function (app) {
   let env = app.get('env');
 
-  if(env === 'development' || env === 'test') {
+  if (env === 'development' || env === 'test') {
     app.use(express.static(path.join(config.root, '.tmp')));
   }
 
-  if(env === 'production') {
-    app.use(favicon(path.join(config.root, 'client', 'favicon-testcase.ico')));
+  if (env === 'production') {
+    app.use(favicon(path.join(config.root, 'client', 'favicon.ico')));
   }
 
   app.set('appPath', path.join(config.root, 'client'));
@@ -47,40 +42,7 @@ export default function(app) {
   app.use(methodOverride());
   app.use(cookieParser());
 
-
-  // Persist sessions with MongoStore / sequelizeStore
-  // We need to enable sessions for passport-twitter because it's an
-  // oauth 1.0 strategy, and Lusca depends on sessions
-  // app.use(session({
-  //   secret: config.secrets.session,
-  //   saveUninitialized: true,
-  //   resave: false,
-  //   store: new MongoStore({
-  //     mongooseConnection: mongoose.connection,
-  //     db: 'e-cg-qe-portal'
-  //   })
-  // }));
-
-  /**
-   * Lusca - express server security
-   * https://github.com/krakenjs/lusca
-   */
-  if(env !== 'test' && !process.env.SAUCE_USERNAME) {
-    // app.use(lusca({
-    //   csrf: {
-    //     angular: true
-    //   },
-    //   xframe: 'SAMEORIGIN',
-    //   hsts: {
-    //     maxAge: 31536000, //1 year, in seconds
-    //     includeSubDomains: true,
-    //     preload: true
-    //   },
-    //   xssProtection: true
-    // }));
-  }
-
-  if(env === 'development') {
+  if (env === 'development') {
     const webpackDevMiddleware = require('webpack-dev-middleware');
     const stripAnsi = require('strip-ansi');
     const webpack = require('webpack');
@@ -125,10 +87,10 @@ export default function(app) {
      * Reload all devices when bundle is complete
      * or send a fullscreen error message to the browser instead
      */
-    compiler.plugin('done', function(stats) {
+    compiler.plugin('done', function (stats) {
       console.log('webpack done hook');
       // if (stats.hasErrors() || stats.hasWarnings()) {
-      if(stats.hasErrors()) {
+      if (stats.hasErrors()) {
         return browserSync.sockets.emit('fullscreen:message', {
           title: 'Webpack Error:',
           body: stripAnsi(stats.toString()),
@@ -139,7 +101,7 @@ export default function(app) {
     });
   }
 
-  if(env === 'development' || env === 'test') {
+  if (env === 'development' || env === 'test') {
     app.use(errorHandler()); // Error handler - has to be last
   }
 }

@@ -10,6 +10,7 @@ import {AppRoutingModule} from "../router/app.routing";
 import {NoteModule} from "../pages/note/note.module";
 import {FOFModule} from "../pages/404/FOF.module";
 import {SiderState} from "../service/siderState/sider.state.store";
+import {AdminModule} from "../pages/admin/admin.module";
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import {SiderState} from "../service/siderState/sider.state.store";
     //pages
     FOFModule,
     HomeModule,
-    NoteModule
+    NoteModule,
+    AdminModule
   ],
   declarations: [
     AppComponent

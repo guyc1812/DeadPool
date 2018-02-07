@@ -68,11 +68,10 @@ public class SyncController {
     @RequestMapping(value = "/doc", method = RequestMethod.PUT)
     public ResponseTransfer updateNotes(
             @RequestParam("category") String category,
-            @RequestParam("title") String title,
-            @RequestParam("path") String path,
             @RequestParam("nav") String nav) {
         try {
-            docsService.updateDoc("guyc1812", category, "master", new IndexFlatItem(category, title, path, nav, 0));
+            IndexFlatItem index = indexService.getSingleIndex(category,nav);
+            docsService.updateDoc("guyc1812", category, "master", index);
             return new ResponseTransfer("ok", "updating done");
         } catch (Exception e) {
             e.printStackTrace();

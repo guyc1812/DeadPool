@@ -8,25 +8,24 @@ import {Component} from '@angular/core';
 
 export class DeadpoolComponent {
 
-  shine: number = 0;
-  inter:any;
+  flag:boolean;
 
   ngOnInit(){
-    // this.shineFunc();
+    this.flag = true;
   }
 
-  shineFunc(){
-
-    this.inter = setInterval(()=>{
-      this.shine = Math.floor((Math.random() * 400) + 1);
-    },300)
-
+  closeEye(){
+    if(this.flag){
+      this.flag = false;
+      let c7 = $('.c7');
+      c7.css("background-color","#00070d");
+      setTimeout(()=>{
+        c7.css("background-color","#ffffff");
+      },200);
+      setTimeout(()=>{
+        this.flag = true;
+      },10000)
+    }
   }
-
-  ngOnDestroy(){
-    clearInterval(this.inter);
-  }
-
-
 
 }
