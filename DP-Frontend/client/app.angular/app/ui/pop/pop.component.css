@@ -1,0 +1,24 @@
+:host {
+  width: 100%;
+}
+
+.pop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  opacity: 0.8;
+  z-index: 1900;
+}
+
+.pop img {
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+}

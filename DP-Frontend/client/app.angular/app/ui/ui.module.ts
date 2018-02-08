@@ -5,10 +5,10 @@ import {MarkDownComponent} from "./markdown/markdown.component";
 import {SiderModule} from "./sider/sider.module";
 import {FooterComponent} from "./footer/footer.component";
 import {HeaderNoteComponent} from "./header.note/header.note";
-import {HttpService} from "../service/httpService/httpService";
 import {HttpClientModule} from "@angular/common/http";
-import { CommonModule } from '@angular/common';
+import {CommonModule} from '@angular/common';
 import {HeaderHomeComponent} from "./header.home/header.home";
+import {PopComponent} from "./pop/pop.component";
 
 @NgModule({
   imports: [
@@ -22,19 +22,19 @@ import {HeaderHomeComponent} from "./header.home/header.home";
     FooterComponent,
     DeadpoolComponent,
     SpiderWebComponent,
-    MarkDownComponent
+    MarkDownComponent,
+    PopComponent
   ],
-  exports:[
+  exports: [
     HeaderNoteComponent,
     HeaderHomeComponent,
     FooterComponent,
     DeadpoolComponent,
     SpiderWebComponent,
-    MarkDownComponent
-  ],
-  providers: [
-    HttpService
+    MarkDownComponent,
+    PopComponent
   ]
 })
 
-export class UIModule {}
+export class UIModule {
+}

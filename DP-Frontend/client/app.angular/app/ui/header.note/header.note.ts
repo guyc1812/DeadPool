@@ -17,40 +17,40 @@ export class HeaderNoteComponent {
 
   src: string;
 
-  title:string;
+  title: string;
 
   constructor(private siderState: SiderState, private router: Router) {
     this.categories = {
       designPattern: {
-        src: 'assets/images/Steven-logo-1.png',
+        src: 'http://guyuchen.com/deadpool/images/Steven-logo-1.png',
         title: 'Design Pattern'
       },
-      designPattern2: 'assets/images/Steven-logo-2.png',
+      designPattern2: 'http://guyuchen.com/deadpool/images/Steven-logo-2.png',
       javaBasic: {
-        src: 'assets/images/Stark-logo-1.png',
+        src: 'http://guyuchen.com/deadpool/images/Stark-logo-1.png',
         title: 'Java Basic'
       },
-      javaBasic2: 'assets/images/Stark-logo-2.png',
+      javaBasic2: 'http://guyuchen.com/deadpool/images/Stark-logo-2.png',
       algorithm: {
-        src: 'assets/images/Hulk-logo-1.png',
+        src: 'http://guyuchen.com/deadpool/images/Hulk-logo-1.png',
         title: 'Algorithm'
       },
-      algorithm2: 'assets/images/Hulk-logo-2.png',
+      algorithm2: 'http://guyuchen.com/deadpool/images/Hulk-logo-2.png',
       frontend: {
-        src: 'assets/images/Thor-logo-1.png',
+        src: 'http://guyuchen.com/deadpool/images/Thor-logo-1.png',
         title: 'Frontend'
       },
-      frontend2: 'assets/images/Thor-logo-2.png',
+      frontend2: 'http://guyuchen.com/deadpool/images/Thor-logo-2.png',
       devOps: {
-        src: 'assets/images/Tchalla-logo-1.png',
+        src: 'http://guyuchen.com/deadpool/images/Tchalla-logo-1.png',
         title: 'DevOps'
       },
-      devOps2: 'assets/images/Tchalla-logo-2.png',
+      devOps2: 'http://guyuchen.com/deadpool/images/Tchalla-logo-2.png',
       others: {
-        src: 'assets/images/Strange-logo-1.png',
+        src: 'http://guyuchen.com/deadpool/images/Strange-logo-1.png',
         title: 'Others'
       },
-      others2: 'assets/images/Strange-logo-2.png',
+      others2: 'http://guyuchen.com/deadpool/images/Strange-logo-2.png',
     }
   }
 
@@ -61,10 +61,8 @@ export class HeaderNoteComponent {
     }
   }
 
-  expand(e:any) {
-
+  expand(e: any) {
     e.stopPropagation();
-
     if (this.siderState.isSiderExpanded) {
       this.siderState.setExpandState(false);
     } else {
@@ -83,6 +81,5 @@ export class HeaderNoteComponent {
   navToHome() {
     this.router.navigate([`/home`]);
   }
-
 
 }

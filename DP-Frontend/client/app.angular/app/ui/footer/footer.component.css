@@ -1,4 +1,4 @@
-.footer{
+.footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -8,14 +8,14 @@
   background-color: #f3f3f3;
 }
 
-.footer-content{
+.footer-content {
   display: block;
   width: 350px;
   height: 100%;
   margin: 0 auto;
 }
 
-.title{
+.title {
   display: block;
   height: 35px;
   width: 100%;
@@ -24,18 +24,18 @@
   font-family: 'Portrait', serif;
   font-weight: 400;
   font-size: 24px;
-  color:#333;
+  color: #333;
   margin: 5px 0 25px;
 }
 
-.contact{
+.contact {
   display: block;
   width: 315px;
   height: 30px;
   margin: 0 auto 5px;
 }
 
-.single-contact{
+.single-contact {
   position: relative;
   vertical-align: top;
   display: inline-block;
@@ -43,78 +43,78 @@
   height: 25px;
 }
 
-.single-contact img{
+.single-contact img {
   opacity: 0.9;
   transition: opacity 0.1s ease;
 }
 
-.single-contact img:hover{
+.single-contact img:hover {
   cursor: pointer;
   opacity: 0.3;
   transition: opacity 0.1s ease;
 }
 
-.contact-github{
+.contact-github {
   margin-right: 44px;
 }
 
-.github{
+.github {
   width: 24px;
   height: 23px;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
 }
 
-.contact-gmail{
+.contact-gmail {
   margin-right: 44px;
 }
 
-.gmail{
+.gmail {
   margin-top: 4px;
   width: 23px;
   height: 15px;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
 }
 
-.contact-linkedin{
+.contact-linkedin {
   margin-right: 44px;
 }
 
-.linkedin{
-  margin-top:1px;
+.linkedin {
+  margin-top: 1px;
   width: 22px;
   height: 21px;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
 }
 
-.contact-wechat{
+.contact-wechat {
   margin-right: 44px;
 }
 
-.wechat{
-  margin-top:2px;
+.wechat {
+  margin-top: 2px;
   width: 23px;
   height: 19px;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
 }
 
-.weibo{
+.weibo {
   width: 23px;
   height: 19px;
-  margin-top:2px;
+  margin-top: 2px;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
 }
 
-.at{
+.at {
   display: block;
   width: 60px;
   height: 30px;
@@ -122,39 +122,39 @@
   font-family: 'Portrait', serif;
   font-weight: 400;
   font-size: 18px;
-  color:#333;
+  color: #333;
 }
 
 @media screen and (max-width: 1280px) {
 
-  .footer{
+  .footer {
     height: 110px;
   }
 
-  .title{
+  .title {
     margin: 8px 0;
     font-size: 20px;
   }
 
-  .contact{
+  .contact {
     margin: 0 auto 3px;
   }
 
-  .at{
+  .at {
     font-size: 16px;
   }
 
-  .contact-github img{
+  .contact-github img {
     width: 22px;
     height: 21px;
   }
 
-  .contact-gmail img{
+  .contact-gmail img {
     width: 21px;
     height: 14px;
   }
 
-  .contact-linkedin img{
+  .contact-linkedin img {
     width: 20px;
     height: 20px;
   }

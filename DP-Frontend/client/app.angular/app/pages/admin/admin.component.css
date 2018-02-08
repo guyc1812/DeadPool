@@ -1,11 +1,11 @@
-.home-main{
+.home-main {
   min-width: 100px;
   height: 100%;
   width: 100%;
-  padding:85px 15px 145px;
+  padding: 85px 15px 145px;
 }
 
-.home-content{
+.home-content {
   min-width: 100px;
   height: 100%;
   width: 100%;
@@ -15,13 +15,13 @@
   overflow: auto;
 }
 
-.home-content img{
+.home-content img {
   height: 100%;
   width: 100%;
   border-radius: 4px;
 }
 
-.update-single{
+.update-single {
   display: block;
   height: auto;
   margin: 20px 0 10px 20px;
@@ -63,28 +63,28 @@
   text-align: center;
 }
 
-.infoPanel{
+.infoPanel {
   margin-top: 20px;
   width: 570px;
   height: 60px;
   text-align: center;
 }
 
-.info{
+.info {
   width: 100%;
   height: 60px;
   line-height: 60px;
   font-size: 20px;
 }
 
-.alert-success{
+.alert-success {
   display: block;
   background-color: #97CBFF;
   border-radius: 4px;
   text-align: center;
 }
 
-.alert-danger{
+.alert-danger {
   display: block;
   background-color: #ff7575;
   border-radius: 4px;
@@ -110,13 +110,13 @@
 }
 
 @media screen and (max-width: 800px) {
-  .home-main{
+  .home-main {
     padding-top: 135px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .home-main{
+  .home-main {
     padding-top: 185px;
   }
 }

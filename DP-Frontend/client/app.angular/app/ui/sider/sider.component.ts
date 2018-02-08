@@ -1,6 +1,6 @@
-import {APP_ID, ChangeDetectionStrategy, Component, HostListener, Inject, Input, PLATFORM_ID} from '@angular/core';
+import {APP_ID, Component, HostListener, Inject, Input, PLATFORM_ID} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
-import {DOCUMENT, isPlatformBrowser} from "@angular/common";
+import {isPlatformBrowser} from "@angular/common";
 import {autorun} from 'mobx';
 
 import {SiderState} from "../../service/siderState/sider.state.store";
@@ -25,11 +25,11 @@ export class SiderComponent {
 
   @Input() list: SiderItem[];
 
-  @Input() category:string;
+  @Input() category: string;
 
-  src:string;
+  src: string;
 
-  categories:any;
+  categories: any;
 
   isBrowser: boolean;
 
@@ -48,19 +48,19 @@ export class SiderComponent {
     this.siderState.setInitedState(false);
 
     this.categories = {
-      designPattern : 'assets/images/Steven-logo-1.png',
-      javaBasic :     'assets/images/Stark-logo-1.png',
-      banner :        'assets/images/Hulk-logo-1.png',
-      thor :          'assets/images/Thor-logo-1.png',
-      tchalla :       'assets/images/Tchalla-logo-1.png',
-      strange :       'assets/images/Strange-logo-1.png',
+      designPattern: 'http://guyuchen.com/deadpool/images/Steven-logo-1.png',
+      javaBasic: 'http://guyuchen.com/deadpool/images/Stark-logo-1.png',
+      banner: 'http://guyuchen.com/deadpool/images/Hulk-logo-1.png',
+      thor: 'http://guyuchen.com/deadpool/images/Thor-logo-1.png',
+      tchalla: 'http://guyuchen.com/deadpool/images/Tchalla-logo-1.png',
+      strange: 'http://guyuchen.com/deadpool/images/Strange-logo-1.png',
     }
 
   }
 
-  ngOnInit(){
+  ngOnInit() {
     this.disposer = autorun(() => {
-      this.animationState = this.siderState.isInited&&this.siderState.isSiderExpanded ? 'isExpand' : 'noExpand';
+      this.animationState = this.siderState.isInited && this.siderState.isSiderExpanded ? 'isExpand' : 'noExpand';
     });
   }
 
@@ -72,11 +72,11 @@ export class SiderComponent {
     }, 2200);
   }
 
-  ngOnChanges(){
+  ngOnChanges() {
     this.src = this.categories[`${this.category}`];
   }
 
-  ngOnDestroy(){
+  ngOnDestroy() {
     this.disposer();
   }
 

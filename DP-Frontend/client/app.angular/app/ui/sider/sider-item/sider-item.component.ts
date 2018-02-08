@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {Router} from "@angular/router";
 import {SiderItem} from "./sider.item.interface";
-import {trigger, state, style, animate, transition} from '@angular/animations';
+import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'sider-item',
@@ -20,25 +20,35 @@ import {trigger, state, style, animate, transition} from '@angular/animations';
 
 export class SiderItemComponent {
 
-  @Input() item:SiderItem;
+  @Input() item: SiderItem;
 
-  expand:boolean = false;
+  expand: boolean = false;
 
-  animationState:string;
+  animationState: string;
 
   // for nav
-  category:any = {
-    Stark: "javaBasic"
+  category: any = {
+    Stark: "javaBasic",
+    Rogers: "designPattern",
+    Banner: "algorithm",
+    TChalla: "devOps",
+    Thor: "frontend",
+    Strange: "others"
   };
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+  }
 
-  toggleOrNav(item:SiderItem){
+  toggleOrNav(item: SiderItem) {
     let category = this.category[`${item.category}`];
     this.expand = !this.expand;
-    this.animationState = this.expand?'isExpand':'noExpand';
-    if(item.nav&&item.nav!==''){
-      this.router.navigate([`/note/${category}/${item.nav}`]);
+    this.animationState = this.expand ? 'isExpand' : 'noExpand';
+    if (item.nav && item.nav !== '') {
+      if (item.nav === 'deadpool') {
+        this.router.navigate(['deadpool']);
+      } else {
+        this.router.navigate([`/note/${category}/${item.nav}`]);
+      }
     }
   }
 

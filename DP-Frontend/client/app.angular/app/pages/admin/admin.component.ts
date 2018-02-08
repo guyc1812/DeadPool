@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {Router} from "@angular/router";
 import {HttpService} from "../../service/httpService/httpService";
 
 @Component({
@@ -10,40 +9,41 @@ import {HttpService} from "../../service/httpService/httpService";
 
 export class AdminComponent {
 
-  repo:string;
-  nav:string;
+  repo: string;
+  nav: string;
 
   isAlert: boolean = false;
   isSuccess: boolean = false;
   warningMessages = '';
 
-  constructor(private http:HttpService) {}
+  constructor(private http: HttpService) {
+  }
 
   update(repo: string) {
-    this.http.putDocs(repo).subscribe(data=>{
-      if(data['text']==='ok'){
+    this.http.putDocs(repo).subscribe(data => {
+      if (data['text'] === 'ok') {
         this.info('update done.')
-      }else if(data['text']==='error'){
+      } else if (data['text'] === 'error') {
         this.warn('something error.')
       }
     })
   }
 
   add(repo: string) {
-    this.http.postDocs(repo).subscribe(data=>{
-      if(data['text']==='ok'){
+    this.http.postDocs(repo).subscribe(data => {
+      if (data['text'] === 'ok') {
         this.info('update done.')
-      }else if(data['text']==='error'){
+      } else if (data['text'] === 'error') {
         this.warn('something error.')
       }
     })
   }
 
-  updateSingle(){
-    this.http.putDoc(this.repo,this.nav).subscribe(data=>{
-      if(data['text']==='ok'){
+  updateSingle() {
+    this.http.putDoc(this.repo, this.nav).subscribe(data => {
+      if (data['text'] === 'ok') {
         this.info('update done.')
-      }else if(data['text']==='error'){
+      } else if (data['text'] === 'error') {
         this.warn('something error.')
       }
     })
@@ -54,9 +54,9 @@ export class AdminComponent {
     this.isAlert = false;
     this.isSuccess = true;
     this.warningMessages = message;
-    setTimeout(()=>{
+    setTimeout(() => {
       this.disappear()
-    },5000);
+    }, 5000);
   }
 
   warn(message: string) {
@@ -64,9 +64,9 @@ export class AdminComponent {
     this.isAlert = true;
     this.isSuccess = false;
     this.warningMessages = message;
-    setTimeout(()=>{
+    setTimeout(() => {
       this.disappear()
-    },5000);
+    }, 5000);
   }
 
   disappear() {

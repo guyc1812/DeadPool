@@ -1,10 +1,10 @@
-let SiderList:any = [
+let SiderList: any = [
   {
-    title:'Demo',
-    items:[
+    title: 'deadpool',
+    items: [
       {
-        nav:'javaBasic/note/suki',
-        title:'Demo',
+        nav: 'deadpool',
+        title: 'No Way',
       }
     ]
   }

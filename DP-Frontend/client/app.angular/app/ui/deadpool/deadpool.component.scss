@@ -1,302 +1,302 @@
- /*part1*/
-  $p1:  202px 98px;
-  $p2:  218px 120px;
-  $p3:  234px 190px;
-  $p4:  222px 242px;
-  $p5:  206px 208px;
-  $p6:  204px 184px;
-  $p7:  196px 168px;
-  $p8:  196px 112px;
-  $p9:  220px 174px;
-  $p10: 222px 202px;
-  $p11: 210px 204px;
-  $p12: 224px 196px;
-  $p13: 212px 196px;
-  $p14: 214px 190px;
-  $p15: 212px 180px;
-  $p16: 300px 100px;
-  $p17: 324px 148px;
-  $p18: 334px 162px;
-  $p19: 328px 198px;
-  $p20: 300px 244px;
-  $p21: 264px 221px;
-  $p22: 242px 184px;
-  $p23: 260px 120px;
-  $p24: 290px 132px;
-  $p25: 290px 166px;
-  $p26: 316px 182px;
-  $p27: 296px 204px;
-  $p28: 258px 200px;
-  $p29: 292px 196px;
-  $p30: 260px 196px;
-  $p31: 264px 188px;
-  $p32: 276px 178px;
-  $p33: 302px 180px;
-  $p34: 290px 188px;
-  $p35: 238px 184px;
-  /*part2*/
-  $p101: 266px 242px;
-  $p102: 233px 252px;
-  $p103: 232px 242px;
-  $p104: 242px 242px;
-  $p105: 236px 114px;
-  $p106: 242px 82px;
-  $p107: 244px 54px;
-  $p108: 302px 30px;
-  $p109: 350px 18px;
-  $p110: 380px 34px;
-  $p111: 354px 42px;
-  $p112: 330px 60px;
-  $p113: 284px 58px;
-  $p114: 328px 16px;
-  $p115: 294px 16px;
-  $p116: 264px 24px;
-  $p117: 228px 48px;
-  $p118: 208px 72px;
-  /*part3*/
-  $p201: 400px 44px;
-  $p202: 410px 56px;
-  $p203: 402px 72px;
-  $p204: 416px 108px;
-  $p205: 416px 150px;
-  $p206: 408px 186px;
-  $p207: 410px 228px;
-  $p208: 386px 236px;
-  $p209: 368px 262px;
-  $p210: 344px 274px;
-  $p211: 304px 302px;
-  $p212: 286px 324px;
-  $p213: 260px 326px;
-  $p214: 250px 318px;
-  $p215: 242px 304px;
-  $p216: 250px 294px;
-  $p217: 252px 272px;
-  $p218: 244px 262px;
-  $p219: 264px 218px;
-  $p220: 302px 244px;
-  $p221: 328px 198px;
-  $p222: 334px 164px;
-  $p223: 324px 150px;
-  $p224: 380px 76px;
-  $p225: 392px 122px;
-  $p226: 390px 174px;
-  $p227: 368px 236px;
-  $p228: 404px 156px;
-  $p229: 230px 276px;
-  /*part4*/
-  $p301: 246px 276px;
-  $p302: 230px 302px;
-  $p303: 206px 318px;
-  $p304: 220px 320px;
-  $p305: 178px 346px;
-  $p306: 206px 346px;
-  $p307: 220px 344px;
-  $p308: 240px 340px;
-  $p309: 262px 376px;
-  $p310: 256px 388px;
-  $p311: 258px 402px;
-  $p312: 250px 408px;
-  $p313: 250px 424px;
-  $p314: 230px 430px;
-  $p315: 222px 440px;
-  $p316: 212px 460px;
-  $p317: 198px 484px;
-  $p318: 190px 520px;
-  $p319: 192px 552px;
-  $p320: 158px 364px;
-  $p321: 182px 356px;
-  $p322: 218px 366px;
-  $p323: 242px 358px;
-  $p324: 244px 368px;
-  $p325: 222px 372px;
-  $p326: 246px 388px;
-  $p327: 190px 376px;
-  $p328: 242px 398px;
-  $p329: 238px 410px;
-  $p330: 228px 392px;
-  $p331: 222px 398px;
-  $p332: 222px 418px;
-  $p333: 200px 400px;
-  $p334: 200px 424px;
-  $p335: 190px 428px;
-  $p336: 170px 400px;
-  $p337: 162px 384px;
-  $p338: 146px 392px;
-  $p339: 162px 416px;
-  $p340: 178px 442px;
-  $p341: 188px 458px;
-  $p342: 164px 458px;
-  $p343: 152px 432px;
-  $p344: 164px 498px;
-  $p345: 142px 412px;
-  $p346: 130px 442px;
-  $p347: 120px 448px;
-  $p348: 130px 468px;
-  $p349: 112px 472px;
-  $p350: 140px 484px;
-  $p351: 118px 501px;
-  $p352: 148px 520px;
-  $p353: 154px 526px;
-  $p354: 176px 526px;
-  $p355: 152px 542px;
-  $p356: 112px 530px;
-  $p357: 108px 556px;
-  $p358: 106px 582px;
-  $p359: 150px 576px;
-  $p360: 106px 600px;
-  $p361: 150px 600px;
-  $p362: 180px 600px;
-  $p363: 208px 600px;
-  $p364: 222px 600px;
-  /*part5*/
-  $p401: 202px 568px;
-  $p402: 234px 600px;
-  $p403: 250px 600px;
-  $p404: 278px 600px;
-  $p405: 344px 600px;
-  $p406: 364px 600px;
-  $p407: 372px 574px;
-  $p408: 436px 600px;
-  $p409: 504px 600px;
-  $p410: 526px 600px;
-  $p411: 550px 600px;
-  $p412: 568px 600px;
-  $p413: 234px 504px;
-  $p414: 246px 524px;
-  $p415: 286px 572px;
-  $p416: 302px 564px;
-  $p417: 336px 554px;
-  $p418: 384px 538px;
-  $p419: 374px 527px;
-  $p420: 404px 556px;
-  $p421: 414px 566px;
-  $p422: 426px 578px;
-  $p423: 442px 566px;
-  $p424: 444px 550px;
-  $p425: 422px 526px;
-  $p426: 434px 534px;
-  $p427: 424px 546px;
-  $p428: 412px 542px;
-  $p429: 406px 492px;
-  $p430: 438px 476px;
-  $p431: 478px 456px;
-  $p432: 500px 492px;
-  $p433: 500px 510px;
-  $p434: 510px 532px;
-  $p435: 508px 554px;
-  $p436: 506px 580px;
-  $p437: 528px 578px;
-  $p438: 528px 552px;
-  $p439: 568px 570px;
-  $p440: 558px 532px;
-  $p441: 546px 518px;
-  $p442: 548px 502px;
-  $p443: 528px 468px;
-  $p444: 530px 454px;
-  $p445: 526px 498px;
-  $p446: 510px 462px;
-  $p447: 498px 398px;
-  $p448: 466px 396px;
-  $p449: 430px 436px;
-  $p450: 396px 446px;
-  $p451: 418px 396px;
-  $p452: 444px 344px;
-  $p453: 496px 346px;
-  $p454: 466px 296px;
-  $p455: 440px 310px;
-  $p456: 428px 262px;
-  $p457: 422px 246px;
-  $p458: 416px 224px;
-  $p459: 398px 280px;
-  $p460: 392px 306px;
-  $p461: 350px 320px;
-  $p462: 394px 354px;
-  $p463: 312px 354px;
-  $p464: 270px 364px;
-  $p465: 306px 400px;
-  $p466: 356px 400px;
-  $p467: 312px 446px;
-  $p468: 274px 386px;
-  $p469: 278px 418px;
-  $p470: 280px 432px;
-  $p471: 296px 458px;
-  $p472: 350px 476px;
-  $p473: 330px 476px;
-  $p474: 342px 490px;
-  $p475: 312px 500px;
-  $p476: 282px 512px;
-  $p477: 270px 516px;
-  $p478: 310px 484px;
-  $p479: 264px 504px;
-  $p480: 234px 474px;
-  $p481: 346px 284px;
-  $p482: 388px 522px;
-  /*part6*/
-  $p501: 504px 74px;
-  $p502: 514px 66px;
-  $p503: 528px 66px;
-  $p504: 534px 76px;
-  $p505: 514px 84px;
-  $p506: 524px 86px;
-  $p507: 504px 102px;
-  $p508: 516px 118px;
-  $p509: 536px 100px;
-  $p510: 526px 118px;
-  $p511: 506px 134px;
-  $p512: 538px 134px;
-  $p513: 518px 152px;
-  $p514: 528px 154px;
-  $p515: 508px 170px;
-  $p516: 540px 164px;
-  $p517: 520px 190px;
-  $p518: 550px 170px;
-  $p519: 540px 172px;
-  $p520: 560px 180px;
-  $p521: 530px 188px;
-  $p522: 510px 208px;
-  $p523: 548px 200px;
-  $p524: 522px 222px;
-  $p525: 560px 216px;
-  $p526: 542px 208px;
-  $p527: 532px 222px;
-  $p528: 512px 234px;
-  $p529: 524px 252px;
-  $p530: 514px 266px;
-  $p531: 548px 236px;
-  $p532: 558px 256px;
-  $p533: 544px 236px;
-  $p534: 532px 248px;
-  $p535: 544px 262px;
-  $p536: 548px 280px;
-  $p537: 558px 298px;
-  $p538: 526px 282px;
-  $p539: 534px 284px;
-  $p540: 516px 300px;
-  $p541: 526px 314px;
-  $p542: 518px 326px;
-  $p543: 528px 342px;
-  $p544: 548px 298px;
-  $p545: 536px 314px;
-  $p546: 538px 340px;
-  $p547: 548px 318px;
-  $p548: 558px 336px;
-  $p549: 548px 330px;
-  $p550: 518px 346px;
-  $p551: 528px 362px;
-  $p552: 538px 362px;
-  $p553: 550px 354px;
-  $p554: 558px 356px;
-  $p555: 512px 348px;
-  $p556: 526px 366px;
-  $p557: 564px 360px;
-  $p558: 512px 358px;
-  $p559: 526px 374px;
-  $p560: 564px 368px;
-  $p561: 524px 374px;
-  $p562: 556px 370px;
-  $p563: 556px 416px;
-  $p564: 496px 364px;
-  $p565: 526px 396px;
+/*part1*/
+$p1: 202px 98px;
+$p2: 218px 120px;
+$p3: 234px 190px;
+$p4: 222px 242px;
+$p5: 206px 208px;
+$p6: 204px 184px;
+$p7: 196px 168px;
+$p8: 196px 112px;
+$p9: 220px 174px;
+$p10: 222px 202px;
+$p11: 210px 204px;
+$p12: 224px 196px;
+$p13: 212px 196px;
+$p14: 214px 190px;
+$p15: 212px 180px;
+$p16: 300px 100px;
+$p17: 324px 148px;
+$p18: 334px 162px;
+$p19: 328px 198px;
+$p20: 300px 244px;
+$p21: 264px 221px;
+$p22: 242px 184px;
+$p23: 260px 120px;
+$p24: 290px 132px;
+$p25: 290px 166px;
+$p26: 316px 182px;
+$p27: 296px 204px;
+$p28: 258px 200px;
+$p29: 292px 196px;
+$p30: 260px 196px;
+$p31: 264px 188px;
+$p32: 276px 178px;
+$p33: 302px 180px;
+$p34: 290px 188px;
+$p35: 238px 184px;
+/*part2*/
+$p101: 266px 242px;
+$p102: 233px 252px;
+$p103: 232px 242px;
+$p104: 242px 242px;
+$p105: 236px 114px;
+$p106: 242px 82px;
+$p107: 244px 54px;
+$p108: 302px 30px;
+$p109: 350px 18px;
+$p110: 380px 34px;
+$p111: 354px 42px;
+$p112: 330px 60px;
+$p113: 284px 58px;
+$p114: 328px 16px;
+$p115: 294px 16px;
+$p116: 264px 24px;
+$p117: 228px 48px;
+$p118: 208px 72px;
+/*part3*/
+$p201: 400px 44px;
+$p202: 410px 56px;
+$p203: 402px 72px;
+$p204: 416px 108px;
+$p205: 416px 150px;
+$p206: 408px 186px;
+$p207: 410px 228px;
+$p208: 386px 236px;
+$p209: 368px 262px;
+$p210: 344px 274px;
+$p211: 304px 302px;
+$p212: 286px 324px;
+$p213: 260px 326px;
+$p214: 250px 318px;
+$p215: 242px 304px;
+$p216: 250px 294px;
+$p217: 252px 272px;
+$p218: 244px 262px;
+$p219: 264px 218px;
+$p220: 302px 244px;
+$p221: 328px 198px;
+$p222: 334px 164px;
+$p223: 324px 150px;
+$p224: 380px 76px;
+$p225: 392px 122px;
+$p226: 390px 174px;
+$p227: 368px 236px;
+$p228: 404px 156px;
+$p229: 230px 276px;
+/*part4*/
+$p301: 246px 276px;
+$p302: 230px 302px;
+$p303: 206px 318px;
+$p304: 220px 320px;
+$p305: 178px 346px;
+$p306: 206px 346px;
+$p307: 220px 344px;
+$p308: 240px 340px;
+$p309: 262px 376px;
+$p310: 256px 388px;
+$p311: 258px 402px;
+$p312: 250px 408px;
+$p313: 250px 424px;
+$p314: 230px 430px;
+$p315: 222px 440px;
+$p316: 212px 460px;
+$p317: 198px 484px;
+$p318: 190px 520px;
+$p319: 192px 552px;
+$p320: 158px 364px;
+$p321: 182px 356px;
+$p322: 218px 366px;
+$p323: 242px 358px;
+$p324: 244px 368px;
+$p325: 222px 372px;
+$p326: 246px 388px;
+$p327: 190px 376px;
+$p328: 242px 398px;
+$p329: 238px 410px;
+$p330: 228px 392px;
+$p331: 222px 398px;
+$p332: 222px 418px;
+$p333: 200px 400px;
+$p334: 200px 424px;
+$p335: 190px 428px;
+$p336: 170px 400px;
+$p337: 162px 384px;
+$p338: 146px 392px;
+$p339: 162px 416px;
+$p340: 178px 442px;
+$p341: 188px 458px;
+$p342: 164px 458px;
+$p343: 152px 432px;
+$p344: 164px 498px;
+$p345: 142px 412px;
+$p346: 130px 442px;
+$p347: 120px 448px;
+$p348: 130px 468px;
+$p349: 112px 472px;
+$p350: 140px 484px;
+$p351: 118px 501px;
+$p352: 148px 520px;
+$p353: 154px 526px;
+$p354: 176px 526px;
+$p355: 152px 542px;
+$p356: 112px 530px;
+$p357: 108px 556px;
+$p358: 106px 582px;
+$p359: 150px 576px;
+$p360: 106px 600px;
+$p361: 150px 600px;
+$p362: 180px 600px;
+$p363: 208px 600px;
+$p364: 222px 600px;
+/*part5*/
+$p401: 202px 568px;
+$p402: 234px 600px;
+$p403: 250px 600px;
+$p404: 278px 600px;
+$p405: 344px 600px;
+$p406: 364px 600px;
+$p407: 372px 574px;
+$p408: 436px 600px;
+$p409: 504px 600px;
+$p410: 526px 600px;
+$p411: 550px 600px;
+$p412: 568px 600px;
+$p413: 234px 504px;
+$p414: 246px 524px;
+$p415: 286px 572px;
+$p416: 302px 564px;
+$p417: 336px 554px;
+$p418: 384px 538px;
+$p419: 374px 527px;
+$p420: 404px 556px;
+$p421: 414px 566px;
+$p422: 426px 578px;
+$p423: 442px 566px;
+$p424: 444px 550px;
+$p425: 422px 526px;
+$p426: 434px 534px;
+$p427: 424px 546px;
+$p428: 412px 542px;
+$p429: 406px 492px;
+$p430: 438px 476px;
+$p431: 478px 456px;
+$p432: 500px 492px;
+$p433: 500px 510px;
+$p434: 510px 532px;
+$p435: 508px 554px;
+$p436: 506px 580px;
+$p437: 528px 578px;
+$p438: 528px 552px;
+$p439: 568px 570px;
+$p440: 558px 532px;
+$p441: 546px 518px;
+$p442: 548px 502px;
+$p443: 528px 468px;
+$p444: 530px 454px;
+$p445: 526px 498px;
+$p446: 510px 462px;
+$p447: 498px 398px;
+$p448: 466px 396px;
+$p449: 430px 436px;
+$p450: 396px 446px;
+$p451: 418px 396px;
+$p452: 444px 344px;
+$p453: 496px 346px;
+$p454: 466px 296px;
+$p455: 440px 310px;
+$p456: 428px 262px;
+$p457: 422px 246px;
+$p458: 416px 224px;
+$p459: 398px 280px;
+$p460: 392px 306px;
+$p461: 350px 320px;
+$p462: 394px 354px;
+$p463: 312px 354px;
+$p464: 270px 364px;
+$p465: 306px 400px;
+$p466: 356px 400px;
+$p467: 312px 446px;
+$p468: 274px 386px;
+$p469: 278px 418px;
+$p470: 280px 432px;
+$p471: 296px 458px;
+$p472: 350px 476px;
+$p473: 330px 476px;
+$p474: 342px 490px;
+$p475: 312px 500px;
+$p476: 282px 512px;
+$p477: 270px 516px;
+$p478: 310px 484px;
+$p479: 264px 504px;
+$p480: 234px 474px;
+$p481: 346px 284px;
+$p482: 388px 522px;
+/*part6*/
+$p501: 504px 74px;
+$p502: 514px 66px;
+$p503: 528px 66px;
+$p504: 534px 76px;
+$p505: 514px 84px;
+$p506: 524px 86px;
+$p507: 504px 102px;
+$p508: 516px 118px;
+$p509: 536px 100px;
+$p510: 526px 118px;
+$p511: 506px 134px;
+$p512: 538px 134px;
+$p513: 518px 152px;
+$p514: 528px 154px;
+$p515: 508px 170px;
+$p516: 540px 164px;
+$p517: 520px 190px;
+$p518: 550px 170px;
+$p519: 540px 172px;
+$p520: 560px 180px;
+$p521: 530px 188px;
+$p522: 510px 208px;
+$p523: 548px 200px;
+$p524: 522px 222px;
+$p525: 560px 216px;
+$p526: 542px 208px;
+$p527: 532px 222px;
+$p528: 512px 234px;
+$p529: 524px 252px;
+$p530: 514px 266px;
+$p531: 548px 236px;
+$p532: 558px 256px;
+$p533: 544px 236px;
+$p534: 532px 248px;
+$p535: 544px 262px;
+$p536: 548px 280px;
+$p537: 558px 298px;
+$p538: 526px 282px;
+$p539: 534px 284px;
+$p540: 516px 300px;
+$p541: 526px 314px;
+$p542: 518px 326px;
+$p543: 528px 342px;
+$p544: 548px 298px;
+$p545: 536px 314px;
+$p546: 538px 340px;
+$p547: 548px 318px;
+$p548: 558px 336px;
+$p549: 548px 330px;
+$p550: 518px 346px;
+$p551: 528px 362px;
+$p552: 538px 362px;
+$p553: 550px 354px;
+$p554: 558px 356px;
+$p555: 512px 348px;
+$p556: 526px 366px;
+$p557: 564px 360px;
+$p558: 512px 358px;
+$p559: 526px 374px;
+$p560: 564px 368px;
+$p561: 524px 374px;
+$p562: 556px 370px;
+$p563: 556px 416px;
+$p564: 496px 364px;
+$p565: 526px 396px;
 
 #deadpool {
   position: absolute;
@@ -307,7 +307,8 @@
   width: 600px;
   height: 600px;
 }
-.chip{
+
+.chip {
   position: absolute;
   top: 0;
   left: 0;
@@ -317,379 +318,1857 @@
   height: 100%;
 }
 
-.bg1{background-color: transparent;clip-path: polygon(88% 66%, 88% 76%, 93% 89%, 95% 95%, 95% 100%, 31% 100%, 39% 84%, 39% 79%, 45% 65%, 45% 60%, 48% 54%, 62% 44%, 69% 37%, 71% 43%, 78% 50%, 83% 58%, 83% 61%);}
-.bg2{background-color: transparent;clip-path: polygon(67% 7%, 63% 6%, 58% 3%, 55% 3%, 49% 3%, 44% 4%, 38% 8%, 35% 12%, 34% 16%, 33% 18%, 32% 28%, 34% 31%, 34% 34%, 37% 40%, 39% 47%, 41% 52%, 43% 55%, 48% 54%, 70% 41%, 69% 37%, 69% 38%, 68% 31%, 69% 25%, 69% 18%, 67% 12%, 68% 9%);}
-.bg3{background-color: transparent;clip-path: polygon(38% 46%, 41% 49%, 36% 58%, 41% 57%, 44% 62%, 43% 65%, 43% 67%, 41% 68%, 42% 71%, 38% 72%, 37% 73%, 35% 77%, 33% 81%, 32% 87%, 32% 92%, 37% 100%, 17% 100%, 18% 93%, 18% 83%, 19% 79%, 20% 75%, 21% 74%, 23% 69%, 24% 65%, 26% 61%, 29% 58%, 34% 53%);}
+.bg1 {
+  background-color: transparent;
+  clip-path: polygon(88% 66%, 88% 76%, 93% 89%, 95% 95%, 95% 100%, 31% 100%, 39% 84%, 39% 79%, 45% 65%, 45% 60%, 48% 54%, 62% 44%, 69% 37%, 71% 43%, 78% 50%, 83% 58%, 83% 61%);
+}
 
-.c1   { background-color: #292b37; clip-path: polygon($p1  , $p2  , $p8                       );  }
-.c2   { background-color: #1d1b28; clip-path: polygon($p7  , $p8  , $p9                       );  }
-.c3   { background-color: #1a191e; clip-path: polygon($p2  , $p8  , $p9                       );  }
-.c4   { background-color: #2f3438; clip-path: polygon($p2  , $p3  , $p9                       );  }
-.c5   { background-color: #15141c; clip-path: polygon($p7  , $p6  , $p9                       );  }
-.c6   { background-color: #00070d; clip-path: polygon($p9  , $p15 , $p3                       );  }
-.c7   { background-color: #ffffff; clip-path: polygon($p6  , $p15 , $p3  , $p14               );  }
-.c8   { background-color: #0d0c1a; clip-path: polygon($p6  , $p14 , $p3  , $p12 , $p13        );  }
-.c9   { background-color: #3f3c4d; clip-path: polygon($p6  , $p11 , $p10 , $p3  , $p12 , $p13 );  }
-.c10  { background-color: #0b0a12; clip-path: polygon($p4  , $p5  , $p6                       );  }
-.c12  { background-color: #191722; clip-path: polygon($p4  , $p10 , $p11                      );  }
-.c13  { background-color: #201929; clip-path: polygon($p3  , $p4  , $p10                      );  }
-.c14  { background-color: #686777; clip-path: polygon($p16 , $p23 , $p24                      );  }
-.c15  { background-color: #0c0c16; clip-path: polygon($p16 , $p17 , $p18 , $p24               );  }
-.c16  { background-color: #6b6b77; clip-path: polygon($p22 , $p23 , $p24                      );  }
-.c17  { background-color: #292935; clip-path: polygon($p22 , $p25 , $p24                      );  }
-.c18  { background-color: #0b0b15; clip-path: polygon($p18 , $p25 , $p24                      );  }
-.c19  { background-color: #05060b; clip-path: polygon($p22 , $p25 , $p31                      );  }
-.c20  { background-color: #0a0a14; clip-path: polygon($p25 , $p26 , $p18                      );  }
-.c21  { background-color: #14141c; clip-path: polygon($p25 , $p26 , $p32                      );  }
-.c22  { background-color: #14151a; clip-path: polygon($p22 , $p34 , $p29 , $p30               );  }
-.c23  { background-color: #1a1a26; clip-path: polygon($p26 , $p29 , $p34 , $p33               );  }
-.c24  { background-color: #ffffff; clip-path: polygon($p31 , $p32 , $p33 , $p34               );  }
-.c25  { background-color: #3d3c46; clip-path: polygon($p22 , $p28 , $p27 , $p26, $p29, $p30   );  }
-.c26  { background-color: #55555f; clip-path: polygon($p22 , $p21 , $p20                      );  }
-.c27  { background-color: #2a2a36; clip-path: polygon($p27 , $p28 , $p20                      );  }
-.c28  { background-color: #13071b; clip-path: polygon($p18 , $p19 , $p20 , $p27               );  }
-.c29  { background-color: #ad2b45; clip-path: polygon($p1  , $p2  , $p35 , $p105              );  }
-.c30  { background-color: #942a41; clip-path: polygon($p16 , $p23 , $p35 , $p105              );  }
-.c31  { background-color: #990d27; clip-path: polygon($p101, $p102, $p4                       );  }
-.c32  { background-color: #681e2f; clip-path: polygon($p103, $p4  , $p35                      );  }
-.c33  { background-color: #d8677b; clip-path: polygon($p103, $p104, $p35                      );  }
-.c34  { background-color: #97152d; clip-path: polygon($p101, $p104, $p35                      );  }
-.c35  { background-color: #cb3f59; clip-path: polygon($p1  , $p105, $p106                     );  }
-.c36  { background-color: #bf5f6d; clip-path: polygon($p16 , $p105, $p106                     );  }
-.c37  { background-color: #b64154; clip-path: polygon($p16 , $p113, $p106                     );  }
-.c38  { background-color: #cd485b; clip-path: polygon($p106, $p107, $p118                     );  }
-.c39  { background-color: #d34b61; clip-path: polygon($p107, $p117, $p118                     );  }
-.c40  { background-color: #d5425e; clip-path: polygon($p1  , $p106, $p118                     );  }
-.c41  { background-color: #ba4057; clip-path: polygon($p106, $p107, $p113                     );  }
-.c42  { background-color: #cf5468; clip-path: polygon($p116, $p117, $p107                     );  }
-.c43  { background-color: #cb4c5d; clip-path: polygon($p107, $p108, $p116                     );  }
-.c44  { background-color: #bf4a53; clip-path: polygon($p107, $p108, $p113                     );  }
-.c45  { background-color: #b93e50; clip-path: polygon($p16 , $p113, $p108                     );  }
-.c46  { background-color: #a63040; clip-path: polygon($p16 , $p112, $p108                     );  }
-.c47  { background-color: #c15258; clip-path: polygon($p114, $p115, $p108                     );  }
-.c48  { background-color: #b94751; clip-path: polygon($p114, $p109, $p108                     );  }
-.c49  { background-color: #9e2632; clip-path: polygon($p109, $p112, $p108                     );  }
-.c50  { background-color: #c4455a; clip-path: polygon($p111, $p112, $p109                     );  }
-.c51  { background-color: #b6394b; clip-path: polygon($p111, $p110, $p109                     );  }
-.c52  { background-color: #cb5c62; clip-path: polygon($p115, $p116, $p108                     );  }
-.c53  { background-color: #5d0416; clip-path: polygon($p16 , $p112, $p224                     );  }
-.c54  { background-color: #621924; clip-path: polygon($p112, $p111, $p224                     );  }
-.c55  { background-color: #5f131f; clip-path: polygon($p110, $p111, $p224                     );  }
-.c56  { background-color: #522431; clip-path: polygon($p201, $p202, $p203                     );  }
-.c57  { background-color: #681122; clip-path: polygon($p201, $p203, $p110                     );  }
-.c58  { background-color: #5f1621; clip-path: polygon($p110, $p203, $p224                     );  }
-.c59  { background-color: #740e23; clip-path: polygon($p16 , $p17 , $p225                     );  }
-.c60  { background-color: #6a1324; clip-path: polygon($p16 , $p224, $p225                     );  }
-.c61  { background-color: #59101b; clip-path: polygon($p203, $p224, $p225                     );  }
-.c62  { background-color: #901331; clip-path: polygon($p203, $p204, $p228                     );  }
-.c63  { background-color: #600e1c; clip-path: polygon($p203, $p225, $p228                     );  }
-.c64  { background-color: #80192c; clip-path: polygon($p204, $p205, $p206, $p228              );  }
-.c65  { background-color: #680712; clip-path: polygon($p206, $p207, $p208                     );  }
-.c66  { background-color: #9f1431; clip-path: polygon($p206, $p208, $p228                     );  }
-.c67  { background-color: #620b1b; clip-path: polygon($p225, $p208, $p228                     );  }
-.c68  { background-color: #3a070c; clip-path: polygon($p226, $p227, $p208                     );  }
-.c69  { background-color: #300608; clip-path: polygon($p208, $p209, $p227                     );  }
-.c70  { background-color: #2f060a; clip-path: polygon($p210, $p209, $p227                     );  }
-.c71  { background-color: #6a0f20; clip-path: polygon($p17 , $p225, $p226                     );  }
-.c72  { background-color: #5f111f; clip-path: polygon($p18 , $p226, $p227                     );  }
-.c73  { background-color: #7b152a; clip-path: polygon($p17 , $p18 , $p226                     );  }
-.c74  { background-color: #6b0a1d; clip-path: polygon($p18 , $p19 , $p227                     );  }
-.c75  { background-color: #60091a; clip-path: polygon($p210, $p227, $p19                      );  }
-.c76  { background-color: #630b19; clip-path: polygon($p210, $p20 , $p19                      );  }
-.c77  { background-color: #b81d3c; clip-path: polygon($p4  , $p102, $p229                     );  }
-.c78  { background-color: #a0172b; clip-path: polygon($p101, $p102, $p229                     );  }
-.c79  { background-color: #89182a; clip-path: polygon($p21 , $p20 , $p101                     );  }
-.c80  { background-color: #880316; clip-path: polygon($p21 , $p35 , $p101                     );  }
-.c81  { background-color: #530d18; clip-path: polygon($p20 , $p211, $p210                     );  }
-.c82  { background-color: #87061c; clip-path: polygon($p20 , $p101, $p211                     );  }
-.c83  { background-color: #861727; clip-path: polygon($p217, $p212, $p101                     );  }
-.c84  { background-color: #6b0b17; clip-path: polygon($p212, $p211, $p101                     );  }
-.c85  { background-color: #23040a; clip-path: polygon($p214, $p215, $p216                     );  }
-.c86  { background-color: #490810; clip-path: polygon($p213, $p214, $p216                     );  }
-.c87  { background-color: #6f1c24; clip-path: polygon($p212, $p216, $p217                     );  }
-.c88  { background-color: #5f0511; clip-path: polygon($p212, $p213, $p216                     );  }
-.c89  { background-color: #9d152d; clip-path: polygon($p217, $p218, $p101                     );  }
-.c90  { background-color: #19000a; clip-path: polygon($p217, $p218, $p216                     );  }
-.c91  { background-color: #393742; clip-path: polygon($p229, $p301, $p302                     );  }
-.c92  { background-color: #514b57; clip-path: polygon($p229, $p301, $p218                     );  }
-.c93  { background-color: #06050d; clip-path: polygon($p304, $p307, $p215                     );  }
-.c94  { background-color: #010200; clip-path: polygon($p301, $p216, $p215, $p304              );  }
-.c95  { background-color: #4a494e; clip-path: polygon($p302, $p303, $p229                     );  }
-.c96  { background-color: #686671; clip-path: polygon($p302, $p303, $p306                     );  }
-.c97  { background-color: #111113; clip-path: polygon($p304, $p306, $p307                     );  }
-.c98  { background-color: #2b2a32; clip-path: polygon($p303, $p305, $p321                     );  }
-.c99  { background-color: #45444c; clip-path: polygon($p303, $p306, $p321                     );  }
-.c100 { background-color: #45444c; clip-path: polygon($p322, $p306, $p321                     );  }
-.c101 { background-color: #16151d; clip-path: polygon($p308, $p306, $p323                     );  }
-.c102 { background-color: #474550; clip-path: polygon($p322, $p306, $p323                     );  }
-.c103 { background-color: #07060b; clip-path: polygon($p308, $p309, $p323                     );  }
-.c104 { background-color: #030207; clip-path: polygon($p323, $p324, $p309                     );  }
-.c105 { background-color: #040406; clip-path: polygon($p324, $p310, $p309                     );  }
-.c106 { background-color: #212028; clip-path: polygon($p324, $p326, $p310                     );  }
-.c107 { background-color: #06050a; clip-path: polygon($p326, $p328, $p310                     );  }
-.c108 { background-color: #070709; clip-path: polygon($p310, $p328, $p311                     );  }
-.c109 { background-color: #000004; clip-path: polygon($p312, $p328, $p311                     );  }
-.c110 { background-color: #0f0e14; clip-path: polygon($p312, $p329, $p328                     );  }
-.c111 { background-color: #080108; clip-path: polygon($p313, $p329, $p312                     );  }
-.c112 { background-color: #04040e; clip-path: polygon($p323, $p324, $p327                     );  }
-.c113 { background-color: #6d6d79; clip-path: polygon($p321, $p322, $p306                     );  }
-.c114 { background-color: #5a5a66; clip-path: polygon($p321, $p322, $p327                     );  }
-.c115 { background-color: #5f5e6e; clip-path: polygon($p330, $p327, $p325                     );  }
-.c116 { background-color: #9d9da5; clip-path: polygon($p330, $p327, $p333                     );  }
-.c117 { background-color: #22222c; clip-path: polygon($p325, $p326, $p330                     );  }
-.c118 { background-color: #666670; clip-path: polygon($p325, $p326, $p324                     );  }
-.c119 { background-color: #080611; clip-path: polygon($p326, $p328, $p333                     );  }
-.c120 { background-color: #7b7a88; clip-path: polygon($p331, $p329, $p328                     );  }
-.c121 { background-color: #212028; clip-path: polygon($p331, $p329, $p332                     );  }
-.c122 { background-color: #45454f; clip-path: polygon($p332, $p333, $p331                     );  }
-.c123 { background-color: #74747e; clip-path: polygon($p332, $p333, $p334                     );  }
-.c124 { background-color: #272731; clip-path: polygon($p314, $p334, $p332                     );  }
-.c125 { background-color: #10101a; clip-path: polygon($p314, $p334, $p315                     );  }
-.c126 { background-color: #10101a; clip-path: polygon($p313, $p329, $p332                     );  }
-.c127 { background-color: #0a090e; clip-path: polygon($p313, $p332, $p314                     );  }
-.c128 { background-color: #2c2a37; clip-path: polygon($p305, $p320, $p327                     );  }
-.c129 { background-color: #2b2b37; clip-path: polygon($p320, $p327, $p336, $p337              );  }
-.c130 { background-color: #232232; clip-path: polygon($p327, $p335, $p336                     );  }
-.c131 { background-color: #b8b9be; clip-path: polygon($p335, $p327, $p333                     );  }
-.c132 { background-color: #52525c; clip-path: polygon($p333, $p334, $p335                     );  }
-.c133 { background-color: #15141c; clip-path: polygon($p334, $p316, $p335                     );  }
-.c134 { background-color: #18171c; clip-path: polygon($p334, $p316, $p315                     );  }
-.c135 { background-color: #1d1d29; clip-path: polygon($p316, $p340, $p335                     );  }
-.c136 { background-color: #1b161d; clip-path: polygon($p316, $p340, $p342                     );  }
-.c137 { background-color: #280b0f; clip-path: polygon($p316, $p317, $p341                     );  }
-.c138 { background-color: #5e0114; clip-path: polygon($p341, $p342, $p344                     );  }
-.c139 { background-color: #370913; clip-path: polygon($p317, $p344, $p341                     );  }
-.c140 { background-color: #160305; clip-path: polygon($p317, $p344, $p353                     );  }
-.c141 { background-color: #110f1a; clip-path: polygon($p317, $p354, $p353                     );  }
-.c142 { background-color: #000004; clip-path: polygon($p317, $p354, $p318                     );  }
-.c143 { background-color: #464451; clip-path: polygon($p338, $p337, $p336                     );  }
-.c144 { background-color: #25242c; clip-path: polygon($p338, $p337, $p320                     );  }
-.c145 { background-color: #55565b; clip-path: polygon($p335, $p336, $p340                     );  }
-.c146 { background-color: #212028; clip-path: polygon($p338, $p336, $p340                     );  }
-.c147 { background-color: #212028; clip-path: polygon($p339, $p345, $p342                     );  }
-.c148 { background-color: #212028; clip-path: polygon($p339, $p345, $p338                     );  }
-.c149 { background-color: #212028; clip-path: polygon($p340, $p342, $p339                     );  }
-.c150 { background-color: #aa1437; clip-path: polygon($p343, $p346, $p345                     );  }
-.c151 { background-color: #c0284f; clip-path: polygon($p343, $p346, $p348                     );  }
-.c152 { background-color: #c72d4f; clip-path: polygon($p342, $p348, $p343                     );  }
-.c153 { background-color: #bc3752; clip-path: polygon($p342, $p348, $p350                     );  }
-.c154 { background-color: #9e1831; clip-path: polygon($p344, $p350, $p342                     );  }
-.c155 { background-color: #363441; clip-path: polygon($p344, $p350, $p351                     );  }
-.c156 { background-color: #363441; clip-path: polygon($p347, $p348, $p349                     );  }
-.c157 { background-color: #5c4b51; clip-path: polygon($p347, $p348, $p346                     );  }
-.c158 { background-color: #150f1d; clip-path: polygon($p349, $p350, $p348                     );  }
-.c159 { background-color: #212028; clip-path: polygon($p349, $p350, $p351                     );  }
-.c160 { background-color: #212028; clip-path: polygon($p344, $p353, $p351                     );  }
-.c161 { background-color: #212028; clip-path: polygon($p344, $p353, $p317                     );  }
-.c162 { background-color: #911128; clip-path: polygon($p352, $p356, $p351                     );  }
-.c163 { background-color: #9e122d; clip-path: polygon($p352, $p356, $p357                     );  }
-.c164 { background-color: #780e1c; clip-path: polygon($p355, $p358, $p357                     );  }
-.c165 { background-color: #8d1731; clip-path: polygon($p355, $p358, $p359                     );  }
-.c166 { background-color: #951b30; clip-path: polygon($p359, $p360, $p361                     );  }
-.c167 { background-color: #781325; clip-path: polygon($p359, $p360, $p358                     );  }
-.c168 { background-color: #aa1636; clip-path: polygon($p352, $p353, $p355, $p357              );  }
-.c169 { background-color: #280106; clip-path: polygon($p354, $p359, $p353                     );  }
-.c170 { background-color: #38090f; clip-path: polygon($p354, $p359, $p362                     );  }
-.c171 { background-color: #340610; clip-path: polygon($p359, $p361, $p362                     );  }
-.c172 { background-color: #2f080b; clip-path: polygon($p362, $p363, $p319                     );  }
-.c173 { background-color: #24070b; clip-path: polygon($p318, $p319, $p362, $p354              );  }
-.c174 { background-color: #5c1523; clip-path: polygon($p363, $p364, $p319                     );  }
-.c175 { background-color: #70131e; clip-path: polygon($p364, $p413, $p401                     );  }
-.c176 { background-color: #211b27; clip-path: polygon($p211, $p212, $p481                     );  }
-.c177 { background-color: #3d3c42; clip-path: polygon($p210, $p481, $p211                     );  }
-.c178 { background-color: #616570; clip-path: polygon($p210, $p481, $p459                     );  }
-.c179 { background-color: #2c2d3f; clip-path: polygon($p209, $p210, $p459                     );  }
-.c180 { background-color: #21242b; clip-path: polygon($p481, $p461, $p212                     );  }
-.c181 { background-color: #7d7c8c; clip-path: polygon($p481, $p461, $p459                     );  }
-.c182 { background-color: #212028; clip-path: polygon($p208, $p209, $p458                     );  }
-.c183 { background-color: #212028; clip-path: polygon($p212, $p463, $p464                     );  }
-.c184 { background-color: #4f4e5e; clip-path: polygon($p212, $p461, $p463                     );  }
-.c185 { background-color: #5f1828; clip-path: polygon($p209, $p457, $p456                     );  }
-.c186 { background-color: #212028; clip-path: polygon($p209, $p457, $p458                     );  }
-.c187 { background-color: #04030b; clip-path: polygon($p209, $p454, $p456                     );  }
-.c188 { background-color: #0c0b11; clip-path: polygon($p209, $p454, $p453                     );  }
-.c190 { background-color: #292732; clip-path: polygon($p459, $p460, $p461                     );  }
-.c191 { background-color: #1b1b27; clip-path: polygon($p459, $p460, $p455                     );  }
-.c192 { background-color: #7a7989; clip-path: polygon($p452, $p460, $p461                     );  }
-.c193 { background-color: #9796a6; clip-path: polygon($p452, $p460, $p455                     );  }
-.c194 { background-color: #282633; clip-path: polygon($p452, $p453, $p455                     );  }
-.c195 { background-color: #1f1d2a; clip-path: polygon($p452, $p453, $p448                     );  }
-.c196 { background-color: #282737; clip-path: polygon($p452, $p462, $p461                     );  }
-.c197 { background-color: #2f2e3e; clip-path: polygon($p452, $p462, $p448                     );  }
-.c198 { background-color: #777686; clip-path: polygon($p462, $p463, $p461                     );  }
-.c199 { background-color: #8c8b9b; clip-path: polygon($p462, $p463, $p466                     );  }
-.c200 { background-color: #555464; clip-path: polygon($p451, $p466, $p462                     );  }
-.c201 { background-color: #3b3b47; clip-path: polygon($p451, $p466, $p450                     );  }
-.c202 { background-color: #1d1b26; clip-path: polygon($p451, $p448, $p462                     );  }
-.c203 { background-color: #252233; clip-path: polygon($p451, $p448, $p449                     );  }
-.c204 { background-color: #23212e; clip-path: polygon($p449, $p450, $p451                     );  }
-.c205 { background-color: #5a5969; clip-path: polygon($p466, $p467, $p450                     );  }
-.c206 { background-color: #32323e; clip-path: polygon($p466, $p467, $p465                     );  }
-.c207 { background-color: #363844; clip-path: polygon($p464, $p465, $p463                     );  }
-.c208 { background-color: #212028; clip-path: polygon($p464, $p465, $p469                     );  }
-.c209 { background-color: #858591; clip-path: polygon($p465, $p463, $p466                     );  }
-.c210 { background-color: #212028; clip-path: polygon($p465, $p467, $p469                     );  }
-.c211 { background-color: #70131e; clip-path: polygon($p470, $p480, $p468                     );  }
-.c212 { background-color: #210e21; clip-path: polygon($p470, $p480, $p471                     );  }
-.c213 { background-color: #26142a; clip-path: polygon($p469, $p470, $p478, $p473              );  }
-.c214 { background-color: #36051b; clip-path: polygon($p469, $p418, $p472                     );  }
-.c215 { background-color: #000009; clip-path: polygon($p413, $p471, $p479                     );  }
-.c216 { background-color: #10101a; clip-path: polygon($p413, $p471, $p480                     );  }
-.c217 { background-color: #212028; clip-path: polygon($p450, $p472, $p467                     );  }
-.c218 { background-color: #3b3849; clip-path: polygon($p472, $p450, $p429                     );  }
-.c219 { background-color: #232a32; clip-path: polygon($p429, $p482, $p472                     );  }
-.c220 { background-color: #b81e38; clip-path: polygon($p429, $p482, $p428                     );  }
-.c221 { background-color: #a80e4c; clip-path: polygon($p418, $p482, $p472                     );  }
-.c222 { background-color: #970b30; clip-path: polygon($p418, $p482, $p421                     );  }
-.c223 { background-color: #7f0117; clip-path: polygon($p421, $p428, $p482                     );  }
-.c224 { background-color: #000000; clip-path: polygon($p421, $p428, $p427                     );  }
-.c225 { background-color: #171721; clip-path: polygon($p473, $p477, $p479                     );  }
-.c226 { background-color: #181822; clip-path: polygon($p473, $p477, $p474                     );  }
-.c227 { background-color: #444450; clip-path: polygon($p471, $p478, $p479                     );  }
-.c228 { background-color: #690f1b; clip-path: polygon($p402, $p414, $p413                     );  }
-.c229 { background-color: #931b34; clip-path: polygon($p402, $p414, $p403                     );  }
-.c230 { background-color: #4f0b18; clip-path: polygon($p364, $p402, $p413                     );  }
-.c231 { background-color: #a92441; clip-path: polygon($p414, $p479, $p403                     );  }
-.c232 { background-color: #060b11; clip-path: polygon($p414, $p479, $p413                     );  }
-.c233 { background-color: #42394c; clip-path: polygon($p403, $p415, $p404                     );  }
-.c234 { background-color: #c2344a; clip-path: polygon($p403, $p415, $p477                     );  }
-.c235 { background-color: #a92441; clip-path: polygon($p403, $p477, $p479                     );  }
-.c236 { background-color: #5f5e6e; clip-path: polygon($p404, $p418, $p405                     );  }
-.c237 { background-color: #a6a6ae; clip-path: polygon($p404, $p418, $p417                     );  }
-.c238 { background-color: #15131e; clip-path: polygon($p415, $p419, $p418                     );  }
-.c239 { background-color: #40404c; clip-path: polygon($p404, $p417, $p415                     );  }
-.c240 { background-color: #555561; clip-path: polygon($p415, $p476, $p477                     );  }
-.c241 { background-color: #0d0d19; clip-path: polygon($p415, $p476, $p416                     );  }
-.c242 { background-color: #212028; clip-path: polygon($p416, $p475, $p476                     );  }
-.c243 { background-color: #474753; clip-path: polygon($p416, $p475, $p419                     );  }
-.c244 { background-color: #212028; clip-path: polygon($p474, $p475, $p419                     );  }
-.c245 { background-color: #212028; clip-path: polygon($p405, $p406, $p418                     );  }
-.c246 { background-color: #212028; clip-path: polygon($p407, $p420, $p421                     );  }
-.c247 { background-color: #100e19; clip-path: polygon($p407, $p420, $p418                     );  }
-.c248 { background-color: #212028; clip-path: polygon($p406, $p422, $p421                     );  }
-.c249 { background-color: #171c22; clip-path: polygon($p406, $p422, $p408                     );  }
-.c250 { background-color: #000004; clip-path: polygon($p406, $p421, $p407                     );  }
-.c251 { background-color: #646470; clip-path: polygon($p429, $p449, $p430                     );  }
-.c252 { background-color: #343440; clip-path: polygon($p429, $p449, $p450                     );  }
-.c253 { background-color: #b74358; clip-path: polygon($p425, $p429, $p428                     );  }
-.c254 { background-color: #c53149; clip-path: polygon($p425, $p429, $p430                     );  }
-.c255 { background-color: #212028; clip-path: polygon($p426, $p428, $p425                     );  }
-.c256 { background-color: #212028; clip-path: polygon($p426, $p428, $p427                     );  }
-.c257 { background-color: #a92846; clip-path: polygon($p425, $p431, $p429                     );  }
-.c258 { background-color: #8f1933; clip-path: polygon($p425, $p431, $p432                     );  }
-.c259 { background-color: #212028; clip-path: polygon($p425, $p433, $p426                     );  }
-.c260 { background-color: #4f4850; clip-path: polygon($p425, $p433, $p432                     );  }
-.c261 { background-color: #d14c5f; clip-path: polygon($p427, $p424, $p426                     );  }
-.c262 { background-color: #bf3447; clip-path: polygon($p427, $p424, $p422                     );  }
-.c263 { background-color: #0b0a0f; clip-path: polygon($p421, $p422, $p427                     );  }
-.c264 { background-color: #c43c54; clip-path: polygon($p422, $p408, $p424                     );  }
-.c265 { background-color: #cf7c86; clip-path: polygon($p408, $p436, $p423                     );  }
-.c266 { background-color: #c46a74; clip-path: polygon($p408, $p436, $p409                     );  }
-.c267 { background-color: #dc8c97; clip-path: polygon($p423, $p435, $p424                     );  }
-.c268 { background-color: #c46a76; clip-path: polygon($p423, $p435, $p436                     );  }
-.c269 { background-color: #bb5f6a; clip-path: polygon($p424, $p434, $p433                     );  }
-.c270 { background-color: #d07d87; clip-path: polygon($p424, $p434, $p435                     );  }
-.c271 { background-color: #cc707f; clip-path: polygon($p424, $p426, $p433                     );  }
-.c272 { background-color: #414050; clip-path: polygon($p431, $p449, $p430                     );  }
-.c273 { background-color: #4c4b5b; clip-path: polygon($p431, $p449, $p448                     );  }
-.c274 { background-color: #212028; clip-path: polygon($p447, $p448, $p431                     );  }
-.c275 { background-color: #191925; clip-path: polygon($p447, $p448, $p453                     );  }
-.c276 { background-color: #1a1825; clip-path: polygon($p431, $p444, $p443                     );  }
-.c277 { background-color: #050716; clip-path: polygon($p431, $p444, $p447                     );  }
-.c278 { background-color: #580f1a; clip-path: polygon($p432, $p443, $p431                     );  }
-.c279 { background-color: #591c24; clip-path: polygon($p432, $p443, $p442                     );  }
-.c280 { background-color: #212028; clip-path: polygon($p432, $p441, $p433                     );  }
-.c281 { background-color: #212028; clip-path: polygon($p432, $p441, $p442                     );  }
-.c282 { background-color: #540c1a; clip-path: polygon($p434, $p441, $p433                     );  }
-.c283 { background-color: #530b19; clip-path: polygon($p434, $p441, $p438                     );  }
-.c284 { background-color: #61101f; clip-path: polygon($p435, $p438, $p434                     );  }
-.c285 { background-color: #961e3a; clip-path: polygon($p435, $p438, $p437                     );  }
-.c286 { background-color: #79112a; clip-path: polygon($p409, $p437, $p435                     );  }
-.c287 { background-color: #791d32; clip-path: polygon($p409, $p437, $p410                     );  }
-.c288 { background-color: #56121f; clip-path: polygon($p438, $p440, $p441                     );  }
-.c290 { background-color: #751d29; clip-path: polygon($p438, $p440, $p439                     );  }
-.c291 { background-color: #591524; clip-path: polygon($p411, $p439, $p412                     );  }
-.c292 { background-color: #6d152b; clip-path: polygon($p411, $p439, $p438                     );  }
-.c293 { background-color: #460911; clip-path: polygon($p410, $p411, $p438                     );  }
-.c295 { background-color: #212028; clip-path: polygon($p440, $p441, $p442                     );  }
-.c296 { background-color: #010101; clip-path: polygon($p443, $p444, $p442                     );  }
-.c294 { background-color: #010101; clip-path: polygon($p440, $p444, $p563                     );  }
-.c297 { background-color: #0c0b13; clip-path: polygon($p561, $p563, $p444                     );  }
-.c298 { background-color: #010101; clip-path: polygon($p563, $p562, $p561                     );  }
-.c299 { background-color: #212028; clip-path: polygon($p555, $p556, $p559, $p558              );  }
-.c300 { background-color: #212028; clip-path: polygon($p556, $p557, $p560, $p559              );  }
-.c301 { background-color: #4f4d5a; clip-path: polygon($p543, $p550, $p542                     );  }
-.c302 { background-color: #212028; clip-path: polygon($p543, $p550, $p551                     );  }
-.c303 { background-color: #4f4d5a; clip-path: polygon($p541, $p542, $p540                     );  }
-.c304 { background-color: #212028; clip-path: polygon($p541, $p542, $p543                     );  }
-.c305 { background-color: #4f4d5a; clip-path: polygon($p540, $p538, $p530                     );  }
-.c306 { background-color: #282633; clip-path: polygon($p540, $p538, $p541                     );  }
-.c307 { background-color: #4f4d5a; clip-path: polygon($p530, $p529, $p528                     );  }
-.c308 { background-color: #212028; clip-path: polygon($p530, $p529, $p538                     );  }
-.c309 { background-color: #212028; clip-path: polygon($p528, $p524, $p522                     );  }
-.c309 { background-color: #4f4d5a; clip-path: polygon($p528, $p524, $p522                     );  }
-.c310 { background-color: #212028; clip-path: polygon($p528, $p524, $p529                     );  }
-.c311 { background-color: #4f4d5a; clip-path: polygon($p522, $p517, $p515                     );  }
-.c312 { background-color: #212028; clip-path: polygon($p522, $p517, $p524                     );  }
-.c313 { background-color: #4f4d5a; clip-path: polygon($p515, $p513, $p511                     );  }
-.c314 { background-color: #212028; clip-path: polygon($p515, $p513, $p517                     );  }
-.c315 { background-color: #4f4d5a; clip-path: polygon($p511, $p508, $p507                     );  }
-.c316 { background-color: #212028; clip-path: polygon($p511, $p508, $p513                     );  }
-.c317 { background-color: #4f4d5a; clip-path: polygon($p505, $p507, $p501                     );  }
-.c318 { background-color: #212028; clip-path: polygon($p505, $p507, $p508                     );  }
-.c319 { background-color: #212028; clip-path: polygon($p501, $p502, $p503, $p504, $p506, $p505);  }
-.c320 { background-color: #212028; clip-path: polygon($p506, $p508, $p505                     );  }
-.c321 { background-color: #212028; clip-path: polygon($p506, $p508, $p514                     );  }
-.c322 { background-color: #212028; clip-path: polygon($p514, $p517, $p508                     );  }
-.c323 { background-color: #212028; clip-path: polygon($p514, $p517, $p527                     );  }
-.c324 { background-color: #212028; clip-path: polygon($p527, $p529, $p517                     );  }
-.c325 { background-color: #212028; clip-path: polygon($p527, $p529, $p539                     );  }
-.c326 { background-color: #212028; clip-path: polygon($p539, $p541, $p529                     );  }
-.c327 { background-color: #212028; clip-path: polygon($p539, $p541, $p546                     );  }
-.c328 { background-color: #212028; clip-path: polygon($p551, $p546, $p552                     );  }
-.c329 { background-color: #212028; clip-path: polygon($p551, $p546, $p541                     );  }
-.c330 { background-color: #20202c; clip-path: polygon($p506, $p509, $p504                     );  }
-.c331 { background-color: #0a0a16; clip-path: polygon($p506, $p509, $p510                     );  }
-.c332 { background-color: #212028; clip-path: polygon($p510, $p512, $p509                     );  }
-.c333 { background-color: #0a0a16; clip-path: polygon($p510, $p512, $p514                     );  }
-.c334 { background-color: #212028; clip-path: polygon($p514, $p516, $p512                     );  }
-.c335 { background-color: #0a0a16; clip-path: polygon($p514, $p516, $p521                     );  }
-.c336 { background-color: #212028; clip-path: polygon($p521, $p526, $p516                     );  }
-.c337 { background-color: #0a0a16; clip-path: polygon($p521, $p526, $p527                     );  }
-.c338 { background-color: #0a0a16; clip-path: polygon($p526, $p527, $p521                     );  }
-.c339 { background-color: #212028; clip-path: polygon($p526, $p527, $p533                     );  }
-.c340 { background-color: #0a0a16; clip-path: polygon($p533, $p534, $p527                     );  }
-.c341 { background-color: #212028; clip-path: polygon($p533, $p534, $p535                     );  }
-.c342 { background-color: #0a0a16; clip-path: polygon($p535, $p539, $p534                     );  }
-.c343 { background-color: #212028; clip-path: polygon($p535, $p539, $p544                     );  }
-.c344 { background-color: #0a0a16; clip-path: polygon($p544, $p545, $p539                     );  }
-.c345 { background-color: #212028; clip-path: polygon($p544, $p545, $p547                     );  }
-.c346 { background-color: #0a0a16; clip-path: polygon($p546, $p547, $p545                     );  }
-.c347 { background-color: #212028; clip-path: polygon($p546, $p547, $p553                     );  }
-.c348 { background-color: #0a0a16; clip-path: polygon($p546, $p552, $p553                     );  }
-.c349 { background-color: #212028; clip-path: polygon($p519, $p523, $p518                     );  }
-.c350 { background-color: #2d2c3a; clip-path: polygon($p519, $p523, $p526                     );  }
-.c351 { background-color: #0a0a16; clip-path: polygon($p526, $p531, $p535                     );  }
-.c352 { background-color: #2d2c3a; clip-path: polygon($p526, $p531, $p523                     );  }
-.c353 { background-color: #0a0a16; clip-path: polygon($p547, $p531, $p535                     );  }
-.c354 { background-color: #0a0a16; clip-path: polygon($p520, $p523, $p518                     );  }
-.c355 { background-color: #0a0a16; clip-path: polygon($p520, $p523, $p525                     );  }
-.c356 { background-color: #0a0a16; clip-path: polygon($p525, $p531, $p523                     );  }
-.c357 { background-color: #0a0a16; clip-path: polygon($p525, $p531, $p532                     );  }
-.c358 { background-color: #0a0a16; clip-path: polygon($p532, $p536, $p531                     );  }
-.c359 { background-color: #0a0a16; clip-path: polygon($p532, $p536, $p537                     );  }
-.c360 { background-color: #0a0a16; clip-path: polygon($p537, $p547, $p536                     );  }
-.c361 { background-color: #0a0a16; clip-path: polygon($p537, $p547, $p548                     );  }
-.c362 { background-color: #0a0a16; clip-path: polygon($p553, $p548, $p547                     );  }
-.c363 { background-color: #212028; clip-path: polygon($p553, $p548, $p554                     );  }
-.c364 { background-color: #212028; clip-path: polygon($p550, $p551, $p556, $p555              );  }
-.c365 { background-color: #212028; clip-path: polygon($p551, $p556, $p557, $p552              );  }
-.c366 { background-color: #212028; clip-path: polygon($p552, $p553, $p557                     );  }
-.c367 { background-color: #2f2e40; clip-path: polygon($p23 , $p22 , $p21 , $p35               );  }
-.c368 { background-color: #221f30; clip-path: polygon($p2  , $p3  , $p4,   $p35               );  }
-.c369 { background-color: #0a0a16; clip-path: polygon($p447, $p444, $p565, $p564              );  }
+.bg2 {
+  background-color: transparent;
+  clip-path: polygon(67% 7%, 63% 6%, 58% 3%, 55% 3%, 49% 3%, 44% 4%, 38% 8%, 35% 12%, 34% 16%, 33% 18%, 32% 28%, 34% 31%, 34% 34%, 37% 40%, 39% 47%, 41% 52%, 43% 55%, 48% 54%, 70% 41%, 69% 37%, 69% 38%, 68% 31%, 69% 25%, 69% 18%, 67% 12%, 68% 9%);
+}
 
-.shine{
+.bg3 {
+  background-color: transparent;
+  clip-path: polygon(38% 46%, 41% 49%, 36% 58%, 41% 57%, 44% 62%, 43% 65%, 43% 67%, 41% 68%, 42% 71%, 38% 72%, 37% 73%, 35% 77%, 33% 81%, 32% 87%, 32% 92%, 37% 100%, 17% 100%, 18% 93%, 18% 83%, 19% 79%, 20% 75%, 21% 74%, 23% 69%, 24% 65%, 26% 61%, 29% 58%, 34% 53%);
+}
+
+.c1 {
+  background-color: #292b37;
+  clip-path: polygon($p1, $p2, $p8);
+}
+
+.c2 {
+  background-color: #1d1b28;
+  clip-path: polygon($p7, $p8, $p9);
+}
+
+.c3 {
+  background-color: #1a191e;
+  clip-path: polygon($p2, $p8, $p9);
+}
+
+.c4 {
+  background-color: #2f3438;
+  clip-path: polygon($p2, $p3, $p9);
+}
+
+.c5 {
+  background-color: #15141c;
+  clip-path: polygon($p7, $p6, $p9);
+}
+
+.c6 {
+  background-color: #00070d;
+  clip-path: polygon($p9, $p15, $p3);
+}
+
+.c7 {
+  background-color: #ffffff;
+  clip-path: polygon($p6, $p15, $p3, $p14);
+}
+
+.c8 {
+  background-color: #0d0c1a;
+  clip-path: polygon($p6, $p14, $p3, $p12, $p13);
+}
+
+.c9 {
+  background-color: #3f3c4d;
+  clip-path: polygon($p6, $p11, $p10, $p3, $p12, $p13);
+}
+
+.c10 {
+  background-color: #0b0a12;
+  clip-path: polygon($p4, $p5, $p6);
+}
+
+.c12 {
+  background-color: #191722;
+  clip-path: polygon($p4, $p10, $p11);
+}
+
+.c13 {
+  background-color: #201929;
+  clip-path: polygon($p3, $p4, $p10);
+}
+
+.c14 {
+  background-color: #686777;
+  clip-path: polygon($p16, $p23, $p24);
+}
+
+.c15 {
+  background-color: #0c0c16;
+  clip-path: polygon($p16, $p17, $p18, $p24);
+}
+
+.c16 {
+  background-color: #6b6b77;
+  clip-path: polygon($p22, $p23, $p24);
+}
+
+.c17 {
+  background-color: #292935;
+  clip-path: polygon($p22, $p25, $p24);
+}
+
+.c18 {
+  background-color: #0b0b15;
+  clip-path: polygon($p18, $p25, $p24);
+}
+
+.c19 {
+  background-color: #05060b;
+  clip-path: polygon($p22, $p25, $p31);
+}
+
+.c20 {
+  background-color: #0a0a14;
+  clip-path: polygon($p25, $p26, $p18);
+}
+
+.c21 {
+  background-color: #14141c;
+  clip-path: polygon($p25, $p26, $p32);
+}
+
+.c22 {
+  background-color: #14151a;
+  clip-path: polygon($p22, $p34, $p29, $p30);
+}
+
+.c23 {
+  background-color: #1a1a26;
+  clip-path: polygon($p26, $p29, $p34, $p33);
+}
+
+.c24 {
+  background-color: #ffffff;
+  clip-path: polygon($p31, $p32, $p33, $p34);
+}
+
+.c25 {
+  background-color: #3d3c46;
+  clip-path: polygon($p22, $p28, $p27, $p26, $p29, $p30);
+}
+
+.c26 {
+  background-color: #55555f;
+  clip-path: polygon($p22, $p21, $p20);
+}
+
+.c27 {
+  background-color: #2a2a36;
+  clip-path: polygon($p27, $p28, $p20);
+}
+
+.c28 {
+  background-color: #13071b;
+  clip-path: polygon($p18, $p19, $p20, $p27);
+}
+
+.c29 {
+  background-color: #ad2b45;
+  clip-path: polygon($p1, $p2, $p35, $p105);
+}
+
+.c30 {
+  background-color: #942a41;
+  clip-path: polygon($p16, $p23, $p35, $p105);
+}
+
+.c31 {
+  background-color: #990d27;
+  clip-path: polygon($p101, $p102, $p4);
+}
+
+.c32 {
+  background-color: #681e2f;
+  clip-path: polygon($p103, $p4, $p35);
+}
+
+.c33 {
+  background-color: #d8677b;
+  clip-path: polygon($p103, $p104, $p35);
+}
+
+.c34 {
+  background-color: #97152d;
+  clip-path: polygon($p101, $p104, $p35);
+}
+
+.c35 {
+  background-color: #cb3f59;
+  clip-path: polygon($p1, $p105, $p106);
+}
+
+.c36 {
+  background-color: #bf5f6d;
+  clip-path: polygon($p16, $p105, $p106);
+}
+
+.c37 {
+  background-color: #b64154;
+  clip-path: polygon($p16, $p113, $p106);
+}
+
+.c38 {
+  background-color: #cd485b;
+  clip-path: polygon($p106, $p107, $p118);
+}
+
+.c39 {
+  background-color: #d34b61;
+  clip-path: polygon($p107, $p117, $p118);
+}
+
+.c40 {
+  background-color: #d5425e;
+  clip-path: polygon($p1, $p106, $p118);
+}
+
+.c41 {
+  background-color: #ba4057;
+  clip-path: polygon($p106, $p107, $p113);
+}
+
+.c42 {
+  background-color: #cf5468;
+  clip-path: polygon($p116, $p117, $p107);
+}
+
+.c43 {
+  background-color: #cb4c5d;
+  clip-path: polygon($p107, $p108, $p116);
+}
+
+.c44 {
+  background-color: #bf4a53;
+  clip-path: polygon($p107, $p108, $p113);
+}
+
+.c45 {
+  background-color: #b93e50;
+  clip-path: polygon($p16, $p113, $p108);
+}
+
+.c46 {
+  background-color: #a63040;
+  clip-path: polygon($p16, $p112, $p108);
+}
+
+.c47 {
+  background-color: #c15258;
+  clip-path: polygon($p114, $p115, $p108);
+}
+
+.c48 {
+  background-color: #b94751;
+  clip-path: polygon($p114, $p109, $p108);
+}
+
+.c49 {
+  background-color: #9e2632;
+  clip-path: polygon($p109, $p112, $p108);
+}
+
+.c50 {
+  background-color: #c4455a;
+  clip-path: polygon($p111, $p112, $p109);
+}
+
+.c51 {
+  background-color: #b6394b;
+  clip-path: polygon($p111, $p110, $p109);
+}
+
+.c52 {
+  background-color: #cb5c62;
+  clip-path: polygon($p115, $p116, $p108);
+}
+
+.c53 {
+  background-color: #5d0416;
+  clip-path: polygon($p16, $p112, $p224);
+}
+
+.c54 {
+  background-color: #621924;
+  clip-path: polygon($p112, $p111, $p224);
+}
+
+.c55 {
+  background-color: #5f131f;
+  clip-path: polygon($p110, $p111, $p224);
+}
+
+.c56 {
+  background-color: #522431;
+  clip-path: polygon($p201, $p202, $p203);
+}
+
+.c57 {
+  background-color: #681122;
+  clip-path: polygon($p201, $p203, $p110);
+}
+
+.c58 {
+  background-color: #5f1621;
+  clip-path: polygon($p110, $p203, $p224);
+}
+
+.c59 {
+  background-color: #740e23;
+  clip-path: polygon($p16, $p17, $p225);
+}
+
+.c60 {
+  background-color: #6a1324;
+  clip-path: polygon($p16, $p224, $p225);
+}
+
+.c61 {
+  background-color: #59101b;
+  clip-path: polygon($p203, $p224, $p225);
+}
+
+.c62 {
+  background-color: #901331;
+  clip-path: polygon($p203, $p204, $p228);
+}
+
+.c63 {
+  background-color: #600e1c;
+  clip-path: polygon($p203, $p225, $p228);
+}
+
+.c64 {
+  background-color: #80192c;
+  clip-path: polygon($p204, $p205, $p206, $p228);
+}
+
+.c65 {
+  background-color: #680712;
+  clip-path: polygon($p206, $p207, $p208);
+}
+
+.c66 {
+  background-color: #9f1431;
+  clip-path: polygon($p206, $p208, $p228);
+}
+
+.c67 {
+  background-color: #620b1b;
+  clip-path: polygon($p225, $p208, $p228);
+}
+
+.c68 {
+  background-color: #3a070c;
+  clip-path: polygon($p226, $p227, $p208);
+}
+
+.c69 {
+  background-color: #300608;
+  clip-path: polygon($p208, $p209, $p227);
+}
+
+.c70 {
+  background-color: #2f060a;
+  clip-path: polygon($p210, $p209, $p227);
+}
+
+.c71 {
+  background-color: #6a0f20;
+  clip-path: polygon($p17, $p225, $p226);
+}
+
+.c72 {
+  background-color: #5f111f;
+  clip-path: polygon($p18, $p226, $p227);
+}
+
+.c73 {
+  background-color: #7b152a;
+  clip-path: polygon($p17, $p18, $p226);
+}
+
+.c74 {
+  background-color: #6b0a1d;
+  clip-path: polygon($p18, $p19, $p227);
+}
+
+.c75 {
+  background-color: #60091a;
+  clip-path: polygon($p210, $p227, $p19);
+}
+
+.c76 {
+  background-color: #630b19;
+  clip-path: polygon($p210, $p20, $p19);
+}
+
+.c77 {
+  background-color: #b81d3c;
+  clip-path: polygon($p4, $p102, $p229);
+}
+
+.c78 {
+  background-color: #a0172b;
+  clip-path: polygon($p101, $p102, $p229);
+}
+
+.c79 {
+  background-color: #89182a;
+  clip-path: polygon($p21, $p20, $p101);
+}
+
+.c80 {
+  background-color: #880316;
+  clip-path: polygon($p21, $p35, $p101);
+}
+
+.c81 {
+  background-color: #530d18;
+  clip-path: polygon($p20, $p211, $p210);
+}
+
+.c82 {
+  background-color: #87061c;
+  clip-path: polygon($p20, $p101, $p211);
+}
+
+.c83 {
+  background-color: #861727;
+  clip-path: polygon($p217, $p212, $p101);
+}
+
+.c84 {
+  background-color: #6b0b17;
+  clip-path: polygon($p212, $p211, $p101);
+}
+
+.c85 {
+  background-color: #23040a;
+  clip-path: polygon($p214, $p215, $p216);
+}
+
+.c86 {
+  background-color: #490810;
+  clip-path: polygon($p213, $p214, $p216);
+}
+
+.c87 {
+  background-color: #6f1c24;
+  clip-path: polygon($p212, $p216, $p217);
+}
+
+.c88 {
+  background-color: #5f0511;
+  clip-path: polygon($p212, $p213, $p216);
+}
+
+.c89 {
+  background-color: #9d152d;
+  clip-path: polygon($p217, $p218, $p101);
+}
+
+.c90 {
+  background-color: #19000a;
+  clip-path: polygon($p217, $p218, $p216);
+}
+
+.c91 {
+  background-color: #393742;
+  clip-path: polygon($p229, $p301, $p302);
+}
+
+.c92 {
+  background-color: #514b57;
+  clip-path: polygon($p229, $p301, $p218);
+}
+
+.c93 {
+  background-color: #06050d;
+  clip-path: polygon($p304, $p307, $p215);
+}
+
+.c94 {
+  background-color: #010200;
+  clip-path: polygon($p301, $p216, $p215, $p304);
+}
+
+.c95 {
+  background-color: #4a494e;
+  clip-path: polygon($p302, $p303, $p229);
+}
+
+.c96 {
+  background-color: #686671;
+  clip-path: polygon($p302, $p303, $p306);
+}
+
+.c97 {
+  background-color: #111113;
+  clip-path: polygon($p304, $p306, $p307);
+}
+
+.c98 {
+  background-color: #2b2a32;
+  clip-path: polygon($p303, $p305, $p321);
+}
+
+.c99 {
+  background-color: #45444c;
+  clip-path: polygon($p303, $p306, $p321);
+}
+
+.c100 {
+  background-color: #45444c;
+  clip-path: polygon($p322, $p306, $p321);
+}
+
+.c101 {
+  background-color: #16151d;
+  clip-path: polygon($p308, $p306, $p323);
+}
+
+.c102 {
+  background-color: #474550;
+  clip-path: polygon($p322, $p306, $p323);
+}
+
+.c103 {
+  background-color: #07060b;
+  clip-path: polygon($p308, $p309, $p323);
+}
+
+.c104 {
+  background-color: #030207;
+  clip-path: polygon($p323, $p324, $p309);
+}
+
+.c105 {
+  background-color: #040406;
+  clip-path: polygon($p324, $p310, $p309);
+}
+
+.c106 {
+  background-color: #212028;
+  clip-path: polygon($p324, $p326, $p310);
+}
+
+.c107 {
+  background-color: #06050a;
+  clip-path: polygon($p326, $p328, $p310);
+}
+
+.c108 {
+  background-color: #070709;
+  clip-path: polygon($p310, $p328, $p311);
+}
+
+.c109 {
+  background-color: #000004;
+  clip-path: polygon($p312, $p328, $p311);
+}
+
+.c110 {
+  background-color: #0f0e14;
+  clip-path: polygon($p312, $p329, $p328);
+}
+
+.c111 {
+  background-color: #080108;
+  clip-path: polygon($p313, $p329, $p312);
+}
+
+.c112 {
+  background-color: #04040e;
+  clip-path: polygon($p323, $p324, $p327);
+}
+
+.c113 {
+  background-color: #6d6d79;
+  clip-path: polygon($p321, $p322, $p306);
+}
+
+.c114 {
+  background-color: #5a5a66;
+  clip-path: polygon($p321, $p322, $p327);
+}
+
+.c115 {
+  background-color: #5f5e6e;
+  clip-path: polygon($p330, $p327, $p325);
+}
+
+.c116 {
+  background-color: #9d9da5;
+  clip-path: polygon($p330, $p327, $p333);
+}
+
+.c117 {
+  background-color: #22222c;
+  clip-path: polygon($p325, $p326, $p330);
+}
+
+.c118 {
+  background-color: #666670;
+  clip-path: polygon($p325, $p326, $p324);
+}
+
+.c119 {
+  background-color: #080611;
+  clip-path: polygon($p326, $p328, $p333);
+}
+
+.c120 {
+  background-color: #7b7a88;
+  clip-path: polygon($p331, $p329, $p328);
+}
+
+.c121 {
+  background-color: #212028;
+  clip-path: polygon($p331, $p329, $p332);
+}
+
+.c122 {
+  background-color: #45454f;
+  clip-path: polygon($p332, $p333, $p331);
+}
+
+.c123 {
+  background-color: #74747e;
+  clip-path: polygon($p332, $p333, $p334);
+}
+
+.c124 {
+  background-color: #272731;
+  clip-path: polygon($p314, $p334, $p332);
+}
+
+.c125 {
+  background-color: #10101a;
+  clip-path: polygon($p314, $p334, $p315);
+}
+
+.c126 {
+  background-color: #10101a;
+  clip-path: polygon($p313, $p329, $p332);
+}
+
+.c127 {
+  background-color: #0a090e;
+  clip-path: polygon($p313, $p332, $p314);
+}
+
+.c128 {
+  background-color: #2c2a37;
+  clip-path: polygon($p305, $p320, $p327);
+}
+
+.c129 {
+  background-color: #2b2b37;
+  clip-path: polygon($p320, $p327, $p336, $p337);
+}
+
+.c130 {
+  background-color: #232232;
+  clip-path: polygon($p327, $p335, $p336);
+}
+
+.c131 {
+  background-color: #b8b9be;
+  clip-path: polygon($p335, $p327, $p333);
+}
+
+.c132 {
+  background-color: #52525c;
+  clip-path: polygon($p333, $p334, $p335);
+}
+
+.c133 {
+  background-color: #15141c;
+  clip-path: polygon($p334, $p316, $p335);
+}
+
+.c134 {
+  background-color: #18171c;
+  clip-path: polygon($p334, $p316, $p315);
+}
+
+.c135 {
+  background-color: #1d1d29;
+  clip-path: polygon($p316, $p340, $p335);
+}
+
+.c136 {
+  background-color: #1b161d;
+  clip-path: polygon($p316, $p340, $p342);
+}
+
+.c137 {
+  background-color: #280b0f;
+  clip-path: polygon($p316, $p317, $p341);
+}
+
+.c138 {
+  background-color: #5e0114;
+  clip-path: polygon($p341, $p342, $p344);
+}
+
+.c139 {
+  background-color: #370913;
+  clip-path: polygon($p317, $p344, $p341);
+}
+
+.c140 {
+  background-color: #160305;
+  clip-path: polygon($p317, $p344, $p353);
+}
+
+.c141 {
+  background-color: #110f1a;
+  clip-path: polygon($p317, $p354, $p353);
+}
+
+.c142 {
+  background-color: #000004;
+  clip-path: polygon($p317, $p354, $p318);
+}
+
+.c143 {
+  background-color: #464451;
+  clip-path: polygon($p338, $p337, $p336);
+}
+
+.c144 {
+  background-color: #25242c;
+  clip-path: polygon($p338, $p337, $p320);
+}
+
+.c145 {
+  background-color: #55565b;
+  clip-path: polygon($p335, $p336, $p340);
+}
+
+.c146 {
+  background-color: #212028;
+  clip-path: polygon($p338, $p336, $p340);
+}
+
+.c147 {
+  background-color: #212028;
+  clip-path: polygon($p339, $p345, $p342);
+}
+
+.c148 {
+  background-color: #212028;
+  clip-path: polygon($p339, $p345, $p338);
+}
+
+.c149 {
+  background-color: #212028;
+  clip-path: polygon($p340, $p342, $p339);
+}
+
+.c150 {
+  background-color: #aa1437;
+  clip-path: polygon($p343, $p346, $p345);
+}
+
+.c151 {
+  background-color: #c0284f;
+  clip-path: polygon($p343, $p346, $p348);
+}
+
+.c152 {
+  background-color: #c72d4f;
+  clip-path: polygon($p342, $p348, $p343);
+}
+
+.c153 {
+  background-color: #bc3752;
+  clip-path: polygon($p342, $p348, $p350);
+}
+
+.c154 {
+  background-color: #9e1831;
+  clip-path: polygon($p344, $p350, $p342);
+}
+
+.c155 {
+  background-color: #363441;
+  clip-path: polygon($p344, $p350, $p351);
+}
+
+.c156 {
+  background-color: #363441;
+  clip-path: polygon($p347, $p348, $p349);
+}
+
+.c157 {
+  background-color: #5c4b51;
+  clip-path: polygon($p347, $p348, $p346);
+}
+
+.c158 {
+  background-color: #150f1d;
+  clip-path: polygon($p349, $p350, $p348);
+}
+
+.c159 {
+  background-color: #212028;
+  clip-path: polygon($p349, $p350, $p351);
+}
+
+.c160 {
+  background-color: #212028;
+  clip-path: polygon($p344, $p353, $p351);
+}
+
+.c161 {
+  background-color: #212028;
+  clip-path: polygon($p344, $p353, $p317);
+}
+
+.c162 {
+  background-color: #911128;
+  clip-path: polygon($p352, $p356, $p351);
+}
+
+.c163 {
+  background-color: #9e122d;
+  clip-path: polygon($p352, $p356, $p357);
+}
+
+.c164 {
+  background-color: #780e1c;
+  clip-path: polygon($p355, $p358, $p357);
+}
+
+.c165 {
+  background-color: #8d1731;
+  clip-path: polygon($p355, $p358, $p359);
+}
+
+.c166 {
+  background-color: #951b30;
+  clip-path: polygon($p359, $p360, $p361);
+}
+
+.c167 {
+  background-color: #781325;
+  clip-path: polygon($p359, $p360, $p358);
+}
+
+.c168 {
+  background-color: #aa1636;
+  clip-path: polygon($p352, $p353, $p355, $p357);
+}
+
+.c169 {
+  background-color: #280106;
+  clip-path: polygon($p354, $p359, $p353);
+}
+
+.c170 {
+  background-color: #38090f;
+  clip-path: polygon($p354, $p359, $p362);
+}
+
+.c171 {
+  background-color: #340610;
+  clip-path: polygon($p359, $p361, $p362);
+}
+
+.c172 {
+  background-color: #2f080b;
+  clip-path: polygon($p362, $p363, $p319);
+}
+
+.c173 {
+  background-color: #24070b;
+  clip-path: polygon($p318, $p319, $p362, $p354);
+}
+
+.c174 {
+  background-color: #5c1523;
+  clip-path: polygon($p363, $p364, $p319);
+}
+
+.c175 {
+  background-color: #70131e;
+  clip-path: polygon($p364, $p413, $p401);
+}
+
+.c176 {
+  background-color: #211b27;
+  clip-path: polygon($p211, $p212, $p481);
+}
+
+.c177 {
+  background-color: #3d3c42;
+  clip-path: polygon($p210, $p481, $p211);
+}
+
+.c178 {
+  background-color: #616570;
+  clip-path: polygon($p210, $p481, $p459);
+}
+
+.c179 {
+  background-color: #2c2d3f;
+  clip-path: polygon($p209, $p210, $p459);
+}
+
+.c180 {
+  background-color: #21242b;
+  clip-path: polygon($p481, $p461, $p212);
+}
+
+.c181 {
+  background-color: #7d7c8c;
+  clip-path: polygon($p481, $p461, $p459);
+}
+
+.c182 {
+  background-color: #212028;
+  clip-path: polygon($p208, $p209, $p458);
+}
+
+.c183 {
+  background-color: #212028;
+  clip-path: polygon($p212, $p463, $p464);
+}
+
+.c184 {
+  background-color: #4f4e5e;
+  clip-path: polygon($p212, $p461, $p463);
+}
+
+.c185 {
+  background-color: #5f1828;
+  clip-path: polygon($p209, $p457, $p456);
+}
+
+.c186 {
+  background-color: #212028;
+  clip-path: polygon($p209, $p457, $p458);
+}
+
+.c187 {
+  background-color: #04030b;
+  clip-path: polygon($p209, $p454, $p456);
+}
+
+.c188 {
+  background-color: #0c0b11;
+  clip-path: polygon($p209, $p454, $p453);
+}
+
+.c190 {
+  background-color: #292732;
+  clip-path: polygon($p459, $p460, $p461);
+}
+
+.c191 {
+  background-color: #1b1b27;
+  clip-path: polygon($p459, $p460, $p455);
+}
+
+.c192 {
+  background-color: #7a7989;
+  clip-path: polygon($p452, $p460, $p461);
+}
+
+.c193 {
+  background-color: #9796a6;
+  clip-path: polygon($p452, $p460, $p455);
+}
+
+.c194 {
+  background-color: #282633;
+  clip-path: polygon($p452, $p453, $p455);
+}
+
+.c195 {
+  background-color: #1f1d2a;
+  clip-path: polygon($p452, $p453, $p448);
+}
+
+.c196 {
+  background-color: #282737;
+  clip-path: polygon($p452, $p462, $p461);
+}
+
+.c197 {
+  background-color: #2f2e3e;
+  clip-path: polygon($p452, $p462, $p448);
+}
+
+.c198 {
+  background-color: #777686;
+  clip-path: polygon($p462, $p463, $p461);
+}
+
+.c199 {
+  background-color: #8c8b9b;
+  clip-path: polygon($p462, $p463, $p466);
+}
+
+.c200 {
+  background-color: #555464;
+  clip-path: polygon($p451, $p466, $p462);
+}
+
+.c201 {
+  background-color: #3b3b47;
+  clip-path: polygon($p451, $p466, $p450);
+}
+
+.c202 {
+  background-color: #1d1b26;
+  clip-path: polygon($p451, $p448, $p462);
+}
+
+.c203 {
+  background-color: #252233;
+  clip-path: polygon($p451, $p448, $p449);
+}
+
+.c204 {
+  background-color: #23212e;
+  clip-path: polygon($p449, $p450, $p451);
+}
+
+.c205 {
+  background-color: #5a5969;
+  clip-path: polygon($p466, $p467, $p450);
+}
+
+.c206 {
+  background-color: #32323e;
+  clip-path: polygon($p466, $p467, $p465);
+}
+
+.c207 {
+  background-color: #363844;
+  clip-path: polygon($p464, $p465, $p463);
+}
+
+.c208 {
+  background-color: #212028;
+  clip-path: polygon($p464, $p465, $p469);
+}
+
+.c209 {
+  background-color: #858591;
+  clip-path: polygon($p465, $p463, $p466);
+}
+
+.c210 {
+  background-color: #212028;
+  clip-path: polygon($p465, $p467, $p469);
+}
+
+.c211 {
+  background-color: #70131e;
+  clip-path: polygon($p470, $p480, $p468);
+}
+
+.c212 {
+  background-color: #210e21;
+  clip-path: polygon($p470, $p480, $p471);
+}
+
+.c213 {
+  background-color: #26142a;
+  clip-path: polygon($p469, $p470, $p478, $p473);
+}
+
+.c214 {
+  background-color: #36051b;
+  clip-path: polygon($p469, $p418, $p472);
+}
+
+.c215 {
+  background-color: #000009;
+  clip-path: polygon($p413, $p471, $p479);
+}
+
+.c216 {
+  background-color: #10101a;
+  clip-path: polygon($p413, $p471, $p480);
+}
+
+.c217 {
+  background-color: #212028;
+  clip-path: polygon($p450, $p472, $p467);
+}
+
+.c218 {
+  background-color: #3b3849;
+  clip-path: polygon($p472, $p450, $p429);
+}
+
+.c219 {
+  background-color: #232a32;
+  clip-path: polygon($p429, $p482, $p472);
+}
+
+.c220 {
+  background-color: #b81e38;
+  clip-path: polygon($p429, $p482, $p428);
+}
+
+.c221 {
+  background-color: #a80e4c;
+  clip-path: polygon($p418, $p482, $p472);
+}
+
+.c222 {
+  background-color: #970b30;
+  clip-path: polygon($p418, $p482, $p421);
+}
+
+.c223 {
+  background-color: #7f0117;
+  clip-path: polygon($p421, $p428, $p482);
+}
+
+.c224 {
+  background-color: #000000;
+  clip-path: polygon($p421, $p428, $p427);
+}
+
+.c225 {
+  background-color: #171721;
+  clip-path: polygon($p473, $p477, $p479);
+}
+
+.c226 {
+  background-color: #181822;
+  clip-path: polygon($p473, $p477, $p474);
+}
+
+.c227 {
+  background-color: #444450;
+  clip-path: polygon($p471, $p478, $p479);
+}
+
+.c228 {
+  background-color: #690f1b;
+  clip-path: polygon($p402, $p414, $p413);
+}
+
+.c229 {
+  background-color: #931b34;
+  clip-path: polygon($p402, $p414, $p403);
+}
+
+.c230 {
+  background-color: #4f0b18;
+  clip-path: polygon($p364, $p402, $p413);
+}
+
+.c231 {
+  background-color: #a92441;
+  clip-path: polygon($p414, $p479, $p403);
+}
+
+.c232 {
+  background-color: #060b11;
+  clip-path: polygon($p414, $p479, $p413);
+}
+
+.c233 {
+  background-color: #42394c;
+  clip-path: polygon($p403, $p415, $p404);
+}
+
+.c234 {
+  background-color: #c2344a;
+  clip-path: polygon($p403, $p415, $p477);
+}
+
+.c235 {
+  background-color: #a92441;
+  clip-path: polygon($p403, $p477, $p479);
+}
+
+.c236 {
+  background-color: #5f5e6e;
+  clip-path: polygon($p404, $p418, $p405);
+}
+
+.c237 {
+  background-color: #a6a6ae;
+  clip-path: polygon($p404, $p418, $p417);
+}
+
+.c238 {
+  background-color: #15131e;
+  clip-path: polygon($p415, $p419, $p418);
+}
+
+.c239 {
+  background-color: #40404c;
+  clip-path: polygon($p404, $p417, $p415);
+}
+
+.c240 {
+  background-color: #555561;
+  clip-path: polygon($p415, $p476, $p477);
+}
+
+.c241 {
+  background-color: #0d0d19;
+  clip-path: polygon($p415, $p476, $p416);
+}
+
+.c242 {
+  background-color: #212028;
+  clip-path: polygon($p416, $p475, $p476);
+}
+
+.c243 {
+  background-color: #474753;
+  clip-path: polygon($p416, $p475, $p419);
+}
+
+.c244 {
+  background-color: #212028;
+  clip-path: polygon($p474, $p475, $p419);
+}
+
+.c245 {
+  background-color: #212028;
+  clip-path: polygon($p405, $p406, $p418);
+}
+
+.c246 {
+  background-color: #212028;
+  clip-path: polygon($p407, $p420, $p421);
+}
+
+.c247 {
+  background-color: #100e19;
+  clip-path: polygon($p407, $p420, $p418);
+}
+
+.c248 {
+  background-color: #212028;
+  clip-path: polygon($p406, $p422, $p421);
+}
+
+.c249 {
+  background-color: #171c22;
+  clip-path: polygon($p406, $p422, $p408);
+}
+
+.c250 {
+  background-color: #000004;
+  clip-path: polygon($p406, $p421, $p407);
+}
+
+.c251 {
+  background-color: #646470;
+  clip-path: polygon($p429, $p449, $p430);
+}
+
+.c252 {
+  background-color: #343440;
+  clip-path: polygon($p429, $p449, $p450);
+}
+
+.c253 {
+  background-color: #b74358;
+  clip-path: polygon($p425, $p429, $p428);
+}
+
+.c254 {
+  background-color: #c53149;
+  clip-path: polygon($p425, $p429, $p430);
+}
+
+.c255 {
+  background-color: #212028;
+  clip-path: polygon($p426, $p428, $p425);
+}
+
+.c256 {
+  background-color: #212028;
+  clip-path: polygon($p426, $p428, $p427);
+}
+
+.c257 {
+  background-color: #a92846;
+  clip-path: polygon($p425, $p431, $p429);
+}
+
+.c258 {
+  background-color: #8f1933;
+  clip-path: polygon($p425, $p431, $p432);
+}
+
+.c259 {
+  background-color: #212028;
+  clip-path: polygon($p425, $p433, $p426);
+}
+
+.c260 {
+  background-color: #4f4850;
+  clip-path: polygon($p425, $p433, $p432);
+}
+
+.c261 {
+  background-color: #d14c5f;
+  clip-path: polygon($p427, $p424, $p426);
+}
+
+.c262 {
+  background-color: #bf3447;
+  clip-path: polygon($p427, $p424, $p422);
+}
+
+.c263 {
+  background-color: #0b0a0f;
+  clip-path: polygon($p421, $p422, $p427);
+}
+
+.c264 {
+  background-color: #c43c54;
+  clip-path: polygon($p422, $p408, $p424);
+}
+
+.c265 {
+  background-color: #cf7c86;
+  clip-path: polygon($p408, $p436, $p423);
+}
+
+.c266 {
+  background-color: #c46a74;
+  clip-path: polygon($p408, $p436, $p409);
+}
+
+.c267 {
+  background-color: #dc8c97;
+  clip-path: polygon($p423, $p435, $p424);
+}
+
+.c268 {
+  background-color: #c46a76;
+  clip-path: polygon($p423, $p435, $p436);
+}
+
+.c269 {
+  background-color: #bb5f6a;
+  clip-path: polygon($p424, $p434, $p433);
+}
+
+.c270 {
+  background-color: #d07d87;
+  clip-path: polygon($p424, $p434, $p435);
+}
+
+.c271 {
+  background-color: #cc707f;
+  clip-path: polygon($p424, $p426, $p433);
+}
+
+.c272 {
+  background-color: #414050;
+  clip-path: polygon($p431, $p449, $p430);
+}
+
+.c273 {
+  background-color: #4c4b5b;
+  clip-path: polygon($p431, $p449, $p448);
+}
+
+.c274 {
+  background-color: #212028;
+  clip-path: polygon($p447, $p448, $p431);
+}
+
+.c275 {
+  background-color: #191925;
+  clip-path: polygon($p447, $p448, $p453);
+}
+
+.c276 {
+  background-color: #1a1825;
+  clip-path: polygon($p431, $p444, $p443);
+}
+
+.c277 {
+  background-color: #050716;
+  clip-path: polygon($p431, $p444, $p447);
+}
+
+.c278 {
+  background-color: #580f1a;
+  clip-path: polygon($p432, $p443, $p431);
+}
+
+.c279 {
+  background-color: #591c24;
+  clip-path: polygon($p432, $p443, $p442);
+}
+
+.c280 {
+  background-color: #212028;
+  clip-path: polygon($p432, $p441, $p433);
+}
+
+.c281 {
+  background-color: #212028;
+  clip-path: polygon($p432, $p441, $p442);
+}
+
+.c282 {
+  background-color: #540c1a;
+  clip-path: polygon($p434, $p441, $p433);
+}
+
+.c283 {
+  background-color: #530b19;
+  clip-path: polygon($p434, $p441, $p438);
+}
+
+.c284 {
+  background-color: #61101f;
+  clip-path: polygon($p435, $p438, $p434);
+}
+
+.c285 {
+  background-color: #961e3a;
+  clip-path: polygon($p435, $p438, $p437);
+}
+
+.c286 {
+  background-color: #79112a;
+  clip-path: polygon($p409, $p437, $p435);
+}
+
+.c287 {
+  background-color: #791d32;
+  clip-path: polygon($p409, $p437, $p410);
+}
+
+.c288 {
+  background-color: #56121f;
+  clip-path: polygon($p438, $p440, $p441);
+}
+
+.c290 {
+  background-color: #751d29;
+  clip-path: polygon($p438, $p440, $p439);
+}
+
+.c291 {
+  background-color: #591524;
+  clip-path: polygon($p411, $p439, $p412);
+}
+
+.c292 {
+  background-color: #6d152b;
+  clip-path: polygon($p411, $p439, $p438);
+}
+
+.c293 {
+  background-color: #460911;
+  clip-path: polygon($p410, $p411, $p438);
+}
+
+.c295 {
+  background-color: #212028;
+  clip-path: polygon($p440, $p441, $p442);
+}
+
+.c296 {
+  background-color: #010101;
+  clip-path: polygon($p443, $p444, $p442);
+}
+
+.c294 {
+  background-color: #010101;
+  clip-path: polygon($p440, $p444, $p563);
+}
+
+.c297 {
+  background-color: #0c0b13;
+  clip-path: polygon($p561, $p563, $p444);
+}
+
+.c298 {
+  background-color: #010101;
+  clip-path: polygon($p563, $p562, $p561);
+}
+
+.c299 {
+  background-color: #212028;
+  clip-path: polygon($p555, $p556, $p559, $p558);
+}
+
+.c300 {
+  background-color: #212028;
+  clip-path: polygon($p556, $p557, $p560, $p559);
+}
+
+.c301 {
+  background-color: #4f4d5a;
+  clip-path: polygon($p543, $p550, $p542);
+}
+
+.c302 {
+  background-color: #212028;
+  clip-path: polygon($p543, $p550, $p551);
+}
+
+.c303 {
+  background-color: #4f4d5a;
+  clip-path: polygon($p541, $p542, $p540);
+}
+
+.c304 {
+  background-color: #212028;
+  clip-path: polygon($p541, $p542, $p543);
+}
+
+.c305 {
+  background-color: #4f4d5a;
+  clip-path: polygon($p540, $p538, $p530);
+}
+
+.c306 {
+  background-color: #282633;
+  clip-path: polygon($p540, $p538, $p541);
+}
+
+.c307 {
+  background-color: #4f4d5a;
+  clip-path: polygon($p530, $p529, $p528);
+}
+
+.c308 {
+  background-color: #212028;
+  clip-path: polygon($p530, $p529, $p538);
+}
+
+.c309 {
+  background-color: #212028;
+  clip-path: polygon($p528, $p524, $p522);
+}
+
+.c309 {
+  background-color: #4f4d5a;
+  clip-path: polygon($p528, $p524, $p522);
+}
+
+.c310 {
+  background-color: #212028;
+  clip-path: polygon($p528, $p524, $p529);
+}
+
+.c311 {
+  background-color: #4f4d5a;
+  clip-path: polygon($p522, $p517, $p515);
+}
+
+.c312 {
+  background-color: #212028;
+  clip-path: polygon($p522, $p517, $p524);
+}
+
+.c313 {
+  background-color: #4f4d5a;
+  clip-path: polygon($p515, $p513, $p511);
+}
+
+.c314 {
+  background-color: #212028;
+  clip-path: polygon($p515, $p513, $p517);
+}
+
+.c315 {
+  background-color: #4f4d5a;
+  clip-path: polygon($p511, $p508, $p507);
+}
+
+.c316 {
+  background-color: #212028;
+  clip-path: polygon($p511, $p508, $p513);
+}
+
+.c317 {
+  background-color: #4f4d5a;
+  clip-path: polygon($p505, $p507, $p501);
+}
+
+.c318 {
+  background-color: #212028;
+  clip-path: polygon($p505, $p507, $p508);
+}
+
+.c319 {
+  background-color: #212028;
+  clip-path: polygon($p501, $p502, $p503, $p504, $p506, $p505);
+}
+
+.c320 {
+  background-color: #212028;
+  clip-path: polygon($p506, $p508, $p505);
+}
+
+.c321 {
+  background-color: #212028;
+  clip-path: polygon($p506, $p508, $p514);
+}
+
+.c322 {
+  background-color: #212028;
+  clip-path: polygon($p514, $p517, $p508);
+}
+
+.c323 {
+  background-color: #212028;
+  clip-path: polygon($p514, $p517, $p527);
+}
+
+.c324 {
+  background-color: #212028;
+  clip-path: polygon($p527, $p529, $p517);
+}
+
+.c325 {
+  background-color: #212028;
+  clip-path: polygon($p527, $p529, $p539);
+}
+
+.c326 {
+  background-color: #212028;
+  clip-path: polygon($p539, $p541, $p529);
+}
+
+.c327 {
+  background-color: #212028;
+  clip-path: polygon($p539, $p541, $p546);
+}
+
+.c328 {
+  background-color: #212028;
+  clip-path: polygon($p551, $p546, $p552);
+}
+
+.c329 {
+  background-color: #212028;
+  clip-path: polygon($p551, $p546, $p541);
+}
+
+.c330 {
+  background-color: #20202c;
+  clip-path: polygon($p506, $p509, $p504);
+}
+
+.c331 {
+  background-color: #0a0a16;
+  clip-path: polygon($p506, $p509, $p510);
+}
+
+.c332 {
+  background-color: #212028;
+  clip-path: polygon($p510, $p512, $p509);
+}
+
+.c333 {
+  background-color: #0a0a16;
+  clip-path: polygon($p510, $p512, $p514);
+}
+
+.c334 {
+  background-color: #212028;
+  clip-path: polygon($p514, $p516, $p512);
+}
+
+.c335 {
+  background-color: #0a0a16;
+  clip-path: polygon($p514, $p516, $p521);
+}
+
+.c336 {
+  background-color: #212028;
+  clip-path: polygon($p521, $p526, $p516);
+}
+
+.c337 {
+  background-color: #0a0a16;
+  clip-path: polygon($p521, $p526, $p527);
+}
+
+.c338 {
+  background-color: #0a0a16;
+  clip-path: polygon($p526, $p527, $p521);
+}
+
+.c339 {
+  background-color: #212028;
+  clip-path: polygon($p526, $p527, $p533);
+}
+
+.c340 {
+  background-color: #0a0a16;
+  clip-path: polygon($p533, $p534, $p527);
+}
+
+.c341 {
+  background-color: #212028;
+  clip-path: polygon($p533, $p534, $p535);
+}
+
+.c342 {
+  background-color: #0a0a16;
+  clip-path: polygon($p535, $p539, $p534);
+}
+
+.c343 {
+  background-color: #212028;
+  clip-path: polygon($p535, $p539, $p544);
+}
+
+.c344 {
+  background-color: #0a0a16;
+  clip-path: polygon($p544, $p545, $p539);
+}
+
+.c345 {
+  background-color: #212028;
+  clip-path: polygon($p544, $p545, $p547);
+}
+
+.c346 {
+  background-color: #0a0a16;
+  clip-path: polygon($p546, $p547, $p545);
+}
+
+.c347 {
+  background-color: #212028;
+  clip-path: polygon($p546, $p547, $p553);
+}
+
+.c348 {
+  background-color: #0a0a16;
+  clip-path: polygon($p546, $p552, $p553);
+}
+
+.c349 {
+  background-color: #212028;
+  clip-path: polygon($p519, $p523, $p518);
+}
+
+.c350 {
+  background-color: #2d2c3a;
+  clip-path: polygon($p519, $p523, $p526);
+}
+
+.c351 {
+  background-color: #0a0a16;
+  clip-path: polygon($p526, $p531, $p535);
+}
+
+.c352 {
+  background-color: #2d2c3a;
+  clip-path: polygon($p526, $p531, $p523);
+}
+
+.c353 {
+  background-color: #0a0a16;
+  clip-path: polygon($p547, $p531, $p535);
+}
+
+.c354 {
+  background-color: #0a0a16;
+  clip-path: polygon($p520, $p523, $p518);
+}
+
+.c355 {
+  background-color: #0a0a16;
+  clip-path: polygon($p520, $p523, $p525);
+}
+
+.c356 {
+  background-color: #0a0a16;
+  clip-path: polygon($p525, $p531, $p523);
+}
+
+.c357 {
+  background-color: #0a0a16;
+  clip-path: polygon($p525, $p531, $p532);
+}
+
+.c358 {
+  background-color: #0a0a16;
+  clip-path: polygon($p532, $p536, $p531);
+}
+
+.c359 {
+  background-color: #0a0a16;
+  clip-path: polygon($p532, $p536, $p537);
+}
+
+.c360 {
+  background-color: #0a0a16;
+  clip-path: polygon($p537, $p547, $p536);
+}
+
+.c361 {
+  background-color: #0a0a16;
+  clip-path: polygon($p537, $p547, $p548);
+}
+
+.c362 {
+  background-color: #0a0a16;
+  clip-path: polygon($p553, $p548, $p547);
+}
+
+.c363 {
+  background-color: #212028;
+  clip-path: polygon($p553, $p548, $p554);
+}
+
+.c364 {
+  background-color: #212028;
+  clip-path: polygon($p550, $p551, $p556, $p555);
+}
+
+.c365 {
+  background-color: #212028;
+  clip-path: polygon($p551, $p556, $p557, $p552);
+}
+
+.c366 {
+  background-color: #212028;
+  clip-path: polygon($p552, $p553, $p557);
+}
+
+.c367 {
+  background-color: #2f2e40;
+  clip-path: polygon($p23, $p22, $p21, $p35);
+}
+
+.c368 {
+  background-color: #221f30;
+  clip-path: polygon($p2, $p3, $p4, $p35);
+}
+
+.c369 {
+  background-color: #0a0a16;
+  clip-path: polygon($p447, $p444, $p565, $p564);
+}
+
+.shine {
   opacity: 0.6;
 }
 

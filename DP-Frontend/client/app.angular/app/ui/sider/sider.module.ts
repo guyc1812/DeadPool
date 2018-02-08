@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {CommonModule}  from '@angular/common';
+import {CommonModule} from '@angular/common';
 import {SiderComponent} from "./sider.component";
 import {SiderItemComponent} from "./sider-item/sider-item.component";
 import {RouterModule} from "@angular/router";
@@ -15,10 +15,11 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     SiderComponent,
     SiderItemComponent
   ],
-  exports:[
+  exports: [
     SiderComponent,
     SiderItemComponent
   ]
 })
 
-export class SiderModule {}
+export class SiderModule {
+}

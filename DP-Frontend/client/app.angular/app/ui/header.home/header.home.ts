@@ -60,5 +60,4 @@ export class HeaderHomeComponent {
     this.router.navigate([`/home`]);
   }
 
-
 }

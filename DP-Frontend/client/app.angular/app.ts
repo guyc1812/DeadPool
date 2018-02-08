@@ -10,3 +10,11 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppBrowserModule)
   .catch(err => console.log(err));
+
+
+try {
+  // remove place holder page when js is fully loaded
+  document.getElementById("ph").style.display = 'none';
+} catch (e) {
+  // ignore
+}

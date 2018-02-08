@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'deadpool',
@@ -8,23 +9,23 @@ import {Component} from '@angular/core';
 
 export class DeadpoolComponent {
 
-  flag:boolean;
+  flag: boolean;
 
-  ngOnInit(){
+  ngOnInit() {
     this.flag = true;
   }
 
-  closeEye(){
-    if(this.flag){
+  closeEye() {
+    if (this.flag) {
       this.flag = false;
       let c7 = $('.c7');
-      c7.css("background-color","#00070d");
-      setTimeout(()=>{
-        c7.css("background-color","#ffffff");
-      },200);
-      setTimeout(()=>{
+      c7.css("background-color", "#00070d");
+      setTimeout(() => {
+        c7.css("background-color", "#ffffff");
+      }, 200);
+      setTimeout(() => {
         this.flag = true;
-      },10000)
+      }, 10000)
     }
   }
 

@@ -6,11 +6,11 @@ import '../../pubilc/css/cssLib/whiteframe.css'
 import '../../pubilc/css/cleanup.css'
 import '../../pubilc/css/custom.css'
 
-
 @Component({
   selector: 'app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {}
+export class AppComponent {
+}

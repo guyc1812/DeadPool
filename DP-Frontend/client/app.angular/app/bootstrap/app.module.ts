@@ -1,4 +1,4 @@
-import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
+import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ReactiveFormsModule} from '@angular/forms';
@@ -11,6 +11,8 @@ import {NoteModule} from "../pages/note/note.module";
 import {FOFModule} from "../pages/404/FOF.module";
 import {SiderState} from "../service/siderState/sider.state.store";
 import {AdminModule} from "../pages/admin/admin.module";
+import {PopService} from "../service/popService/popService";
+import {HttpService} from "../service/httpService/httpService";
 
 @NgModule({
   imports: [
@@ -31,7 +33,11 @@ import {AdminModule} from "../pages/admin/admin.module";
   declarations: [
     AppComponent
   ],
-  providers: [SiderState]
+  providers: [
+    SiderState,
+    PopService,
+    HttpService
+  ]
 })
 
 export class AppModule {

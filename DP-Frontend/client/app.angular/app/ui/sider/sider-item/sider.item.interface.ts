@@ -1,5 +1,5 @@
 interface SiderItem {
-  category:string,
+  category: string,
   nav?: string,
   path?: string,
   status: number,

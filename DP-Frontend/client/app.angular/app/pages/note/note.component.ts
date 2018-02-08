@@ -1,13 +1,12 @@
-import {Component, HostListener} from '@angular/core';
+import {Component} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import {autorun} from "mobx";
-
 import {SiderState} from "../../service/siderState/sider.state.store";
 import {SiderItem} from '../../ui/sider/sider-item/sider.item.interface'
-
 import siderList from '../../ui/sider/sider-list/sider.list'
 import {ActivatedRoute} from "@angular/router";
 import {HttpService} from "../../service/httpService/httpService";
+import * as $ from 'jquery';
 
 @Component({
   templateUrl: './note.component.html',
@@ -37,9 +36,9 @@ export class NoteComponent {
 
   mainState: string;
 
-  categories:any;
-  src:string;
-  background:string;
+  categories: any;
+  src: string;
+  background: string;
 
   constructor(private siderState: SiderState,
               private route: ActivatedRoute,
@@ -51,28 +50,28 @@ export class NoteComponent {
 
     this.categories = {
       javaBasic: {
-        src:'assets/images/Stark-symbol.png',
-        background:'radial-gradient(circle farthest-side at right top,#fefdfe 5%,#f8cdda 25%,#1d2b64 80%,#0e153a 98%)'
+        src: 'http://guyuchen.com/deadpool/images/Stark-symbol.png',
+        background: 'radial-gradient(circle farthest-side at right top,#fefdfe 5%,#f8cdda 25%,#1d2b64 80%,#0e153a 98%)'
       },
-      designPattern:  {
-        src:'assets/images/Steven-symbol.png',
-        background:'radial-gradient(circle farthest-side at right top,#233f6e 5%,#9e404a 25%,#381317 80%,#20090b 98%)'
+      designPattern: {
+        src: 'http://guyuchen.com/deadpool/images/Steven-symbol.png',
+        background: 'radial-gradient(circle farthest-side at right top,#233f6e 5%,#9e404a 25%,#381317 80%,#20090b 98%)'
       },
-      algorithm:  {
-        src:'assets/images/Hulk-Symbol.png',
-        background:'radial-gradient(circle farthest-side at right top,#fab64b 5%,#2d582a 25%,#082310 80%,#001204 98%)'
+      algorithm: {
+        src: 'http://guyuchen.com/deadpool/images/Hulk-Symbol.png',
+        background: 'radial-gradient(circle farthest-side at right top,#fab64b 5%,#2d582a 25%,#082310 80%,#001204 98%)'
       },
-      devOps:  {
-        src:'assets/images/Tchalla-symbol.png',
-        background:'radial-gradient(circle farthest-side at right top,#c8b388 5%,#9fbab5 25%,#082310 80%,#162522 98%)'
+      devOps: {
+        src: 'http://guyuchen.com/deadpool/images/Tchalla-symbol.png',
+        background: 'radial-gradient(circle farthest-side at right top,#c8b388 5%,#9fbab5 25%,#082310 80%,#162522 98%)'
       },
-      frontend:  {
-        src:'assets/images/Thor-symbol.png',
-        background:'radial-gradient(circle farthest-side at right top,#fbfef7 5%,#c1792f 25%,#30221f 80%,#1c1115 98%)'
+      frontend: {
+        src: 'http://guyuchen.com/deadpool/images/Thor-symbol.png',
+        background: 'radial-gradient(circle farthest-side at right top,#fbfef7 5%,#c1792f 25%,#30221f 80%,#1c1115 98%)'
       },
-      others:  {
-        src:'assets/images/Strange-symbol.png',
-        background:'radial-gradient(circle farthest-side at right top,#d6df36 5%,#ae7984 25%,#231231 80%,#120323 98%)'
+      others: {
+        src: 'http://guyuchen.com/deadpool/images/Strange-symbol.png',
+        background: 'radial-gradient(circle farthest-side at right top,#d6df36 5%,#ae7984 25%,#231231 80%,#120323 98%)'
       }
     };
 
@@ -104,7 +103,7 @@ export class NoteComponent {
       );
 
     this.disposer = autorun(() => {
-      this.mainState = this.siderState.isBigScreen&&this.siderState.isSiderExpanded ? 'isExpand' : 'noExpand';
+      this.mainState = this.siderState.isBigScreen && this.siderState.isSiderExpanded ? 'isExpand' : 'noExpand';
     });
   }
 
@@ -122,8 +121,8 @@ export class NoteComponent {
     $("html, body").animate({scrollTop: $(document).height() - $(window).height()}, 500);
   }
 
-  toggleMain(){
-    if(this.siderState.isSiderExpanded){
+  toggleMain() {
+    if (this.siderState.isSiderExpanded) {
       this.siderState.setExpandState(false);
     }
   }

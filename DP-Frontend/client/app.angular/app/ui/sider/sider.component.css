@@ -1,11 +1,12 @@
-div{
+div {
   display: block;
   box-sizing: border-box;
 }
-.sider-container{
+
+.sider-container {
   position: relative;
   background: #f3f3f3;
-  box-shadow: 3px 0 3px rgba(0,0,0,.1);
+  box-shadow: 3px 0 3px rgba(0, 0, 0, .1);
   width: 260px;
   flex: 0 0 260px;
   height: 100%;
@@ -15,7 +16,8 @@ div{
   border-bottom: 1px solid #ddd;
   z-index: 1600;
 }
-.sider-list{
+
+.sider-list {
   height: auto;
   width: 100%;
   overflow-y: auto;

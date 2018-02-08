@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {PopService} from "../../service/popService/popService";
 
 @Component({
   selector: 'footer',
@@ -14,9 +15,13 @@ export class FooterComponent {
 
   time: any;
 
-  isClicked:boolean;
+  isClicked: boolean;
 
-  constructor() {
+  pop: boolean;
+
+  constructor(private popService: PopService) {
+
+    this.pop = false;
 
     this.title = 'www.guyuchen.com';
 
@@ -30,7 +35,7 @@ export class FooterComponent {
   }
 
   mouseEnter(con: string) {
-    if(this.title !== this.contact[`${con}`]){
+    if (this.title !== this.contact[`${con}`]) {
       clearTimeout(this.time);
       this.isClicked = false;
       this.title = this.contact[`${con}`];
@@ -38,7 +43,7 @@ export class FooterComponent {
   }
 
   mouseLeave() {
-    if(!this.isClicked){
+    if (!this.isClicked) {
       this.title = 'www.guyuchen.com';
     }
   }
@@ -47,21 +52,23 @@ export class FooterComponent {
     this.isClicked = true;
     clearTimeout(this.time);
     this.title = this.contact[`${con}`];
-    this.time = setTimeout(()=>{
+    this.time = setTimeout(() => {
       this.title = 'www.guyuchen.com';
       this.isClicked = false;
-    },3000);
+    }, 3000);
 
-    if(con==='github'){
+    if (con === 'github') {
       window.open(
         'https://github.com/guyc1812',
         '_blank'
       );
-    } else if (con==='weibo'){
+    } else if (con === 'weibo') {
       window.open(
         'https://weibo.com/guyc1812',
         '_blank'
       );
+    } else if (con === 'wechat') {
+      this.popService.setPop();
     }
   }
 

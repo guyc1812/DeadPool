@@ -1,13 +1,15 @@
-div{
+div {
   display: block;
   box-sizing: border-box;
 }
-.item{
+
+.item {
   width: 100%;
   height: auto;
   position: relative;
 }
-.item-title{
+
+.item-title {
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
@@ -19,15 +21,18 @@ div{
   color: #353c4e;
   padding: 0 5px;
 }
-.item-title:hover{
+
+.item-title:hover {
   background-color: #dbdbdb;
   cursor: pointer;
 }
-.item-title:focus{
+
+.item-title:focus {
   background-color: #ddd;
   outline: none;
 }
-.item-title-text{
+
+.item-title-text {
   display: inline-block;
   box-sizing: border-box;
   height: 40px;
@@ -37,20 +42,24 @@ div{
   text-align: left;
   font-size: 16px;
 }
-.item-title-text:hover{
+
+.item-title-text:hover {
   color: #515c77;
 }
-.item-title-arrow{
+
+.item-title-arrow {
   display: inline-block;
   box-sizing: border-box;
   width: 24px;
   height: 40px;
   padding: 8px 0;
 }
-.item-title-arrow svg{
-  fill:	#5B5B5B;
+
+.item-title-arrow svg {
+  fill: #5B5B5B;
 }
-.item-content{
+
+.item-content {
   width: 100%;
   height: auto;
   padding-left: 10px;

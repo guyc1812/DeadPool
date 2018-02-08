@@ -1,6 +1,6 @@
-.header{
+.header {
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 70px;
@@ -9,7 +9,7 @@
   z-index: 1800;
 }
 
-.header-logo{
+.header-logo {
   position: fixed;
   top: 17px;
   left: 20px;
@@ -33,7 +33,7 @@
   width: 36px;
 }
 
-.category:hover,.header-logo:hover{
+.category:hover, .header-logo:hover {
   cursor: pointer;
 }
 

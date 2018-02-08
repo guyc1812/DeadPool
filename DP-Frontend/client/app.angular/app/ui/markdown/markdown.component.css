@@ -1,19 +1,19 @@
-:host{
+:host {
   width: 100%;
 }
 
-div{
+div {
   display: block;
 }
 
-.markdown{
-  margin: 0 auto;
+.markdown {
+  margin: 0 auto 200px;
   width: 100%;
   max-width: 1200px;
   min-height: 10px;
 }
 
-.loading{
+.loading {
   display: flex;
   height: 100%;
   width: 100%;
@@ -21,7 +21,7 @@ div{
   justify-content: center;
 }
 
-.loading img{
+.loading img {
   display: block;
   width: 80px;
   height: 80px;

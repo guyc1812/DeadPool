@@ -81,22 +81,22 @@
   width: 112px;
 }
 
-.home-main{
+.home-main {
   min-width: 100px;
   height: 100%;
   width: 100%;
-  padding:85px 15px 145px;
+  padding: 85px 15px 145px;
 }
 
-.home-content{
+.home-content {
   min-width: 100px;
   height: 100%;
   width: 100%;
   border-radius: 4px;
-  background:radial-gradient(circle farthest-side at left bottom,#dc8c97 5%,#c43c54 15%,#7f0117 40%,#212028 75%)
+  background: radial-gradient(circle farthest-side at left bottom, #dc8c97 5%, #c43c54 15%, #7f0117 40%, #212028 75%)
 }
 
-.home-content img{
+.home-content img {
   height: 100%;
   width: 100%;
   border-radius: 4px;
@@ -144,7 +144,6 @@
     width: 119px;
   }
 }
-
 
 @media screen and (max-width: 500px) {
 
