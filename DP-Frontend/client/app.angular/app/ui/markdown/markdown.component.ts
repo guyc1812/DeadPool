@@ -28,15 +28,23 @@ export class MarkDownComponent {
     this.loading = true;
     let codePlace = $('#markdown');
     codePlace.html("");
+    codePlace.css("margin-bottom","0");
     this.http.getDoc(this.category, this.id).subscribe(data => {
+      console.log(data);
       let text = data['text'];
       let response = JSON.parse(data['response']);
       if (text === 'error') {
         console.error('get doc error: ' + this.category + '/' + this.id);
-      } else if (text === 'ok') {
+      } else if (text === 'ok'&&response!==null) {
         this.loading = false;
+        codePlace.css("margin-bottom","200px");
         codePlace.append(response['content']);
+      }else {
+        console.error('System Error');
       }
+    },error=>{
+      this.loading = true;
+      console.error('System Error');
     });
   }
 

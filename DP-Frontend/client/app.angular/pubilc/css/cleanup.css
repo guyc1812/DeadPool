@@ -4,8 +4,9 @@ html {
   padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  font-family: "Portrait", "sans-serif";
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
+  overflow: hidden;
   color: #111;
 }
 
@@ -13,11 +14,11 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Portrait", "robotoregular", monospace;
+  font-family: "Portrait", "sans-serif";
   min-height: 100%;
   min-width:10px;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow: hidden;
   color: #111;
 }
 

@@ -25,12 +25,13 @@
   font-weight: 400;
   font-size: 24px;
   color: #333;
-  margin: 5px 0 25px;
+  margin: 15px 0;
 }
 
 .contact {
-  display: block;
-  width: 315px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
   height: 30px;
   margin: 0 auto 5px;
 }
@@ -157,6 +158,15 @@
   .contact-linkedin img {
     width: 20px;
     height: 20px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .footer-content {
+    display: block;
+    width: 300px;
   }
 
 }

@@ -7,17 +7,16 @@ div {
 }
 
 .markdown {
-  margin: 0 auto 200px;
+  margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  min-height: 10px;
+  min-height: 1px;
 }
 
 .loading {
   display: flex;
   height: 100%;
   width: 100%;
-  align-items: center;
   justify-content: center;
 }
 

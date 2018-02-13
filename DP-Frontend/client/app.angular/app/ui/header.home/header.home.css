@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
+  height: 60px;
   border-bottom: 1px solid #ddd;
   background: white;
   z-index: 1800;
@@ -11,7 +11,7 @@
 
 .home-header-logo {
   position: fixed;
-  top: 17px;
+  top: 11px;
   left: 20px;
 }
 
@@ -28,16 +28,17 @@
 
 .home-header-category-title {
   height: 30px;
-  width: auto;
+  width: 100%;
   border-left: solid 1px #ddd;
   font-size: 18px;
   line-height: 29px;
-  padding: 0 20px;
+  padding-left: 15px;
+  overflow: hidden;
 }
 
 .home-header-category-title span {
   color: #333;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .home-header-category-title span:hover, .home-header-logo img:hover {
@@ -46,46 +47,46 @@
 }
 
 .javaBasic {
-  top: 20px;
+  top: 15px;
   left: 76px;
-  width: 114px;
+  width: 104px;
 }
 
 .designPattern {
-  top: 20px;
-  left: 190px;
-  width: 152px;
+  top: 15px;
+  left: 180px;
+  width: 145px;
 }
 
 .algorithm {
-  top: 20px;
-  left: 342px;
-  width: 119px;
-}
-
-.devOps {
-  top: 20px;
-  left: 461px;
-  width: 101px;
-}
-
-.frontend {
-  top: 20px;
-  left: 562px;
+  top: 15px;
+  left: 325px;
   width: 111px;
 }
 
+.devOps {
+  top: 15px;
+  left: 436px;
+  width: 194px;
+}
+
+.frontend {
+  top: 15px;
+  left: 530px;
+  width: 104px;
+}
+
 .others {
-  top: 20px;
-  left: 673px;
-  width: 112px;
+  top: 15px;
+  left: 634px;
+  width: 85px;
 }
 
 .home-main {
   min-width: 100px;
   height: 100%;
   width: 100%;
-  padding: 85px 15px 145px;
+  padding: 75px 15px 130px;
 }
 
 .home-content {
@@ -105,85 +106,108 @@
 @media screen and (max-width: 800px) {
 
   .home-header {
-    height: 120px;
+    height: 100px;
   }
 
   .javaBasic {
-    top: 20px;
+    top: 15px;
     left: 76px;
-    width: 114px;
+    width: 104px;
   }
 
   .designPattern {
-    top: 20px;
-    left: 190px;
-    width: 152px;
+    top: 15px;
+    left: 180px;
+    width: 145px;
   }
 
   .algorithm {
-    top: 20px;
-    left: 342px;
-    width: 119px;
+    top: 15px;
+    left: 325px;
+    width: 111px;
   }
 
   .devOps {
-    top: 70px;
+    top: 55px;
     left: 76px;
-    width: 114px;
+    width: 104px;
   }
 
   .frontend {
-    top: 70px;
-    left: 190px;
-    width: 152px;
+    top: 55px;
+    left: 180px;
+    width: 145px;
   }
 
   .others {
-    top: 70px;
-    left: 342px;
-    width: 119px;
+    top: 55px;
+    left: 325px;
+    width: 111px;
   }
 }
 
 @media screen and (max-width: 500px) {
 
   .home-header {
-    height: 170px;
+    height: 140px;
   }
 
   .javaBasic {
-    top: 20px;
+    top: 15px;
     left: 76px;
-    width: 114px;
+    width: 104px;
   }
 
   .designPattern {
-    top: 20px;
-    left: 190px;
-    width: 152px;
+    top: 15px;
+    left: 180px;
+    width: 145px;
   }
 
   .algorithm {
-    top: 70px;
+    top: 55px;
     left: 76px;
-    width: 114px;
+    width: 104px;
   }
 
   .devOps {
-    top: 70px;
-    left: 190px;
-    width: 152px;
+    top: 55px;
+    left: 180px;
+    width: 145px;
   }
 
   .frontend {
-    top: 120px;
+    top: 95px;
     left: 76px;
-    width: 114px;
+    width: 104px;
   }
 
   .others {
-    top: 120px;
-    left: 190px;
-    width: 152px;
+    top: 95px;
+    left: 180px;
+    width: 145px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home-header-category-title {
+    padding-left: 7px;
+  }
+  .designPattern {
+    top: 15px;
+    left: 177px;
+    width: 145px;
+  }
+
+  .devOps {
+    top: 55px;
+    left: 177px;
+    width: 145px;
+  }
+
+  .others {
+    top: 95px;
+    left: 177px;
+    width: 145px;
   }
 }
