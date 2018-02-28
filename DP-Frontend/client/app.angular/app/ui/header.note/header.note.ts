@@ -63,10 +63,12 @@ export class HeaderNoteComponent {
 
   expand(e: any) {
     e.stopPropagation();
-    if (this.siderState.isSiderExpanded) {
-      this.siderState.setExpandState(false);
-    } else {
-      this.siderState.setExpandState(true);
+    if(this.siderState.isInited){
+      if (this.siderState.isSiderExpanded) {
+        this.siderState.setExpandState(false);
+      } else {
+        this.siderState.setExpandState(true);
+      }
     }
   }
 

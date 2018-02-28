@@ -30,7 +30,6 @@ export class MarkDownComponent {
     codePlace.html("");
     codePlace.css("margin-bottom","0");
     this.http.getDoc(this.category, this.id).subscribe(data => {
-      console.log(data);
       let text = data['text'];
       let response = JSON.parse(data['response']);
       if (text === 'error') {

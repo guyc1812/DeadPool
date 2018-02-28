@@ -43,7 +43,9 @@ export class NoteComponent {
   constructor(private siderState: SiderState,
               private route: ActivatedRoute,
               private http: HttpService) {
+    this.siderState.setInitedState(false);
     this.siderList = siderList;
+    setTimeout(()=>this.siderState.setInitedState(true),500);
   }
 
   ngOnInit() {
