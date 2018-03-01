@@ -6,7 +6,7 @@ html {
   -webkit-font-smoothing: antialiased;
   font-family: "Portrait", "sans-serif";
   text-rendering: optimizeLegibility;
-  overflow: hidden;
+  overflow-x: hidden;
   color: #111;
 }
 
@@ -18,7 +18,7 @@ body {
   min-height: 100%;
   min-width:10px;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
   color: #111;
 }
 

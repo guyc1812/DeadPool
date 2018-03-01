@@ -18,11 +18,11 @@ const distPath = paths.dist;
 Gulp.task('build', cb => {
   runSequence(
     'clean',
-    'build-images',
-    'transpile:server',
+    // 'build-images',
+    // 'transpile:server',
     [
-      'copy:extras',
-      'copy:assets',
+      // 'copy:extras',
+      // 'copy:assets',
       'webpack:dist'
     ],
     cb);
