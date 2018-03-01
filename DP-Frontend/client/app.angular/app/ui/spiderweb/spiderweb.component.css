@@ -19,7 +19,7 @@
 
 .spider-show, .spider-cover {
   left: 0;
-  top: 70px;
+  top: 58px;
 }
 
 .spider-man {
@@ -34,7 +34,7 @@
 
   .spider-show, .spider-cover {
     left: -22px;
-    top: 80px;
+    top: 58px;
   }
 }
 
@@ -45,7 +45,7 @@
 
   .spider-show, .spider-cover {
     left: -80px;
-    top: 28px;
+    top: -2px;
   }
 
 }

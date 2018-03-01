@@ -124,7 +124,7 @@ export class NoteComponent {
   }
 
   toggleMain() {
-    if (this.siderState.isSiderExpanded) {
+    if ((!this.siderState.isBigScreen)&&this.siderState.isSiderExpanded) {
       this.siderState.setExpandState(false);
     }
   }

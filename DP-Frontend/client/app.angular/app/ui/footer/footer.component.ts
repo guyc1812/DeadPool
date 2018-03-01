@@ -28,7 +28,7 @@ export class FooterComponent {
     this.contact = {
       github: 'github.com/guyc1812',
       gmail: 'guyc1812@gmail.com',
-      linkedin: '谷宇晨',
+      linkedin: 'Yuchen Gu',
       wechat: 'wxid_fakeface',
       weibo: 'weibo.com/guyc1812'
     }
@@ -65,6 +65,11 @@ export class FooterComponent {
     } else if (con === 'weibo') {
       window.open(
         'https://weibo.com/guyc1812',
+        '_blank'
+      );
+    } else if (con === 'linkedin') {
+      window.open(
+        'https://linkedin.com/in/yuchen-gu-17881b139',
         '_blank'
       );
     } else if (con === 'wechat') {
