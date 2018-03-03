@@ -14,9 +14,9 @@ import {SiderItem} from "./sider-item/sider.item.interface";
     trigger('siderListExpand', [
       state('isExpand', style({'margin-left': '0'})),
       state('noExpand', style({'margin-left': '-270px'})),
-      transition('* => isExpand', animate('500ms ease-in')),
-      transition('noExpand => isExpand', animate('500ms ease-in')),
-      transition('isExpand => noExpand', animate('500ms ease-out'))
+      transition('* => isExpand', animate('400ms ease-in')),
+      transition('noExpand => isExpand', animate('400ms ease-in')),
+      transition('isExpand => noExpand', animate('400ms ease-out'))
     ])
   ]
 })
@@ -69,7 +69,7 @@ export class SiderComponent {
     setTimeout(() => {
       self.siderState.setInitedState(true);
       self.siderState.setExpandState(this.siderState.isBigScreen);
-    }, 2200);
+    }, 420);
   }
 
   ngOnChanges() {

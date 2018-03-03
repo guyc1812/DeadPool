@@ -23,6 +23,11 @@
             <artifactId>DP-domain</artifactId>
             <version>1.0.snapshot</version>
         </dependency>
+        <dependency>
+            <groupId>com.guyuchen</groupId>
+            <artifactId>DP-core</artifactId>
+            <version>1.0.snapshot</version>
+        </dependency>
     </dependencies>
 
     <build>

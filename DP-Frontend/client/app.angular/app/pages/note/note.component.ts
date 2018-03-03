@@ -15,9 +15,9 @@ import * as $ from 'jquery';
     trigger('mainExpand', [
       state('isExpand', style({'padding-left': '260px'})),
       state('noExpand', style({'padding-left': '0'})),
-      transition('* => isExpand', animate('500ms ease-in')),
-      transition('noExpand => isExpand', animate('500ms ease-in')),
-      transition('isExpand => noExpand', animate('500ms ease-out'))
+      transition('* => isExpand', animate('400ms ease-in')),
+      transition('noExpand => isExpand', animate('400ms ease-in')),
+      transition('isExpand => noExpand', animate('380ms ease-out'))
     ])
   ]
 })
@@ -45,7 +45,7 @@ export class NoteComponent {
               private http: HttpService) {
     this.siderState.setInitedState(false);
     this.siderList = siderList;
-    setTimeout(()=>this.siderState.setInitedState(true),500);
+    setTimeout(()=>this.siderState.setInitedState(true),420);
   }
 
   ngOnInit() {
@@ -116,11 +116,11 @@ export class NoteComponent {
   }
 
   toTop() {
-    $("html, body").animate({scrollTop: 0}, 500);
+    $("html, body").animate({scrollTop: 0}, 400);
   }
 
   toBottom() {
-    $("html, body").animate({scrollTop: $(document).height() - $(window).height()}, 500);
+    $("html, body").animate({scrollTop: $(document).height() - $(window).height()}, 400);
   }
 
   toggleMain() {

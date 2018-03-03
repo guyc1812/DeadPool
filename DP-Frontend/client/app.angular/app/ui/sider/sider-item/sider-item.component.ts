@@ -11,9 +11,9 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
     trigger('siderItemExpand', [
       state('isExpand', style({transform: 'rotate(90deg)'})),
       state('noExpand', style({transform: 'rotate(0deg)'})),
-      transition('* => isExpand', animate('200ms ease-in')),
-      transition('noExpand => isExpand', animate('200ms ease-in')),
-      transition('isExpand => noExpand', animate('200ms ease-in'))
+      transition('* => isExpand', animate('400ms ease-in')),
+      transition('noExpand => isExpand', animate('400ms ease-in')),
+      transition('isExpand => noExpand', animate('400ms ease-in'))
     ])
   ]
 })
