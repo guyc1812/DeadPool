@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnChanges, OnDestroy, OnInit} from '@angular/core';
 import {HttpService} from "../../service/httpService/httpService";
 import * as $ from 'jquery';
 
@@ -8,7 +8,7 @@ import * as $ from 'jquery';
   styleUrls: ['./markdown.component.css'],
 })
 
-export class MarkDownComponent {
+export class MarkDownComponent implements OnInit, OnChanges, OnDestroy {
 
   @Input()
   category: string;
@@ -45,6 +45,10 @@ export class MarkDownComponent {
       this.loading = true;
       console.error('System Error');
     });
+  }
+
+  ngOnDestroy(): void {
+    console.log("destroy")
   }
 
 }

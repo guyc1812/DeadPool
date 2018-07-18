@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnChanges, OnDestroy, OnInit} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import {autorun} from "mobx";
 import {SiderState} from "../../service/siderState/sider.state.store";
@@ -22,7 +22,7 @@ import * as $ from 'jquery';
   ]
 })
 
-export class NoteComponent {
+export class NoteComponent implements OnInit, OnDestroy{
 
   // Input values
   id: string;
