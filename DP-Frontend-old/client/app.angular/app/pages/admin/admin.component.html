@@ -1,0 +1,131 @@
+<header-home></header-home>
+
+<div class="home-main">
+
+  <div class="home-content">
+
+    <div class="update-single">
+      <div style="display: block;font-size: 20px;height: 30px;line-height: 30px">Update Single</div>
+      <div style="display: block;font-size: 20px;height: 34px;width: 650px">
+        <form>
+          <input style="vertical-align: top;width: 200px;height: 34px;border-radius: 3px" type="text" id="Repo"
+                 name="Repo" placeholder="Repo" [(ngModel)]="repo">
+          <input style="vertical-align: top;width: 360px;height: 34px;border-radius: 3px" type="text" id="Nav"
+                 name="Nav"
+                 placeholder="Nav" [(ngModel)]="nav">
+          <button style="vertical-align: top" class="btn btn-outline update-btn" (click)="updateSingle()">Update
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="update-batch update">
+
+      <div style="display: block;font-size: 20px;height: 30px;line-height: 30px">Update Batch</div>
+      <div style="display: block">
+        <table>
+          <thead>
+          <tr>
+            <th style="width: 100px;text-align: left">Owner</th>
+            <th style="width: 100px;text-align: left">Repo</th>
+            <th style="width: 100px;text-align: left">Branch</th>
+            <th style="width: 170px;text-align: left">Category</th>
+            <th style="width: 100px">Update</th>
+            <th style="width: 100px">Add</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>guyc1812</td>
+            <td>Stark</td>
+            <td>master</td>
+            <td>Java Basic</td>
+            <td style="text-align: center;width: 120px">
+              <button class="btn btn-outline update-btn" (click)="update('javaBasic')">Update</button>
+            </td>
+            <td style="text-align: center;width: 120px">
+              <button class="btn btn-outline update-btn" (click)="add('javaBasic')">Add</button>
+            </td>
+          </tr>
+          <tr>
+            <td>guyc1812</td>
+            <td>Rogers</td>
+            <td>master</td>
+            <td>Design Pattern</td>
+            <td style="text-align: center;width: 120px">
+              <button class="btn btn-outline update-btn" (click)="update('designPattern')">Update</button>
+            </td>
+            <td style="text-align: center;width: 120px">
+              <button class="btn btn-outline update-btn" (click)="add('designPattern')">Add</button>
+            </td>
+          </tr>
+          <tr>
+            <td>guyc1812</td>
+            <td>Banner</td>
+            <td>master</td>
+            <td>Algorithm</td>
+            <td style="text-align: center;width: 120px">
+              <button class="btn btn-outline update-btn" (click)="update('algorithm')">Update</button>
+            </td>
+            <td style="text-align: center;width: 120px">
+              <button class="btn btn-outline update-btn" (click)="add('algorithm')">Add</button>
+            </td>
+          </tr>
+          <tr>
+            <td>guyc1812</td>
+            <td>Thor</td>
+            <td>master</td>
+            <td>Frontend</td>
+            <td style="text-align: center;width: 120px">
+              <button class="btn btn-outline update-btn" (click)="update('frontend')">Update</button>
+            </td>
+            <td style="text-align: center;width: 120px">
+              <button class="btn btn-outline update-btn" (click)="add('frontend')">Add</button>
+            </td>
+          </tr>
+          <tr>
+            <td>guyc1812</td>
+            <td>Tchalla</td>
+            <td>master</td>
+            <td>DevOps</td>
+            <td style="text-align: center;width: 120px">
+              <button class="btn btn-outline update-btn" (click)="update('devOps')">Update</button>
+            </td>
+            <td style="text-align: center;width: 120px">
+              <button class="btn btn-outline update-btn" (click)="add('devOps')">Add</button>
+            </td>
+          </tr>
+          <tr>
+            <td>guyc1812</td>
+            <td>Strange</td>
+            <td>master</td>
+            <td>Others</td>
+            <td style="text-align: center;width: 120px">
+              <button class="btn btn-outline update-btn" (click)="update('others')">Update</button>
+            </td>
+            <td style="text-align: center;width: 120px">
+              <button class="btn btn-outline update-btn" (click)="add('others')">Add</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="infoPanel">
+        <div class="alert alert-success info" *ngIf="isSuccess" role="alert">
+          <strong>SUCCESS!&nbsp;&nbsp;</strong>{{warningMessages}}
+        </div>
+        <div class="alert alert-danger info" *ngIf="isAlert" role="alert">
+          <strong>SORRY!&nbsp;&nbsp;</strong>{{warningMessages}}
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+<footer></footer>

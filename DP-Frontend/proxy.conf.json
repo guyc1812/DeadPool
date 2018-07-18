@@ -1,0 +1,6 @@
+{
+  "/api": {
+    "target": "https://www.guyuchen.com",
+    "secure": false
+  }
+}

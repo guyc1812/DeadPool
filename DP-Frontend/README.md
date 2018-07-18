@@ -1,107 +1,27 @@
-# ssr test
+# Dp
 
-### Upgrade for package.json
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
-note the ng5 requires typescript >= 2.4
+## Development server
 
-```json
-{
-  "dependencies": {
-      "@angular/animations": "^5.0.0-rc.8",
-      "@angular/common": "^5.0.0-rc.8",
-      "@angular/compiler": "^5.0.0-rc.8",
-      "@angular/core": "^5.0.0-rc.8",
-      "@angular/forms": "^5.0.0-rc.8",
-      "@angular/http": "^5.0.0-rc.8",
-      "@angular/platform-browser": "^5.0.0-rc.8",
-      "@angular/platform-browser-dynamic": "^5.0.0-rc.8",
-      "@angular/platform-server": "^5.0.0-rc.8",
-      "@angular/router": "^5.0.0-rc.8",
-      "@nguniversal/express-engine": "^5.0.0-beta.4",
-      "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.4",
-      "core-js": "^2.4.1",
-      "rxjs": "^5.5.2",
-      "zone.js": "^0.8.14"
-   },
-  "devDependencies": {
-      "@angular/cli": "1.5.0-rc.6",
-      "@angular/compiler-cli": "^5.0.0-rc.8",
-      "@angular/language-service": "^5.0.0-rc.8",
-      "@types/node": "^8.0.30",
-      "cpy-cli": "^1.0.1",
-      "express": "^4.15.2",
-      "http-server": "^0.10.0",
-      "reflect-metadata": "^0.1.10",
-      "ts-loader": "^2.3.7",
-      "typescript": "~2.4.2",
-      "webpack": "^3.8.1",
-      "extract-text-webpack-plugin": "^3.0.2",
-      "webpack-node-externals": "^1.6.0"
-   }
-}
-``` 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-### Added new files
+## Code scaffolding
 
-* angular-cli.json
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-* tsconfig for angular-cli
-    * client/app.ng2/tsconfig.app.json
-    * client/app.ng2/tsconfig.server.json
-    
-* environment for angular-cli
-    * client/app.ng2/environments/environment.ts
-    * client/app.ng2/environments/environment.prod.ts
-    
-* ng-root-module
-    * client/app.ng2/app/app.module.ts
-    * client/app.ng2/app/app.server.module.ts
-    
-* ng-main-entry
-    * client/app.ng2/app.ts
-    * client/app.ng2/app.server.ts
-    
-* server.ssr
-    * server.ts
-    * prerender.ts
-    * static.paths.ts   //ssr-route
+## Build
 
-* webpack for ssr-server
-    * webpack/ng2/webpack.ssr.js
-    
-### Scripts
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-dev
-```bash
-  gulp serve                   # listen on 3000
-```
+## Running unit tests
 
-prod
-* build without ssr
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-    ```bash
-      gulp build --env prod     # dist | - client/
-                                #        - server/                                   
-      gulp start:server:prod    # listen on 8080
-    ```
+## Running end-to-end tests
 
-* build with ssr
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-    ```bash
-      gulp build:ssr            # dist | - client/
-                                #        - client-ssr/
-                                #        - server/
-                                #        - server-ssr/
-                              
-      gulp start:server:ssr     # listen on 4000
-      
-      # or directly
-      gulp serve:ssr            # listen on 4000
-    ```
+## Further help
 
-* build ssr only
-
-    ```bash
-      gulp build:ssr-only       # dist | - client-ssr/
-                                #        - server-ssr/
-    ```
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

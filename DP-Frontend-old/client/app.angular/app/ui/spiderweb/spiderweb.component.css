@@ -1,0 +1,51 @@
+.spider-cover {
+  clip-path: polygon(39% 11%, 29% 27%, 9% 37%, 1% 46%, 2% 52%, 22% 58%, 17% 74%, 32% 84%, 27% 92%, 35% 99%, 43% 100%, 50% 97%, 54% 92%, 54% 84%, 62% 84%, 79% 74%, 78% 83%, 70% 85%, 76% 87%, 76% 93%, 85% 91%, 86% 84%, 89% 81%, 87% 67%, 64% 71%, 61% 55%, 89% 51%, 97% 47%, 98% 42%, 84% 36%, 53% 28%);
+}
+
+.spider-cover:hover {
+  cursor: pointer;
+}
+
+.spider, .spider-cover {
+  position: fixed;
+  z-index: 1700;
+  top: -340px;
+  left: 0;
+  transition: top 1s;
+  transition-timing-function: ease-in-out;
+  width: 227px;
+  height: 400px;
+}
+
+.spider-show, .spider-cover {
+  left: 0;
+  top: 58px;
+}
+
+.spider-man {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .spider, .spider-cover {
+    transform: scale(0.8, 0.8);
+  }
+
+  .spider-show, .spider-cover {
+    left: -22px;
+    top: 58px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .spider, .spider-cover {
+    transform: scale(0.3, 0.3);
+  }
+
+  .spider-show, .spider-cover {
+    left: -80px;
+    top: -2px;
+  }
+
+}

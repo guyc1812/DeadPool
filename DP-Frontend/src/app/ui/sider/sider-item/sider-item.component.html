@@ -1,0 +1,17 @@
+<div class="item">
+
+  <button class="item-title" (click)="toggleOrNav(item)">
+    <span class="item-title-text">{{item.title}}</span>
+    <span class="item-title-arrow" *ngIf="item.items&&item.items.length!==0" [@siderItemExpand]="animationState">
+      <svg height="24" viewBox="0 0 24 24" width="24" xmlns="https://www.w3.org/2000/svg">
+        <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"/>
+        <path d="M0-.25h24v24H0z" fill="none"/>
+      </svg>
+    </span>
+  </button>
+
+  <div class="item-content" *ngIf="expand">
+    <sider-item *ngFor="let item of item.items" [item]="item"></sider-item>
+  </div>
+
+</div>

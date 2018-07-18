@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+  background: white;;
+  z-index: 1800;
+}
+
+.header-logo {
+  position: fixed;
+  top: 11px;
+  left: 20px;
+  width: 36px;
+  height: 36px;
+}
+
+.header-title {
+  width: auto;
+  font-size: 26px;
+  line-height: 60px;
+  padding-right: 60px;
+  text-align: right;
+}
+
+.category {
+  position: fixed;
+  top: 11px;
+  left: 70px;
+  height: 36px;
+  width: 36px;
+}
+
+.category:hover, .header-logo:hover {
+  cursor: pointer;
+}
+
+
