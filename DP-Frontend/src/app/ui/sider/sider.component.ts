@@ -48,12 +48,12 @@ export class SiderComponent implements OnInit, OnChanges, OnDestroy, AfterConten
     this.siderState.setInitedState(false);
 
     this.categories = {
-      designPattern: 'https://guyuchen.com/deadpool/images/Steven-logo-1.png',
-      javaBasic: 'https://guyuchen.com/deadpool/images/Stark-logo-1.png',
-      banner: 'https://guyuchen.com/deadpool/images/Hulk-logo-1.png',
-      thor: 'https://guyuchen.com/deadpool/images/Thor-logo-1.png',
-      tchalla: 'https://guyuchen.com/deadpool/images/Tchalla-logo-1.png',
-      strange: 'https://guyuchen.com/deadpool/images/Strange-logo-1.png',
+      designPattern: 'https://oss.guyuchen.com/deadpool/images/Steven-logo-1.png',
+      javaBasic: 'https://oss.guyuchen.com/deadpool/images/Stark-logo-1.png',
+      banner: 'https://oss.guyuchen.com/deadpool/images/Hulk-logo-1.png',
+      thor: 'https://oss.guyuchen.com/deadpool/images/Thor-logo-1.png',
+      tchalla: 'https://oss.guyuchen.com/deadpool/images/Tchalla-logo-1.png',
+      strange: 'https://oss.guyuchen.com/deadpool/images/Strange-logo-1.png',
     };
 
   }

@@ -22,35 +22,35 @@ export class HeaderNoteComponent implements OnChanges {
   constructor(private siderState: SiderState, private router: Router) {
     this.categories = {
       designPattern: {
-        src: 'https://guyuchen.com/deadpool/images/Steven-logo-1.png',
+        src: 'https://oss.guyuchen.com/deadpool/images/Steven-logo-1.png',
         title: 'Design Pattern'
       },
-      designPattern2: 'https://guyuchen.com/deadpool/images/Steven-logo-2.png',
+      designPattern2: 'https://oss.guyuchen.com/deadpool/images/Steven-logo-2.png',
       javaBasic: {
-        src: 'https://guyuchen.com/deadpool/images/Stark-logo-1.png',
+        src: 'https://oss.guyuchen.com/deadpool/images/Stark-logo-1.png',
         title: 'Java Basic'
       },
-      javaBasic2: 'https://guyuchen.com/deadpool/images/Stark-logo-2.png',
+      javaBasic2: 'https://oss.guyuchen.com/deadpool/images/Stark-logo-2.png',
       algorithm: {
-        src: 'https://guyuchen.com/deadpool/images/Hulk-logo-1.png',
+        src: 'https://oss.guyuchen.com/deadpool/images/Hulk-logo-1.png',
         title: 'Algorithm'
       },
-      algorithm2: 'https://guyuchen.com/deadpool/images/Hulk-logo-2.png',
+      algorithm2: 'https://oss.guyuchen.com/deadpool/images/Hulk-logo-2.png',
       frontend: {
-        src: 'https://guyuchen.com/deadpool/images/Thor-logo-1.png',
+        src: 'https://oss.guyuchen.com/deadpool/images/Thor-logo-1.png',
         title: 'Frontend'
       },
-      frontend2: 'https://guyuchen.com/deadpool/images/Thor-logo-2.png',
+      frontend2: 'https://oss.guyuchen.com/deadpool/images/Thor-logo-2.png',
       devOps: {
-        src: 'https://guyuchen.com/deadpool/images/Tchalla-logo-1.png',
+        src: 'https://oss.guyuchen.com/deadpool/images/Tchalla-logo-1.png',
         title: 'DevOps'
       },
-      devOps2: 'https://guyuchen.com/deadpool/images/Tchalla-logo-2.png',
+      devOps2: 'https://oss.guyuchen.com/deadpool/images/Tchalla-logo-2.png',
       others: {
-        src: 'https://guyuchen.com/deadpool/images/Strange-logo-1.png',
+        src: 'https://oss.guyuchen.com/deadpool/images/Strange-logo-1.png',
         title: 'Others'
       },
-      others2: 'https://guyuchen.com/deadpool/images/Strange-logo-2.png',
+      others2: 'https://oss.guyuchen.com/deadpool/images/Strange-logo-2.png',
     };
   }
 

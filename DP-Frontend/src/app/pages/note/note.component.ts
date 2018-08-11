@@ -52,27 +52,27 @@ export class NoteComponent implements OnInit, OnDestroy {
 
     this.categories = {
       javaBasic: {
-        src: 'https://guyuchen.com/deadpool/images/Stark-symbol.png',
+        src: 'https://oss.guyuchen.com/deadpool/images/Stark-symbol.png',
         background: 'radial-gradient(circle farthest-side at right top,#fefdfe 5%,#f8cdda 25%,#1d2b64 80%,#0e153a 98%)'
       },
       designPattern: {
-        src: 'https://guyuchen.com/deadpool/images/Steven-symbol.png',
+        src: 'https://oss.guyuchen.com/deadpool/images/Steven-symbol.png',
         background: 'radial-gradient(circle farthest-side at right top,#233f6e 5%,#9e404a 25%,#381317 80%,#20090b 98%)'
       },
       algorithm: {
-        src: 'https://guyuchen.com/deadpool/images/Hulk-Symbol.png',
+        src: 'https://oss.guyuchen.com/deadpool/images/Hulk-Symbol.png',
         background: 'radial-gradient(circle farthest-side at right top,#fab64b 5%,#2d582a 25%,#082310 80%,#001204 98%)'
       },
       devOps: {
-        src: 'https://guyuchen.com/deadpool/images/Tchalla-symbol.png',
+        src: 'https://oss.guyuchen.com/deadpool/images/Tchalla-symbol.png',
         background: 'radial-gradient(circle farthest-side at right top,#c8b388 5%,#9fbab5 25%,#082310 80%,#162522 98%)'
       },
       frontend: {
-        src: 'https://guyuchen.com/deadpool/images/Thor-symbol.png',
+        src: 'https://oss.guyuchen.com/deadpool/images/Thor-symbol.png',
         background: 'radial-gradient(circle farthest-side at right top,#fbfef7 5%,#c1792f 25%,#30221f 80%,#1c1115 98%)'
       },
       others: {
-        src: 'https://guyuchen.com/deadpool/images/Strange-symbol.png',
+        src: 'https://oss.guyuchen.com/deadpool/images/Strange-symbol.png',
         background: 'radial-gradient(circle farthest-side at right top,#d6df36 5%,#ae7984 25%,#231231 80%,#120323 98%)'
       }
     };
